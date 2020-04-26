@@ -109,16 +109,4 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-body h2 {
-  margin: 2% 0;
-}
-body li {
-  margin: 1% 0;
-}
-body footer {
-  margin-top: 5%;
-}
-body footer .jumbotron {
-  margin-bottom: 0px !important;
-}
 /*# sourceMappingURL=main.css.map */
