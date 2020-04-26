@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <title>WebDev Tempate</title>
+    <title>Jan Hamara | Web Developer | Graphic Designer</title>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -20,17 +20,13 @@
     <meta http-equiv="Content-Type" content="text/html"/>
     <meta name="format-detection" content="telephone=no"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../JHPW/favicon.ico">
+
+    <!--    CDN Bootstrap   -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--     Fonts      -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&amp;‌​subset=greek,latin-e‌​xt"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!--    CDN AOS   -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-
-    <!--    CDN Bootstrap   -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!--    Font Awesome    -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -46,36 +42,33 @@
 <!--                                    -->
 
 <body>
-<!--Test availability of Bootstrap CSS CDN-->
-<div id="bootstrapCssTest" class="hidden"></div>
 
-<header class="jumbotron">
-    <h1 class="text-center">Basic HTML Boilerplate</h1>
-</header>
+    <!--Test availability of Bootstrap CSS CDN-->
+    <div id="bootstrapCssTest" class="d-none">Boostrap CSS Test [Should not be visible]</div>
 
-<div class="container-fluid">
-    <h2 class="text-center">This boilerplate includes</h2>
-    <div>
-        <ul class="text-center">
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>Webpack</li>
-            <li>AOS (Animations Framework)</li>
-            <li>Font Awesome</li>
-            <li>LESS Pre-compiler</li>
-        </ul>
+    <header class="jumbotron">
+        <h1 class="text-center">Basic HTML Boilerplate</h1>
+    </header>
+
+    <div class="container-fluid">
+        <h2 class="text-center">This boilerplate includes</h2>
+        <div>
+            <ul class="text-center">
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>Webpack</li>
+                <li>AOS (Animations Framework)</li>
+                <li>Font Awesome</li>
+                <li>LESS Pre-compiler</li>
+            </ul>
+        </div>
     </div>
-</div>
 
-<footer class="text-center">
-    <div class="jumbotron">
-        <h6>Made by Jan Hamara</h6>
-    </div>
-</footer>
-
-
-
-
+    <footer class="text-center">
+        <div class="jumbotron">
+            <h6>Made by Jan Hamara</h6>
+        </div>
+    </footer>
 
 <!--                                           -->
 <!--            End of Main Content            -->
@@ -84,34 +77,26 @@
 <!-- ----------------------------------------------------------------------------------------------------------- -->
 
 <!--     jQuery      -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--     When CDN is not available -> Load the local version of jQuery       -->
 <script>window.jQuery || document.write('<script src="./js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 
-<!--    Bootstrap    -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/vendor/bootstrap.min.js"><\/script>')}</script>
+<!--     PopperJS      -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-<!--       AOS       -->
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<!--    Bootstrap    -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--     When CDN is not available -> Load the local version of Bootstrap       -->
+<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/vendor/bootstrap.min.js"><\/script>')}</script>
 
 <!--    Test Bootstrap CSS CDN    -->
 <script type="text/javascript">
     if ($('#bootstrapCssTest').is(':visible') === true) {
         $('<link href="./css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
-        $('<link href="./css/vendor/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
     }
 </script>
 
 <script type="text/javascript" src="./js/main.js"></script>
-
-<script type="text/javascript">
-    $( document ).ready(function() {
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 1000
-        });
-    });
-</script>
 
 </body>
 </html>

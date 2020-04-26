@@ -104,7 +104,7 @@ html {
   width: 100%;
   height: 100%;
   color: #2f2f2f;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', Arial;
   font-size: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -121,3 +121,4 @@ body footer {
 body footer .jumbotron {
   margin-bottom: 0px !important;
 }
+/*# sourceMappingURL=main.css.map */
