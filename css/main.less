@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+//------------------------------------------------------------------------------
+
+// Variables
+
+// ------------------------------------------------------------------------------
+
+@min: 0%;
+@max: 100%;
+@font: 'Comfortaa', cursive;
+@main-font-color: #2f2f2f;
+
+//--------------------------
+// Media Queries
+// -------------------------
+
+@smartphone-all: ~"only screen and (max-width: 479px) and (orientation: portrait)";
+@smartphone-all-landscape: ~"only screen and (max-width: 736px) and (orientation: landscape)";
+@smartphone-small: ~"only screen and (max-width: 330px) and (orientation: portrait)";
+@smartphone: ~"only screen and (min-width: 330px) and (max-width: 400px) and (orientation: portrait)";
+@smartphone-medium: ~"only screen and (min-width: 400px) and (max-width: 413px) and (orientation: portrait)";
+@smartphone-big: ~"only screen and (min-width: 413px) and (max-width: 479px) and (orientation: portrait)";
+@tablet-small: ~"only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait)";
+@tablet-big: ~"only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait)";
+@iPad-landscape: ~"only screen and (width: 1024px) and (height: 768px) and (orientation: landscape)";
+@big-screen: ~"only screen and (min-width: 1900px)";
+
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+
+// Classes
+
+// ------------------------------------------------------------------------------
+
+.nobound {
+  margin: @min;
+  padding: @min;
+}
+
+.fs {
+  width: @max;
+  height: @max;
+}
+
+.display (@value: block) {
+  display: @value;
+}
+
+.position (@pos: absolute) {
+  position: @pos;
+}
+
+.aligntext (@align: center) {
+  text-align: @align;
+}
+
+/*   Mixin for perfect absolute positioning - centering    */
+.p-center {
+  .position;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rel {
+  .position(relative);
+}
+
+.abs {
+  .position;
+}
+
+.bg-setup {
+  background-position:  center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -ms-content-zooming: none;
+}
+
+//-------------------------------------------------------------
+
+body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, aside, article, figure, figcaption, h1, h2, h3, h4, h5, h6, i {
+  .display;
+  .nobound;
+  //outline: red 1px solid;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+html {
+  //background-image: url(../assets/img/background-2.svg);
+  .bg-setup;
+}
+
+
+body,html {
+  .fs;
+  color: @main-font-color;
+  font-family: @font;
+  font-size: @max;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+//-------------------------------------------------------------
+
+//                        Main CSS
+
+//-------------------------------------------------------------
+
+body {
+
+  h2 {
+    margin: 2% 0;
+  }
+
+  li {
+    margin: 1% 0;
+  }
+
+  footer {
+    margin-top: 5%;
+
+    .jumbotron {
+      margin-bottom: 0px !important;
+    }
+  }
+}
