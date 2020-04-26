@@ -1,0 +1,32 @@
+{
+  "name": "jhpw",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanHamara/JHPW.git"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "web",
+    "developer",
+    "graphic",
+    "designer"
+  ],
+  "author": "Jan Hamara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JanHamara/JHPW/issues"
+  },
+  "homepage": "https://github.com/JanHamara/JHPW#readme"
+}
