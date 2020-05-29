@@ -10,8 +10,13 @@
 
 @min: 0%;
 @max: 100%;
-@font: 'Comfortaa', Arial;
-@main-font-color: #2f2f2f;
+@font: 'ingra-2', sans-serif;
+@font2: 'beloved-sans', sans-serif;
+@main-font-color: rgb(209, 209, 209);
+@light-font-color: rgb(143, 143, 143);
+@main-bg-color: rgb(16, 16, 15);
+
+@highlight-red: rgb(175, 41, 31);
 
 //--------------------------
 // Media Queries
@@ -19,13 +24,20 @@
 
 @smartphone-all: ~"only screen and (max-width: 479px) and (orientation: portrait)";
 @smartphone-all-landscape: ~"only screen and (max-width: 736px) and (orientation: landscape)";
+
 @smartphone-small: ~"only screen and (max-width: 330px) and (orientation: portrait)";
+
 @smartphone: ~"only screen and (min-width: 330px) and (max-width: 400px) and (orientation: portrait)";
-@smartphone-medium: ~"only screen and (min-width: 400px) and (max-width: 413px) and (orientation: portrait)";
-@smartphone-big: ~"only screen and (min-width: 413px) and (max-width: 479px) and (orientation: portrait)";
+
+@smartphone-medium: ~"only screen and (min-width: 400px) and (max-width: 410px) and (orientation: portrait)";
+
+@smartphone-big: ~"only screen and (min-width: 410px) and (max-width: 479px) and (orientation: portrait)";
+
 @tablet-small: ~"only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait)";
 @tablet-big: ~"only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait)";
+
 @iPad-landscape: ~"only screen and (width: 1024px) and (height: 768px) and (orientation: landscape)";
+
 @big-screen: ~"only screen and (min-width: 1900px)";
 
 //------------------------------------------------------------------------------
@@ -98,16 +110,15 @@ body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, as
   }
 }
 
-html {
-  //background-image: url(../assets/img/background-2.svg);
-  .bg-setup;
-}
-
 body,html {
   .fs;
-  color: @main-font-color;
-  font-family: @font;
-  font-size: @max;
+  color: @main-font-color !important;
+  font-family: @font !important;
+  font-size: @max; // font-size: 100% // Needs to be defined for correct responsive resizing of text
+  font-weight: 100 !important;
+  //font-weight: 700 !important; - This one is necessary for Beloved Sans Bold
+  font-style: normal !important;
+  letter-spacing: 0.2em;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -117,3 +128,388 @@ body,html {
 //                        Main CSS
 
 //-------------------------------------------------------------
+
+.section-template {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  //
+  width: @max;
+  height: 100vh;
+
+  .container-fluid {
+    .fs;
+    .nobound;
+    //
+    .rel;
+
+    // Page Logo Image
+    .jh-page-logo {
+      .p-center;
+      width: 4vw;
+      //
+      top: 13.5vh;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    // Page Content Container
+    .jh-page-container {
+      .p-center;
+      .aligntext;
+      //
+      width: 60vw;
+      height: 45vh;
+
+      .jh-page-paragraph {
+        color: @light-font-color !important;
+        font-family: ingra-2, sans-serif !important;
+        font-weight: 200 !important;
+        font-style: normal !important;
+        font-size: 1vw;
+        //
+        line-height: 4vh;
+        margin-bottom: 5vh;
+        letter-spacing: 0.4em;
+
+        span.jh-strong {
+          .display(inline);
+          color: @main-font-color;
+          font-weight: 500 !important;
+        }
+      }
+    }
+
+    // About | Content Pages
+
+    // 1
+    #jh-about-content-1 {
+      .display(block);
+      opacity: 1;
+      transition: 1s opacity;
+    }
+
+    // 2
+    #jh-about-content-2 {
+      .display(none);
+      opacity: 0;
+      transition: 1s opacity;
+    }
+
+    // 3
+    #jh-about-content-3 {
+      .display(none);
+      opacity: 0;
+      transition: 1s opacity;
+    }
+
+    // Read More Button
+    .jh-read-more-button {
+      .position;
+      bottom: 12.5vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //
+      color: @light-font-color !important;
+      font-family: ingra-2, sans-serif !important;
+      font-weight: 200 !important;
+      font-style: normal !important;
+      font-size: 0.9vw;
+      letter-spacing: 0.4em;
+
+      &:hover {
+        cursor: pointer;
+
+        span {
+          color: @main-font-color !important;
+        }
+      }
+
+      img {
+        .display(inline-block);
+        width: 0.6vw;
+        margin-right: 0.2vw;
+      }
+
+      span {
+        .display(inline-block);
+      }
+    }
+
+    // Page Counter
+    .jh-page-counter {
+      .position;
+      bottom: 9vh;
+      right: 0vw;
+      transform: translate(-50%, -50%);
+      overflow: visible;
+      //
+      width: 8vw;
+      height: 4.25vh;
+      //
+      font-size: 1.5vw;
+
+      div {
+        .display(inline-block);
+      }
+
+      .jh-pc-container {
+        .display(inline-block);
+        .p-center;
+        width: 80%;
+        //
+        overflow: visible;
+
+        #jh-pc-current {
+          font-weight: 600 !important;
+        }
+
+        .jh-pc-divider {
+          width: 1vw;
+        }
+
+        .jh-pc-total {
+          font-family: ingra-2, sans-serif !important;
+          font-weight: 100 !important;
+          font-style: normal !important;
+          opacity: 0.7;
+          //
+          .abs;
+          bottom: 0;
+          margin-left: 0.7vw;
+        }
+      }
+    }
+
+    // Page Bar Indicator
+    .jh-bar-indicator {
+      .position;
+      top: 50%;
+      right: 5vw;
+      transform: translate(-50%, -50%);
+      //
+      height: 45vh;
+      width: 0.1vw;
+      //
+      background: @light-font-color;
+
+      .jh-bar-indicator-thumb-container {
+        .fs;
+        .rel;
+
+        .jh-bar-indicator-thumb {
+          .abs;
+          top: 0;
+          width: @max;
+          height: 33%;
+          //
+          background: @main-font-color;
+          transition: top 2s;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  background: @main-bg-color;
+  height: auto;
+
+  .show-page {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  main {
+    opacity: 1;
+    width: @max;
+    height: 100vh;
+
+    // Replace into specific section
+    ul {
+      font-family: @font !important;
+      color: @main-font-color !important;
+      list-style-type: none;
+
+      li {
+        font-family: @font !important;
+        color: @main-font-color !important;
+        list-style-type: none;
+        opacity: 0.7;
+        transition: opacity 1s;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 1;
+          transition: opacity 1s;
+        }
+      }
+    }
+
+    // Menu Icon
+
+    div#menu-icon {
+      width: 2.5vw;
+      //
+      .position;
+      top: 13.5vh;
+      right: 4vw;
+      transform: translate(-50%, -50%);
+      //
+      overflow: visible !important;
+      //
+      opacity: 0.7;
+      transition: opacity 1s;
+      z-index: 9999 !important;
+
+      #menu-icon-default {
+        .fs;
+      }
+
+      #menu-icon-tooltip {
+        margin-top: 1.5vh;
+        font-size: 0.7vw;
+        font-weight: 600;
+        //
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 1s;
+
+        #menu-icon-tooltip {
+          opacity: 1;
+          transition: opacity 1s;
+        }
+      }
+    }
+
+    //
+
+    // Header
+
+    header#jh-header {
+      width: @max;
+      height: 100vh;
+      color: @main-font-color;
+      //
+      opacity: 1;
+      transition: opacity 1s;
+      //
+
+      .container-fluid {
+        .fs;
+        .nobound;
+
+        img#jh-hero-logo {
+          .p-center;
+          width: 6vw;
+          //
+          top: 17%;
+
+          @media @smartphone-all {
+            width: 20vw;
+          }
+        }
+
+        img#jh-hero-heading {
+          .p-center;
+          width: 29vw;
+          //
+          top: 35.5%;
+
+          @media @smartphone-all {
+            width: 70vw;
+          }
+        }
+
+        div#jh-hero-subheading {
+          .p-center;
+          .aligntext;
+          font-family: @font !important;
+          font-size: 1vw;
+          letter-spacing: 0.405em;
+          //
+          top: 42%;
+          left: 50.2%;
+          //
+          opacity: 0.8;
+
+          @media @smartphone-all {
+            font-size: 2.43vw;
+            width: 70vw;
+          }
+        }
+
+        img#jh-hero-image {
+          .position;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 0%);
+          width: 27vw;
+        }
+      }
+    }
+
+    // Menu
+
+    #jh-menu {
+      width: @max;
+      height: 100vh;
+      color: @main-font-color !important;
+      //
+      opacity: 0;
+      transition: opacity 1s;
+
+      .container-fluid {
+        .fs;
+        .nobound;
+
+        img#jh-menu-logo {
+          .p-center;
+          width: 6vw;
+          //
+          top: 17%;
+        }
+
+        ul#jh-menu-list {
+          font-family: @font !important;
+          color: @main-font-color !important;
+          //
+          .p-center;
+
+          li {
+
+          }
+        }
+      }
+    }
+
+    // About
+
+    #jh-about {
+      background: @main-bg-color;
+      //
+      .display(none); // just for dev
+      opacity: 0; // just for dev
+      //
+      .section-template;
+
+      // Section Hero Image
+      #jh-about-hero-image {
+        .display(inline-block);
+        height: @max;
+        width: auto;
+      }
+    }
+  }
+}

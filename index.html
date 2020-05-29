@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
     <title>Jan Hamara | Web Developer | Graphic Designer</title>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -17,19 +20,27 @@
     <meta property="og:url" content="WebDev Tempate" />
     <meta property="og:site_name" content="WebDev Tempate" />
     <meta name="og:keywords" content="Web, Dev, Template"/>
-    <meta http-equiv="Content-Type" content="text/html"/>
     <meta name="format-detection" content="telephone=no"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="../JHPW/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
     <!--    CDN Bootstrap   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!--    CDN AOS   -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+
     <!--     Fonts      -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&amp;‌​subset=greek,latin-e‌​xt"/>
+    <link rel="stylesheet" href="https://use.typekit.net/eiw2pfz.css"> <!--     Ingra Hair / Thin      -->
+    <link rel="stylesheet" href="https://use.typekit.net/eiw2pfz.css"> <!--     Beloved Sans Bold      -->
 
     <!--    Font Awesome    -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--    GlitchJS    -->
+    <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/style.css'>
+    <link rel="stylesheet" href="./css/vendor/glitch.css">
+
 
     <!-- All css should be bundled here / Webpack -->
     <link rel="stylesheet" href="./css/main.css">
@@ -37,22 +48,244 @@
 
 <!-- ----------------------------------------------------------------------------------------------------------- -->
 
-<body>
+<body id="jh-body">
 
-    <!--Test availability of Bootstrap CSS CDN-->
+    <!-- Test availability of Bootstrap CSS CDN -->
     <div id="bootstrapCssTest" class="d-none">Boostrap CSS Test [Should not be visible]</div>
 
-    <!--                                    -->
-    <!--            Main Content            -->
-    <!--                                    -->
+    <!--        Landing Page         -->
+    <main id="jh-main-content">
 
-<!--                                           -->
-<!--            End of Main Content            -->
-<!--                                           -->
 
-<!-- ----------------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
 
-<!--     jQuery      -->
+
+        <!--        Menu Icon         -->
+        <div id="menu-icon">
+            <img id="menu-icon-default" src="./assets/04_Icons/03_Menu_Default.png" class="img-responsive" alt="menu-icon">
+            <span id="menu-icon-tooltip">MENU</span>
+        </div>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        Header         -->
+        <header id="jh-header">
+            <div class="container-fluid">
+                <img id="jh-hero-logo" src="./assets/01_Logos/04_Logo_Solo_White_Outline/logo_solo_white_outline_1000px.png" class="img-responsive" alt="hero-logo">
+
+                <img id="jh-hero-heading" src="./assets/01_Logos/14_Text_Landing_Page/text_landing_page_1500px.png" class="img-responsive" alt="hero-logo">
+
+                <div id="jh-hero-subheading">
+                    WEB DEVELOPER | GRAPHIC DESIGNER
+                </div>
+
+                <img id="jh-hero-image" src="./assets/00_IMG/00_Landing_Page/header-image-dark.png" class="img-responsive" alt="hero-image">
+            </div>
+        </header>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        About         -->
+        <section id="jh-about" class="section-template">
+            <div class="container-fluid">
+
+                <!-- ---------------------------------------------- -->
+
+                <!--        Page Hero Image         -->
+                <img id="jh-about-hero-image" src="./assets/00_IMG/01_About/about-image.jpg" class="img-responsive" alt="profile-image">
+
+                <!-- ---------------------------------------------- -->
+
+                <!--        Page Logo Image         -->
+                <img id="jh-about-page-logo" class="jh-page-logo" src="./assets/01_Logos/12_Logo_Signature_White/logo_signature_white_500px.png" class="img-responsive" alt="page-logo">
+
+                <!-- ---------------------------------------------- -->
+
+                <!--        Page Content Container         -->
+                <div id="jh-about-content-1" class="jh-page-container">
+                    <p class="jh-page-paragraph">
+                        MY NAME IS <span class="jh-strong">JAN HAMARA</span>
+                    </p>
+                    <p class="jh-page-paragraph">
+                        MY PASSION IS CREATING BEAUTIFUL <br/>
+
+                        <span class="jh-strong">WEBSITES</span>, <span class="jh-strong">UI/UX</span>,
+                        <span class="jh-strong">APPLICATIONS</span> AND <span class="jh-strong">BRANDING IDENTITIES</span><br/>
+
+                        WITH THE HIGHEST STANDARDS OF QUALITY <br/>
+                    </p>
+                    <p class="jh-page-paragraph">
+                        WITH OVER 4 YEARS OF EXPERIENCE <br/>
+
+                        IN <span class="jh-strong">WEB DEVELOPMENT</span> AND <span class="jh-strong">GRAPHIC DESIGN</span><br/>
+
+                        I CONSTANTLY STRIVE TO IMPROVE WITHIN MY GOAL<br/>
+
+                        OF PRODUCING ATTRACTIVE AND FUNCTIONAL<br/>
+
+                        <span class="jh-strong">DIGITAL PRODUCTS</span><br/>
+                    </p>
+                </div>
+
+                <div id="jh-about-content-2" class="jh-page-container">
+                    <p class="jh-page-paragraph">
+                        I GRADUATED FROM <span class="jh-strong">MA DIGITAL MEDIA & INFORMATION STUDIES</span><br/>
+
+                        DEGREE AT <span class="jh-strong">THE UNIVERSITY OF GLASGOW</span>
+                    </p>
+                    <p class="jh-page-paragraph">
+                        HAVING WORKED FOR COMPANIES LIKE <span class="jh-strong">J.P.MORGAN CHASE & CO.</span><br/>
+
+                        I HAVE GAINED VALUABLE EXPERIENCE IN AREAS OF<br/>
+
+                        <span class="jh-strong">TEAM WORK</span>, <span class="jh-strong">PROJECT MANAGEMENT</span> AND <span class="jh-strong">WORK FLOW</span>
+                    </p>
+                    <p class="jh-page-paragraph">
+                        PARTICIPATION AT NUMEROUS <span class="jh-strong">HACKATHONS</span> OVER THE WORLD<br/>
+
+                        HAS ALLOWED ME TO LEARN <span class="jh-strong">PROFESSIONAL SKILLS</span><br/>
+
+                        FROM THE VERY BEST DEVELOPERS IN THE FIELD<br/>
+
+                        AND LED TO SOME NOTABLE <span class="jh-strong">AWARDS</span>
+                    </p>
+                </div>
+
+                <div id="jh-about-content-3" class="jh-page-container">
+                    <p class="jh-page-paragraph">
+                        APART FROM BEING A DEVELOPER AND A DESIGNER<br/>
+
+                        I AM ALSO AN <span class="jh-strong">AVID TRAVELER</span>, <span class="jh-strong">PHOTOGRAPHER</span> AND <span class="jh-strong">FILM MAKER</span><br/>
+
+                        WITH AN ACTIVE TRAVEL BLOG ON <span class="jh-strong">INSTAGRAM</span><br/>
+                    </p>
+                    <p class="jh-page-paragraph">
+                        YEARS OF EXPERIENCE IN <span class="jh-strong">HOSPITALITY AND TOURISM</span><br/>
+
+                        HAVE TAUGHT ME PRICELESS <span class="jh-strong">ORGANISATIONAL SKILLS</span>,<br/>
+
+                        <span class="jh-strong">TIME MANAGEMENT</span> AND <span class="jh-strong">FLEXIBILITY</span><br/>
+                    </p>
+                    <p class="jh-page-paragraph">
+                        I CAN SPEAK <span class="jh-strong">SIX LANGUAGES</span>, CURRENTLY LEARNING SEVENTH<br/>
+
+                        I AM ALSO A STRONG ENTHUSIAST OF <span class="jh-strong">VR TECHNOLOGY</span><br/>
+
+                        AND AN ACTIVE <span class="jh-strong">CRYPTOCURRENCY INVESTOR</span><br/>
+                    </p>
+                </div>
+
+                <!-- ---------------------------------------------- -->
+
+                <!--        Read More Button         -->
+                <div id="jh-read-more-1" class="jh-read-more-button">
+                    <img id="jh-rm-1-sign" src="./assets/00_IMG/01_About/about-pc-divider-white.png" class="img-responsive" alt="read-more-sign">
+                    <span id="jh-rm-1-text">READ MORE</span>
+                </div>
+
+                <!-- ---------------------------------------------- -->
+
+                <!--        Page Counter         -->
+                <div id="jh-about-page-counter" class="jh-page-counter">
+                    <div class="jh-pc-container">
+                        <div id="jh-pc-current">01</div>
+                        <div class="jh-pc-divider">
+                            <img src="./assets/00_IMG/01_About/about-pc-divider.png" class="img-responsive" alt="page-counter-divider">
+                        </div>
+                        <div class="jh-pc-total">03</div>
+                    </div>
+                </div>
+
+                <!-- ---------------------------------------------- -->
+
+                <!--        Page Bar Indicator         -->
+                <div id="jh-about-bar-indicator" class="jh-bar-indicator">
+                    <div class="jh-bar-indicator-thumb-container">
+                        <div id="jh-bar-indicator-thumb" class="jh-bar-indicator-thumb"></div>
+                    </div>
+                </div>
+
+                <!-- ---------------------------------------------- -->
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        Tech Stack         -->
+        <section id="jh-tech-stack" class="section-template">
+            <div class="container-fluid">
+                <h1>Page | Tech Stack</h1>
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        Portfolio         -->
+        <section id="jh-portfolio" class="section-template">
+            <div class="container-fluid">
+                <h1>Page | Portfolio</h1>
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        Awards         -->
+        <section id="jh-awards" class="section-template">
+            <div class="container-fluid">
+                <h1>Page | Awards</h1>
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        Contact         -->
+        <section id="jh-contact" class="section-template">
+            <div class="container-fluid">
+                <h1>Page | Contact</h1>
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!--        Menu         -->
+        <section id="jh-menu">
+            <div class="container-fluid">
+
+                <!--    Menu Logo    -->
+                <img id="jh-menu-logo" src="./assets/01_Logos/04_Logo_Solo_White_Outline/logo_solo_white_outline_1000px.png" class="img-responsive" alt="hero-logo">
+
+                <!--    Menu List    -->
+                <ul id="jh-menu-list" class="list-unstyled">
+                    <li id="about_page">About</li>
+                    <li id="tech_stack_page">Tech Stack</li>
+                    <li id="portfolio_page">Portfolio</li>
+                    <li id="awards_page">Awards</li>
+                    <li id="contact_page">Contact</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    </main>
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <!--     jQuery      -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <!--     When CDN is not available -> Load the local version of jQuery       -->
 <script>window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')</script>
@@ -71,6 +304,15 @@
         $('<link href="./css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
     }
 </script>
+
+    <!--       AOS       -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            AOS.init({});
+        });
+    </script>
 
 <script type="text/javascript" src="./js/main.js"></script>
 
