@@ -143,6 +143,17 @@ body,html {
     //
     .rel;
 
+    //-------------------------------------------------------------
+
+    // Section Hero Image
+    .jh-hero-image {
+      .display(inline-block);
+      height: @max;
+      width: auto;
+    }
+
+    //-------------------------------------------------------------
+
     // Page Logo Image
     .jh-page-logo {
       .p-center;
@@ -155,6 +166,8 @@ body,html {
       }
     }
 
+    //-------------------------------------------------------------
+
     // Page Content Container
     .jh-page-container {
       .p-center;
@@ -162,6 +175,9 @@ body,html {
       //
       width: 60vw;
       height: 45vh;
+      //
+      //border: 0.5px red solid; // just dev
+      overflow: visible; // just dev
 
       .jh-page-paragraph {
         color: @light-font-color !important;
@@ -176,39 +192,25 @@ body,html {
 
         span.jh-strong {
           .display(inline);
-          color: @main-font-color;
+          //
+          color: @main-font-color !important;
+          font-style: normal !important;
           font-weight: 500 !important;
+
+          .jh-red-divider {
+            .display(inline);
+            color: @highlight-red;
+          }
         }
       }
     }
 
-    // About | Content Pages
-
-    // 1
-    #jh-about-content-1 {
-      .display(block);
-      opacity: 1;
-      transition: 1s opacity;
-    }
-
-    // 2
-    #jh-about-content-2 {
-      .display(none);
-      opacity: 0;
-      transition: 1s opacity;
-    }
-
-    // 3
-    #jh-about-content-3 {
-      .display(none);
-      opacity: 0;
-      transition: 1s opacity;
-    }
+    //-------------------------------------------------------------
 
     // Read More Button
     .jh-read-more-button {
       .position;
-      bottom: 12.5vh;
+      bottom: 11vh;
       left: 50%;
       transform: translate(-50%, -50%);
       //
@@ -238,6 +240,8 @@ body,html {
       }
     }
 
+    //-------------------------------------------------------------
+
     // Page Counter
     .jh-page-counter {
       .position;
@@ -262,7 +266,7 @@ body,html {
         //
         overflow: visible;
 
-        #jh-pc-current {
+        #jh-pc-current, #jh-pc2-current {
           font-weight: 600 !important;
         }
 
@@ -282,6 +286,8 @@ body,html {
         }
       }
     }
+
+    //-------------------------------------------------------------
 
     // Page Bar Indicator
     .jh-bar-indicator {
@@ -314,6 +320,8 @@ body,html {
         }
       }
     }
+
+    //-------------------------------------------------------------
   }
 }
 
@@ -405,6 +413,7 @@ body {
       opacity: 1;
       transition: opacity 1s;
       //
+      .display(none) !important;
 
       .container-fluid {
         .fs;
@@ -503,12 +512,124 @@ body {
       opacity: 0; // just for dev
       //
       .section-template;
+      //
+      .container-fluid {
 
-      // Section Hero Image
-      #jh-about-hero-image {
-        .display(inline-block);
-        height: @max;
-        width: auto;
+        //-------------------------------------------------------------
+
+        // About | Content Pages
+
+        // 1
+        #jh-about-content-1 {
+          .display(block);
+          opacity: 1;
+          transition: 1s opacity;
+        }
+
+        // 2
+        #jh-about-content-2 {
+          .display(none);
+          opacity: 0;
+          transition: 1s opacity;
+        }
+
+        // 3
+        #jh-about-content-3 {
+          .display(none);
+          opacity: 0;
+          transition: 1s opacity;
+        }
+      }
+    }
+
+    // Tech Stack
+    #jh-tech-stack {
+      background: @main-bg-color;
+      //
+      .display !important; // just for dev
+      opacity: 1 !important; // just for dev
+      //
+      .section-template;
+      //
+      .container-fluid {
+
+        .jh-page-container {
+          .jh-page-paragraph:first-child {
+            font-size: 1.2vw !important;
+          }
+        }
+
+        //-------------------------------------------------------------
+
+        // Tech Stack | Content Pages
+
+        // 1
+        #jh-tech-content-1 {
+          .display(block);
+          opacity: 1;
+          transition: 1s opacity;
+        }
+
+        // 2
+        #jh-tech-content-2 {
+          .display(none);
+          opacity: 0;
+          transition: 1s opacity;
+        }
+
+        // 3
+        #jh-tech-content-3 {
+          .display(none);
+          opacity: 0;
+          transition: 1s opacity;
+        }
+      }
+
+      //-------------------------------------------------------------
+
+      // Tech Stack List
+
+      .jh-tech-stack-list {
+        .display(flex);
+        width: @max;
+        height: 11vh;
+        margin-top: 7vh;
+        //
+        overflow: visible !important;
+
+        .jh-tech-stack-list-item {
+          flex: 1;
+          height: @max;
+          transition: transform 1s;
+          overflow: visible !important;
+
+          &:hover {
+            transform: scale(1.1);
+            transition: transform 1s;
+          }
+
+          img {
+            width: 50%;
+            margin: 0 auto 2vh;
+          }
+
+          span.jh-tsl-thumb {
+            .aligntext;
+            font-size: 0.7vw;
+            letter-spacing: 0.1em;
+            font-weight: 100;
+          }
+        }
+      }
+
+      #jh-tech-stack-2 {
+        width: 36%;
+        margin: auto;
+      }
+
+      #jh-tech-stack-3 {
+        width: 60%;
+        margin: auto;
       }
     }
   }
