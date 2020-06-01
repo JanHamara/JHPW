@@ -130,6 +130,8 @@ body,html {
 //-------------------------------------------------------------
 
 .section-template {
+  background: @main-bg-color;
+  //
   display: none;
   opacity: 0;
   transition: opacity 1s;
@@ -150,6 +152,19 @@ body,html {
       .display(inline-block);
       height: @max;
       width: auto;
+    }
+
+    //-------------------------------------------------------------
+
+    // Section Thumb Text
+    .jh-thumb-text {
+      .abs;
+      width: 15vw;
+      right: -1.5vw;
+      bottom: 11vw;
+      transform: rotate(-90deg);
+      //
+      opacity: 0.5;
     }
 
     //-------------------------------------------------------------
@@ -176,7 +191,6 @@ body,html {
       width: 60vw;
       height: 45vh;
       //
-      //border: 0.5px red solid; // just dev
       overflow: visible; // just dev
 
       .jh-page-paragraph {
@@ -320,8 +334,6 @@ body,html {
         }
       }
     }
-
-    //-------------------------------------------------------------
   }
 }
 
@@ -329,17 +341,14 @@ body {
   background: @main-bg-color;
   height: auto;
 
-  .show-page {
-    opacity: 1;
-    transition: opacity 1s;
-  }
+  //-------------------------------------------------------------
 
   main {
-    opacity: 1;
     width: @max;
     height: 100vh;
 
-    // Replace into specific section
+    //-------------------------------------------------------------
+
     ul {
       font-family: @font !important;
       color: @main-font-color !important;
@@ -360,9 +369,11 @@ body {
       }
     }
 
+    //-------------------------------------------------------------
+
     // Menu Icon
 
-    div#menu-icon {
+    #menu-icon {
       width: 2.5vw;
       //
       .position;
@@ -401,7 +412,7 @@ body {
       }
     }
 
-    //
+    //-------------------------------------------------------------
 
     // Header
 
@@ -413,7 +424,8 @@ body {
       opacity: 1;
       transition: opacity 1s;
       //
-      .display(none) !important;
+      opacity: 0;     // just for dev [Contact]
+      .display(none); // just for dev [Contact]
 
       .container-fluid {
         .fs;
@@ -469,6 +481,8 @@ body {
       }
     }
 
+    //-------------------------------------------------------------
+
     // Menu
 
     #jh-menu {
@@ -503,14 +517,11 @@ body {
       }
     }
 
+    //-------------------------------------------------------------
+
     // About
 
     #jh-about {
-      background: @main-bg-color;
-      //
-      .display(none); // just for dev
-      opacity: 0; // just for dev
-      //
       .section-template;
       //
       .container-fluid {
@@ -542,13 +553,10 @@ body {
       }
     }
 
+    //-------------------------------------------------------------
+
     // Tech Stack
     #jh-tech-stack {
-      background: @main-bg-color;
-      //
-      .display !important; // just for dev
-      opacity: 1 !important; // just for dev
-      //
       .section-template;
       //
       .container-fluid {
@@ -632,5 +640,135 @@ body {
         margin: auto;
       }
     }
+
+    //-------------------------------------------------------------
+
+    // Contact
+    #jh-contact {
+      .section-template;
+      //
+      .display(block); // just for dev
+      opacity: 1;      // just for dev
+      //
+      .container-fluid {
+
+        //-------------------------------------------------------------
+
+        // Page Hero Image
+        #jh-contact-hero-image {
+          height: 80%;
+          position: absolute;
+          top: 15%;
+          left: 0;
+        }
+
+        //-------------------------------------------------------------
+
+        // Contact Form
+        #jh-contact-form {
+          width: 70%;
+          margin: auto;
+
+
+          form#jh-cf {
+            width: @max;
+
+            .form-group {
+
+              .jh-cf-indicator {
+                .display(inline-block);
+                width: 0.8vw;
+                height: @max;
+                //
+                float: left;
+                margin-right: 0.5vw;
+
+                img {
+                  .display(inline-block);
+                  width: @max;
+                  height: auto;
+                }
+              }
+
+              // Default Styling
+              input, textarea {
+                .display(inline-block);
+                width: 90%;
+                // Clear all styling
+                background: none !important;
+                border: none !important;
+                outline: none !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                resize: none !important;
+                //
+                color: @light-font-color !important;
+                font-family: ingra-2, sans-serif !important;
+                font-weight: 200 !important;
+                font-style: normal !important;
+                font-size: 1vw;
+                //
+                line-height: 4vh;
+                letter-spacing: 0.4em;
+                text-transform: uppercase !important;
+              }
+            }
+
+            .form-control {
+              padding: 0 !important;
+            }
+
+            .fg1, .fg2 {
+              .display(inline-block);
+              width: 48%;
+              height: 7vh;
+              float: left;
+              //
+              border-bottom: 0.5px @light-font-color solid;
+              line-height: 7vh;
+              //
+              margin-bottom: 4vh;
+            }
+
+            .fg2 {
+              float: right;
+            }
+
+            .fg3 {
+              .display(block);
+              width: @max;
+              height: 18vh;
+              //
+              border-bottom: 0.5px @light-font-color solid;
+
+              .jh-cf-indicator {
+                height: 7vh;
+                line-height: 7vh;
+              }
+
+              textarea {
+                width: calc(100% - 2vw);
+                line-height: 7vh;
+                float: right;
+              }
+            }
+          }
+        }
+
+        //-------------------------------------------------------------
+
+        // Submit Button
+
+        #jh-submit-form {
+
+          &:hover {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+
+    //-------------------------------------------------------------
+
   }
 }

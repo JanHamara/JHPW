@@ -103,6 +103,7 @@ html {
   overflow-y: scroll;
 }
 .section-template {
+  background: #10100f;
   display: none;
   opacity: 0;
   transition: opacity 1s;
@@ -120,6 +121,14 @@ html {
   display: inline-block;
   height: 100%;
   width: auto;
+}
+.section-template .container-fluid .jh-thumb-text {
+  position: absolute;
+  width: 15vw;
+  right: -1.5vw;
+  bottom: 11vw;
+  transform: rotate(-90deg);
+  opacity: 0.5;
 }
 .section-template .container-fluid .jh-page-logo {
   position: absolute;
@@ -255,12 +264,7 @@ body {
   background: #10100f;
   height: auto;
 }
-body .show-page {
-  opacity: 1;
-  transition: opacity 1s;
-}
 body main {
-  opacity: 1;
   width: 100%;
   height: 100vh;
 }
@@ -281,7 +285,7 @@ body main ul li:hover {
   opacity: 1;
   transition: opacity 1s;
 }
-body main div#menu-icon {
+body main #menu-icon {
   width: 2.5vw;
   position: absolute;
   top: 13.5vh;
@@ -292,23 +296,23 @@ body main div#menu-icon {
   transition: opacity 1s;
   z-index: 9999 !important;
 }
-body main div#menu-icon #menu-icon-default {
+body main #menu-icon #menu-icon-default {
   width: 100%;
   height: 100%;
 }
-body main div#menu-icon #menu-icon-tooltip {
+body main #menu-icon #menu-icon-tooltip {
   margin-top: 1.5vh;
   font-size: 0.7vw;
   font-weight: 600;
   opacity: 0;
   transition: opacity 1s;
 }
-body main div#menu-icon:hover {
+body main #menu-icon:hover {
   cursor: pointer;
   opacity: 1;
   transition: opacity 1s;
 }
-body main div#menu-icon:hover #menu-icon-tooltip {
+body main #menu-icon:hover #menu-icon-tooltip {
   opacity: 1;
   transition: opacity 1s;
 }
@@ -318,7 +322,8 @@ body main header#jh-header {
   color: #d1d1d1;
   opacity: 1;
   transition: opacity 1s;
-  display: none !important;
+  opacity: 0;
+  display: none;
 }
 body main header#jh-header .container-fluid {
   width: 100%;
@@ -426,6 +431,14 @@ body main #jh-about .container-fluid .jh-hero-image {
   display: inline-block;
   height: 100%;
   width: auto;
+}
+body main #jh-about .container-fluid .jh-thumb-text {
+  position: absolute;
+  width: 15vw;
+  right: -1.5vw;
+  bottom: 11vw;
+  transform: rotate(-90deg);
+  opacity: 0.5;
 }
 body main #jh-about .container-fluid .jh-page-logo {
   position: absolute;
@@ -574,8 +587,6 @@ body main #jh-about .container-fluid #jh-about-content-3 {
 }
 body main #jh-tech-stack {
   background: #10100f;
-  display: block !important;
-  opacity: 1 !important;
   display: none;
   opacity: 0;
   transition: opacity 1s;
@@ -593,6 +604,14 @@ body main #jh-tech-stack .container-fluid .jh-hero-image {
   display: inline-block;
   height: 100%;
   width: auto;
+}
+body main #jh-tech-stack .container-fluid .jh-thumb-text {
+  position: absolute;
+  width: 15vw;
+  right: -1.5vw;
+  bottom: 11vw;
+  transform: rotate(-90deg);
+  opacity: 0.5;
 }
 body main #jh-tech-stack .container-fluid .jh-page-logo {
   position: absolute;
@@ -776,5 +795,243 @@ body main #jh-tech-stack #jh-tech-stack-2 {
 body main #jh-tech-stack #jh-tech-stack-3 {
   width: 60%;
   margin: auto;
+}
+body main #jh-contact {
+  background: #10100f;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  opacity: 1;
+}
+body main #jh-contact .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+}
+body main #jh-contact .container-fluid .jh-hero-image {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+}
+body main #jh-contact .container-fluid .jh-thumb-text {
+  position: absolute;
+  width: 15vw;
+  right: -1.5vw;
+  bottom: 11vw;
+  transform: rotate(-90deg);
+  opacity: 0.5;
+}
+body main #jh-contact .container-fluid .jh-page-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4vw;
+  top: 13.5vh;
+}
+body main #jh-contact .container-fluid .jh-page-logo:hover {
+  cursor: pointer;
+}
+body main #jh-contact .container-fluid .jh-page-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60vw;
+  height: 45vh;
+  overflow: visible;
+}
+body main #jh-contact .container-fluid .jh-page-container .jh-page-paragraph {
+  color: #8f8f8f !important;
+  font-family: ingra-2, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 1vw;
+  line-height: 4vh;
+  margin-bottom: 5vh;
+  letter-spacing: 0.4em;
+}
+body main #jh-contact .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong {
+  display: inline;
+  color: #d1d1d1 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+body main #jh-contact .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong .jh-red-divider {
+  display: inline;
+  color: #af291f;
+}
+body main #jh-contact .container-fluid .jh-read-more-button {
+  position: absolute;
+  bottom: 11vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #8f8f8f !important;
+  font-family: ingra-2, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 0.9vw;
+  letter-spacing: 0.4em;
+}
+body main #jh-contact .container-fluid .jh-read-more-button:hover {
+  cursor: pointer;
+}
+body main #jh-contact .container-fluid .jh-read-more-button:hover span {
+  color: #d1d1d1 !important;
+}
+body main #jh-contact .container-fluid .jh-read-more-button img {
+  display: inline-block;
+  width: 0.6vw;
+  margin-right: 0.2vw;
+}
+body main #jh-contact .container-fluid .jh-read-more-button span {
+  display: inline-block;
+}
+body main #jh-contact .container-fluid .jh-page-counter {
+  position: absolute;
+  bottom: 9vh;
+  right: 0vw;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  width: 8vw;
+  height: 4.25vh;
+  font-size: 1.5vw;
+}
+body main #jh-contact .container-fluid .jh-page-counter div {
+  display: inline-block;
+}
+body main #jh-contact .container-fluid .jh-page-counter .jh-pc-container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: visible;
+}
+body main #jh-contact .container-fluid .jh-page-counter .jh-pc-container #jh-pc-current,
+body main #jh-contact .container-fluid .jh-page-counter .jh-pc-container #jh-pc2-current {
+  font-weight: 600 !important;
+}
+body main #jh-contact .container-fluid .jh-page-counter .jh-pc-container .jh-pc-divider {
+  width: 1vw;
+}
+body main #jh-contact .container-fluid .jh-page-counter .jh-pc-container .jh-pc-total {
+  font-family: ingra-2, sans-serif !important;
+  font-weight: 100 !important;
+  font-style: normal !important;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  margin-left: 0.7vw;
+}
+body main #jh-contact .container-fluid .jh-bar-indicator {
+  position: absolute;
+  top: 50%;
+  right: 5vw;
+  transform: translate(-50%, -50%);
+  height: 45vh;
+  width: 0.1vw;
+  background: #8f8f8f;
+}
+body main #jh-contact .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body main #jh-contact .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container .jh-bar-indicator-thumb {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 33%;
+  background: #d1d1d1;
+  transition: top 2s;
+}
+body main #jh-contact .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container .jh-bar-indicator-thumb:hover {
+  cursor: pointer;
+}
+body main #jh-contact .container-fluid #jh-contact-hero-image {
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+body main #jh-contact .container-fluid #jh-contact-form {
+  width: 70%;
+  margin: auto;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf {
+  width: 100%;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group .jh-cf-indicator {
+  display: inline-block;
+  width: 0.8vw;
+  height: 100%;
+  float: left;
+  margin-right: 0.5vw;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group .jh-cf-indicator img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group input,
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group textarea {
+  display: inline-block;
+  width: 90%;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  resize: none !important;
+  color: #8f8f8f !important;
+  font-family: ingra-2, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 1vw;
+  line-height: 4vh;
+  letter-spacing: 0.4em;
+  text-transform: uppercase !important;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-control {
+  padding: 0 !important;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg1,
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg2 {
+  display: inline-block;
+  width: 48%;
+  height: 7vh;
+  float: left;
+  border-bottom: 0.5px #8f8f8f solid;
+  line-height: 7vh;
+  margin-bottom: 4vh;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg2 {
+  float: right;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg3 {
+  display: block;
+  width: 100%;
+  height: 18vh;
+  border-bottom: 0.5px #8f8f8f solid;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg3 .jh-cf-indicator {
+  height: 7vh;
+  line-height: 7vh;
+}
+body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg3 textarea {
+  width: calc(100% - 2vw);
+  line-height: 7vh;
+  float: right;
+}
+body main #jh-contact .container-fluid #jh-submit-form:hover {
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=main.css.map */

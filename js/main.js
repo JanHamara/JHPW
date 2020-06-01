@@ -241,26 +241,6 @@ $( document ).ready(function() {
 
     // -----------------------------------------------------------------------------------------------------------------
 
-    // About Page / - Home Button
-
-    let about_home_link = document.getElementById("jh-about-page-logo");
-
-    about_home_link.addEventListener('click', function() {
-       homePage(all_pages);
-       setTimeout(function() {
-           document.getElementById("jh-header").style.display = "block";
-           setTimeout(function() {
-               document.getElementById("jh-header").style.opacity = 1;
-           }, 1000);
-       }, 1000);
-    });
-
-    function homePage(pages) {
-        pages.forEach(element => hideElement(element));
-    }
-
-    // -----------------------------------------------------------------------------------------------------------------
-
     // About Page / - Read More Button
 
     let read_more_1 = 1;
@@ -466,11 +446,11 @@ $( document ).ready(function() {
     let read_more_2 = 1;
 
     $("#jh-read-more-2").on('click', function() {
-        if (read_more_1 === 1) {
+        if (read_more_2 === 1) {
             RM2_goto2();
-        } else if (read_more_1 === 2) {
+        } else if (read_more_2 === 2) {
             RM2_goto3();
-        } else if (read_more_1 === 3) {
+        } else if (read_more_2 === 3) {
             RM2_default();
         }
     });
@@ -480,7 +460,7 @@ $( document ).ready(function() {
         $("#jh-pc2-current").html("01");
         RM2_show_default();
         $("#jh-rm-2-text").html("SERVER-SIDE DEVELOPMENT");
-        read_more_1 = 1;
+        read_more_2 = 1;
     }
 
     function RM2_goto2() {
@@ -488,7 +468,7 @@ $( document ).ready(function() {
         $("#jh-pc2-current").html("02");
         RM2_show_2();
         $("#jh-rm-2-text").html("GRAPHIC DESIGN / WEB DESIGN");
-        read_more_1 = 2;
+        read_more_2 = 2;
     }
 
     function RM2_goto3() {
@@ -496,7 +476,7 @@ $( document ).ready(function() {
         $("#jh-pc2-current").html("03");
         RM2_show_3();
         $("#jh-rm-1-text").html("FRONT END / WEB DEVELOPMENT");
-        read_more_1 = 3;
+        read_more_2 = 3;
     }
 
     // ----------------------------------------------------------
@@ -536,7 +516,7 @@ $( document ).ready(function() {
 
     // -----------------------------------------------------------------------------------------------------------------
 
-    // About Page / - Read More Button Hover
+    // Tech Page / - Read More Button Hover
 
     $("#jh-read-more-2").on('mouseenter', function() {
         document.getElementById("jh-rm-2-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
@@ -544,6 +524,84 @@ $( document ).ready(function() {
 
     $("#jh-read-more-2").on('mouseleave', function() {
         document.getElementById("jh-rm-2-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
+    });
+
+    // -----------------------------------------------------------------------------------------------------------------
+
+    // Contact Page / - Submit Form Button Hover
+
+    $("#jh-submit-form").on('mouseenter', function() {
+        document.getElementById("jh-rm-3-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
+    });
+
+    $("#jh-submit-form").on('mouseleave', function() {
+        document.getElementById("jh-rm-3-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
+    });
+
+
+
+
+
+    // -----------------------------------------------------------------------------------------------------------------
+
+    // ALL PAGES / - Home Button
+
+    // -----------------------------------------------------------------------------------------------------------------
+
+    let about_home_link = document.getElementById("jh-about-page-logo");
+    let tech_home_link = document.getElementById("jh-tech-page-logo");
+    // let portfolio_home_link = document.getElementById("jh-portfolio-page-logo");
+    // let awards_home_link = document.getElementById("jh-awards-page-logo");
+    let contact_home_link = document.getElementById("jh-contact-page-logo");
+
+    const home_links = [about_home_link, tech_home_link, contact_home_link];
+
+    // Add EventListener to each link
+    home_links.forEach(element => {
+        addHomeLink(element, all_pages);
+    });
+
+    function addHomeLink(element, pages) {
+        element.addEventListener('click', function() {
+            homePage(pages);
+            setTimeout(function() {
+                document.getElementById("jh-header").style.display = "block";
+                setTimeout(function() {
+                    document.getElementById("jh-header").style.opacity = 1;
+                }, 1000);
+            }, 1000);
+        });
+    }
+
+    function homePage(pages) {
+        pages.forEach(el => hideElement(el));
+    }
+
+    // -----------------------------------------------------------------------------------------------------------------
+
+    // Contact Form
+
+    $("#jh-cf-text").on('focus', function() {
+        document.getElementById("jh-cf-sign-1").src = "./assets/00_IMG/01_About/about-pc-divider.png";
+    }).on('focusout', function() {
+        document.getElementById("jh-cf-sign-1").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
+    });
+
+    $("#jh-cf-email").on('focus', function() {
+        document.getElementById("jh-cf-sign-2").src = "./assets/00_IMG/01_About/about-pc-divider.png";
+    }).on('focusout', function() {
+        document.getElementById("jh-cf-sign-2").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
+    });
+
+    $("#jh-cf-message").on('focus', function() {
+        document.getElementById("jh-cf-sign-3").src = "./assets/00_IMG/01_About/about-pc-divider.png";
+    }).on('focusout', function() {
+        // Validate
+        if ($("#jh-cf-message").html !== "") {
+
+        } else {
+            document.getElementById("jh-cf-sign-3").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
+        }
     });
 });
 
