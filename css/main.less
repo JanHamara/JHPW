@@ -664,14 +664,19 @@ body {
 
         //-------------------------------------------------------------
 
+        #jh-contact-content {
+          overflow: visible;
+        }
+
         // Contact Form
         #jh-contact-form {
           width: 70%;
           margin: auto;
-
+          overflow: visible;
 
           form#jh-cf {
             width: @max;
+            overflow: visible;
 
             .form-group {
 
@@ -716,6 +721,10 @@ body {
 
             .form-control {
               padding: 0 !important;
+
+              .form-submitted {
+
+              }
             }
 
             .fg1, .fg2 {
@@ -728,6 +737,8 @@ body {
               line-height: 7vh;
               //
               margin-bottom: 4vh;
+              //
+              overflow: visible;
             }
 
             .fg2 {
@@ -737,7 +748,7 @@ body {
             .fg3 {
               .display(block);
               width: @max;
-              height: 18vh;
+              height: 16.4vh;
               //
               border-bottom: 0.5px @light-font-color solid;
 
@@ -748,10 +759,30 @@ body {
 
               textarea {
                 width: calc(100% - 2vw);
+                height: 16.4vh;
                 line-height: 7vh;
                 float: right;
               }
             }
+
+            .error {
+              border-bottom: 0.5px @highlight-red solid;
+            }
+          }
+
+          .errorMessage, .errorMessage2 {
+            .aligntext(left);
+            color: @main-font-color !important;
+            width: 100% !important;
+            font-size: 0.6vw !important;
+            font-weight: 600;
+            //
+            .abs;
+            bottom: -90%;
+          }
+
+          .errorMessage2 {
+            bottom: -11%;
           }
         }
 
@@ -760,9 +791,8 @@ body {
         // Submit Button
 
         #jh-submit-form {
-
           &:hover {
-            cursor: not-allowed;
+            cursor: pointer;
           }
         }
       }

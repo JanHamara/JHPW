@@ -3,7 +3,7 @@
 // Console Output for Dependencies Tests
 if (window.jQuery) { console.log('Load jQuery: SUCCESS'); } else { console.log('Load jQuery: FAILED'); }
 if (typeof($.fn.modal) === 'undefined') { console.log('Load Bootstrap JS: FAILED'); } else { console.log('Load Bootstrap JS: SUCCESS'); }
-if (jQuery('#bootstrapCssTest').is(':visible') === true)  { console.log('Load Bootstrap CSS: FAILED'); } else { console.log('Load Bootstrap CSS: SUCCESS'); }
+if ($('#bootstrapCssTest').is(':visible') === true)  { console.log('Load Bootstrap CSS: FAILED'); } else { console.log('Load Bootstrap CSS: SUCCESS'); }
 
 $( document ).ready(function() {
 
@@ -48,7 +48,7 @@ $( document ).ready(function() {
     // -------------------------------------------------------------------------------------------------
 
     // Current Page
-    var current = landing_page;
+    let current = landing_page;
 
     // -------------------------------------------------------------------------------------------------
 
@@ -117,7 +117,7 @@ $( document ).ready(function() {
     // - hideElement()
     function hideElement(element) {
         // Hide the sections
-        element.style.opacity = 0;
+        element.style.opacity = "0";
         // Remove the section from DOM
         setTimeout(function () {
             element.style.display = 'none';
@@ -130,7 +130,7 @@ $( document ).ready(function() {
         menu.style.display = 'block';
         // Show the menu
         setTimeout(function () {
-            menu.style.opacity = 1;
+            menu.style.opacity = "1";
         }, 1000);
     }
 
@@ -152,7 +152,7 @@ $( document ).ready(function() {
 
     function closeMenu(menu, logo, logo_tooltip, previous) {
         // Hide Menu
-        menu.style.opacity = 0;
+        menu.style.opacity = "0";
 
         // Change Menu Button back to Default
         changeMenuLogoBack(logo, logo_tooltip);
@@ -165,7 +165,7 @@ $( document ).ready(function() {
 
         // Show [previous] sections
         setTimeout(function () {
-            previous.style.opacity = 1;
+            previous.style.opacity = "1";
         }, 1500);
     }
 
@@ -173,13 +173,13 @@ $( document ).ready(function() {
 
     // Links Event Listeners
     all_links.forEach(element => element.addEventListener('click', function() {
-        about_set = ["about_page", about_page]
-        tech_set = ["tech_stack_page", tech_stack_page]
-        portfolio_set = ["portfolio_page", portfolio_page]
-        awards_set = ["awards_page", awards_page]
-        contact_set = ["contact_page", contact_page]
+        let about_set = ["about_page", about_page];
+        let tech_set = ["tech_stack_page", tech_stack_page];
+        let portfolio_set = ["portfolio_page", portfolio_page];
+        let awards_set = ["awards_page", awards_page];
+        let contact_set = ["contact_page", contact_page];
 
-        full_set = [about_set, tech_set, portfolio_set, awards_set, contact_set];
+        let full_set = [about_set, tech_set, portfolio_set, awards_set, contact_set];
 
         // Show relevant page
         full_set.forEach(element_2 => showPage(element, element_2, menu_page, menu_logo, menu_tooltip, current));
@@ -210,7 +210,7 @@ $( document ).ready(function() {
 
     // closeMenuDefault() - Only close Menu [not showing any section]
     function closeMenuDefault(menu, logo, logo_tooltip) {
-        menu.style.opacity = 0;
+        menu.style.opacity = "0";
         changeMenuLogoBack(logo, logo_tooltip);
         setTimeout(function () {
             menu.style.display = 'none';
@@ -225,7 +225,7 @@ $( document ).ready(function() {
         section.style.display = 'block';
         // Show the section
         setTimeout(function () {
-            section.style.opacity = 1;
+            section.style.opacity = "1";
         }, 1500);
     }
 
@@ -244,8 +244,15 @@ $( document ).ready(function() {
     // About Page / - Read More Button
 
     let read_more_1 = 1;
+    let jh_read_more_1 = $("#jh-read-more-1");
+    let jh_pc_current = $("#jh-pc-current");
+    let jh_rm_text_1 = $("#jh-rm-1-text");
 
-    $("#jh-read-more-1").on('click', function() {
+    let jh_about_content_1 = $('#jh-about-content-1');
+    let jh_about_content_2 = $('#jh-about-content-2');
+    let jh_about_content_3 = $('#jh-about-content-3');
+
+    jh_read_more_1.on('click', function() {
         if (read_more_1 === 1) {
             RM1_goto2();
         } else if (read_more_1 === 2) {
@@ -257,57 +264,57 @@ $( document ).ready(function() {
 
     function RM1_default() {
         document.getElementById("jh-bar-indicator-thumb").style.top = "0px";
-        $("#jh-pc-current").html("01");
+        jh_pc_current.html("01");
         RM1_show_default();
-        $("#jh-rm-1-text").html("READ MORE");
+        jh_rm_text_1.html("READ MORE");
         read_more_1 = 1;
     }
 
     function RM1_goto2() {
         document.getElementById("jh-bar-indicator-thumb").style.top = "103.5px";
-        $("#jh-pc-current").html("02");
+        jh_pc_current.html("02");
         RM1_show_2();
         read_more_1 = 2;
     }
 
     function RM1_goto3() {
         document.getElementById("jh-bar-indicator-thumb").style.top = "207px";
-        $("#jh-pc-current").html("03");
+        jh_pc_current.html("03");
         RM1_show_3();
-        $("#jh-rm-1-text").html("GO BACK");
+        jh_rm_text_1.html("GO BACK");
         read_more_1 = 3;
     }
 
     function RM1_show_default() {
-        $("#jh-about-content-3").css({'opacity':'0'});
+        jh_about_content_3.css({'opacity':'0'});
         setTimeout(function() {
-            $("#jh-about-content-3").css({'display':'none'});
-            $("#jh-about-content-1").css({'display':'block'});
+            jh_about_content_3.css({'display':'none'});
+            jh_about_content_1.css({'display':'block'});
         }, 1000);
         setTimeout(function() {
-            $("#jh-about-content-1").css({'opacity':'1'});
+            jh_about_content_1.css({'opacity':'1'});
         }, 1500);
     }
 
     function RM1_show_2() {
-        $("#jh-about-content-1").css({'opacity':'0'});
+        jh_about_content_1.css({'opacity':'0'});
         setTimeout(function() {
-            $("#jh-about-content-1").css({'display':'none'});
-            $("#jh-about-content-2").css({'display':'block'});
+            jh_about_content_1.css({'display':'none'});
+            jh_about_content_2.css({'display':'block'});
         }, 1000);
         setTimeout(function() {
-            $("#jh-about-content-2").css({'opacity':'1'});
+            jh_about_content_2.css({'opacity':'1'});
         }, 1500);
     }
 
     function RM1_show_3() {
-        $("#jh-about-content-2").css({'opacity':'0'});
+        jh_about_content_2.css({'opacity':'0'});
         setTimeout(function() {
-            $("#jh-about-content-2").css({'display':'none'});
-            $("#jh-about-content-3").css({'display':'block'});
+            jh_about_content_2.css({'display':'none'});
+            jh_about_content_3.css({'display':'block'});
         }, 1000);
         setTimeout(function() {
-            $("#jh-about-content-3").css({'opacity':'1'});
+            jh_about_content_3.css({'opacity':'1'});
         }, 1500);
     }
 
@@ -315,63 +322,17 @@ $( document ).ready(function() {
 
     // About Page / - Read More Button Hover
 
-    $("#jh-read-more-1").on('mouseenter', function() {
+    jh_read_more_1.on('mouseenter', function() {
         document.getElementById("jh-rm-1-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
     });
 
-    $("#jh-read-more-1").on('mouseleave', function() {
+    jh_read_more_1.on('mouseleave', function() {
         document.getElementById("jh-rm-1-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
     });
 
     // -----------------------------------------------------------------------------------------------------------------
 
-    // About Page / - Draggable scroll bar
 
-    dragElement(document.getElementById("jh-bar-indicator-thumb"));
-
-    function dragElement(elmnt) {
-        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-
-        if (document.getElementById(elmnt.id)) {
-            document.getElementById(elmnt.id).onmousedown = dragMouseDown;
-        }
-
-        function dragMouseDown(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // get the mouse cursor position at startup
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            document.onmouseup = closeDragElement;
-            document.onmousemove = elementDrag;
-        }
-
-        function elementDrag(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // calculate the new cursor position:
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            // set the element's new position:
-            let currentOffset = elmnt.offsetTop - pos2;
-            if (currentOffset < 0) {
-                currentOffset = 0
-            } else if (currentOffset > 207) {
-                currentOffset = 207;
-            }
-            elmnt.style.top = currentOffset + "px";
-            elmnt.style.left = elmnt.style.left; // we want to allow only vertical movement
-        }
-
-        function closeDragElement() {
-            document.onmouseup = null;
-            document.onmousemove = null;
-        }
-    }
-
-    // -------------------------------------------------------------------------------------------------
 
 
 
@@ -388,7 +349,7 @@ $( document ).ready(function() {
     let tsthumb = [];   // Software logo Thumbnail
 
     // Fill up arrays with all references and elements
-    for (var i = 0; i < 20; i++) {
+    for (let i = 0; i < 20; i++) {
         ts[i] = $("#jh-tsl-" + (i+1).toString());
         tsimg[i] = document.getElementById("jh-tsl-img-" + (i+1).toString());
         tsthumb[i] = document.getElementById("jh-tsl-thumb-" + (i+1).toString());
@@ -412,7 +373,7 @@ $( document ).ready(function() {
     let ts_ = [];
 
     // Fill the ts_ array
-    for (var i = 0; i < 20; i++) {
+    for (let i = 0; i < 20; i++) {
         ts_[i+1] = [ts[i], tsimg[i], tsthumb[i],
             ("./assets/04_Icons/01_Tech_Stack/" + tsnormal[i]), ("./assets/04_Icons/01_Tech_Stack/" + tshover[i]) ]
     }
@@ -429,13 +390,13 @@ $( document ).ready(function() {
             // Change the source image
             element[1].src = element[4];
             // Change font weight
-            element[2].style.fontWeight = 700;
+            element[2].style.fontWeight = "700";
             // On mouse enter
         }).on('mouseleave', function () {           // On mouse leave
             // Change the source image
             element[1].src = element[3];
             // Change font weight
-            element[2].style.fontWeight = 100;
+            element[2].style.fontWeight = "100";
         });
     }
 
@@ -444,8 +405,15 @@ $( document ).ready(function() {
     // Tech Stack Page / - Read More Button
 
     let read_more_2 = 1;
+    let jh_read_more_2 = $("#jh-read-more-2");
+    let jh_pc2_current = $("#jh-pc2-current");
+    let jh_rm_text_2 = $("#jh-rm-2-text");
 
-    $("#jh-read-more-2").on('click', function() {
+    let jh_tech_content_1 = $('#jh-tech-content-1');
+    let jh_tech_content_2 = $('#jh-tech-content-2');
+    let jh_tech_content_3 = $('#jh-tech-content-3');
+
+    jh_read_more_2.on('click', function() {
         if (read_more_2 === 1) {
             RM2_goto2();
         } else if (read_more_2 === 2) {
@@ -457,49 +425,49 @@ $( document ).ready(function() {
 
     function RM2_default() {
         document.getElementById("jh-bar-indicator-2-thumb").style.top = "0px";
-        $("#jh-pc2-current").html("01");
+        jh_pc2_current.html("01");
         RM2_show_default();
-        $("#jh-rm-2-text").html("SERVER-SIDE DEVELOPMENT");
+        jh_rm_text_2.html("SERVER-SIDE DEVELOPMENT");
         read_more_2 = 1;
     }
 
     function RM2_goto2() {
         document.getElementById("jh-bar-indicator-2-thumb").style.top = "103.5px";
-        $("#jh-pc2-current").html("02");
+        jh_pc2_current.html("02");
         RM2_show_2();
-        $("#jh-rm-2-text").html("GRAPHIC DESIGN / WEB DESIGN");
+        jh_rm_text_2.html("GRAPHIC DESIGN / WEB DESIGN");
         read_more_2 = 2;
     }
 
     function RM2_goto3() {
         document.getElementById("jh-bar-indicator-2-thumb").style.top = "207px";
-        $("#jh-pc2-current").html("03");
+        jh_pc2_current.html("03");
         RM2_show_3();
-        $("#jh-rm-1-text").html("FRONT END / WEB DEVELOPMENT");
+        jh_rm_text_2.html("FRONT END / WEB DEVELOPMENT");
         read_more_2 = 3;
     }
 
     // ----------------------------------------------------------
 
     function RM2_show_default() {
-        $("#jh-tech-content-3").css({'opacity':'0'});
+        jh_tech_content_3.css({'opacity':'0'});
         setTimeout(function() {
-            $("#jh-tech-content-3").css({'display':'none'});
-            $("#jh-tech-content-1").css({'display':'block'});
+            jh_tech_content_3.css({'display':'none'});
+            jh_tech_content_1.css({'display':'block'});
         }, 1000);
         setTimeout(function() {
-            $("#jh-tech-content-1").css({'opacity':'1'});
+            jh_tech_content_1.css({'opacity':'1'});
         }, 1500);
     }
 
     function RM2_show_2() {
-        $("#jh-tech-content-1").css({'opacity':'0'});
+        jh_tech_content_1.css({'opacity':'0'});
         setTimeout(function() {
-            $("#jh-tech-content-1").css({'display':'none'});
-            $("#jh-tech-content-2").css({'display':'block'});
+            jh_tech_content_1.css({'display':'none'});
+            jh_tech_content_2.css({'display':'block'});
         }, 1000);
         setTimeout(function() {
-            $("#jh-tech-content-2").css({'opacity':'1'});
+            jh_tech_content_2.css({'opacity':'1'});
         }, 1500);
     }
 
@@ -518,27 +486,13 @@ $( document ).ready(function() {
 
     // Tech Page / - Read More Button Hover
 
-    $("#jh-read-more-2").on('mouseenter', function() {
+    jh_read_more_2.on('mouseenter', function() {
         document.getElementById("jh-rm-2-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
     });
 
-    $("#jh-read-more-2").on('mouseleave', function() {
+    jh_read_more_2.on('mouseleave', function() {
         document.getElementById("jh-rm-2-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
     });
-
-    // -----------------------------------------------------------------------------------------------------------------
-
-    // Contact Page / - Submit Form Button Hover
-
-    $("#jh-submit-form").on('mouseenter', function() {
-        document.getElementById("jh-rm-3-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
-    });
-
-    $("#jh-submit-form").on('mouseleave', function() {
-        document.getElementById("jh-rm-3-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
-    });
-
-
 
 
 
@@ -554,6 +508,13 @@ $( document ).ready(function() {
     // let awards_home_link = document.getElementById("jh-awards-page-logo");
     let contact_home_link = document.getElementById("jh-contact-page-logo");
 
+    let form = $('#jh-cf');
+    // Form Groups - controls bottom border
+    const fg1 = document.getElementById("fg1");
+    const fg2 = document.getElementById("fg2");
+    const fg3 = document.getElementById("fg3");
+    const fg = [fg1, fg2, fg3];
+
     const home_links = [about_home_link, tech_home_link, contact_home_link];
 
     // Add EventListener to each link
@@ -563,11 +524,14 @@ $( document ).ready(function() {
 
     function addHomeLink(element, pages) {
         element.addEventListener('click', function() {
+            // if (current === contact_page) {
+                clearForm();
+            // }
             homePage(pages);
             setTimeout(function() {
                 document.getElementById("jh-header").style.display = "block";
                 setTimeout(function() {
-                    document.getElementById("jh-header").style.opacity = 1;
+                    document.getElementById("jh-header").style.opacity = "1";
                 }, 1000);
             }, 1000);
         });
@@ -577,31 +541,11 @@ $( document ).ready(function() {
         pages.forEach(el => hideElement(el));
     }
 
-    // -----------------------------------------------------------------------------------------------------------------
-
-    // Contact Form
-
-    $("#jh-cf-text").on('focus', function() {
-        document.getElementById("jh-cf-sign-1").src = "./assets/00_IMG/01_About/about-pc-divider.png";
-    }).on('focusout', function() {
-        document.getElementById("jh-cf-sign-1").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
-    });
-
-    $("#jh-cf-email").on('focus', function() {
-        document.getElementById("jh-cf-sign-2").src = "./assets/00_IMG/01_About/about-pc-divider.png";
-    }).on('focusout', function() {
-        document.getElementById("jh-cf-sign-2").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
-    });
-
-    $("#jh-cf-message").on('focus', function() {
-        document.getElementById("jh-cf-sign-3").src = "./assets/00_IMG/01_About/about-pc-divider.png";
-    }).on('focusout', function() {
-        // Validate
-        if ($("#jh-cf-message").html !== "") {
-
-        } else {
-            document.getElementById("jh-cf-sign-3").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
-        }
-    });
+    function clearForm() {
+        ($('.errorMessage')).remove();
+        ($('.errorMessage2')).remove();
+        fg.forEach(element => element.classList.remove("error"));
+        form.trigger("reset");
+    }
 });
 
