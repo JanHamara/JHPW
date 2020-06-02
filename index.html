@@ -561,6 +561,77 @@
         });
     </script>
 
+    <!--  Form Validation  -->
+    <script>
+        function isNotEmpty(values, valueNames) {
+            var isNotEmpty = true;
+            for (x in values) {
+                if (values[x] === "") {
+                    var errorInput = jQuery('#' + valueNames[x]);
+                    var errorMsg = jQuery("<div class='errorMessage'></div>").text('FILL OUT MISSING INFORMATION ABOVE!');
+                    errorInput.after(errorMsg);
+                    isNotEmpty = false;
+                }
+            }
+            return isNotEmpty;
+        }
+
+        function validateForm() {
+            var name = jQuery('#jh-cf-text').val();
+            var email =  jQuery('#jh-cf-email').val();
+            var message = jQuery('#jh-cf-message').val();
+            var formValues = [name, email, message];
+            var formValuesNames = ["name", "email", "message"];
+            if (isNotEmpty(formValues, formValuesNames)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function validateMail() {
+            var email =  jQuery('#jh-cf-email');
+            // This is a Regex expression to test for email address format
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(email.val().match(mailformat)) {
+                return true;
+            } else {
+                var errorMsg = jQuery("<div class='errorMessage'></div>").text('EMAIL FORMAT INCORRECT!');
+                email.after(errorMsg);
+                email.focus();
+                return false;
+            }
+        }
+
+        function q(value) {
+            (jQuery('.errorMessage')).remove();
+            // Check if all fields are filled
+            if (validateForm()) {
+                // Check for validity of email address
+                if (validateMail()) {
+                    var dataString = jQuery('#jh-cf').serialize();
+                    jQuery('.form-submitted').css({"opacity": 1, "transform": "scale(1.1)"});
+                    jQuery('#jh-cf').trigger("reset");
+                    setTimeout(function () {
+                        jQuery('.form-submitted').css({"opacity": 0, "transform": "scale(0.8)"});
+                    }, 3000);
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "send_form.php",
+                        data: dataString,
+                        success: function() {
+                            jQuery('.form-submitted').css({"opacity": 1, "transform": "scale(1.1)"});
+                            jQuery('#jh-cf').trigger("reset");
+                            setTimeout(function () {
+                                jQuery('.form-submitted').css({"opacity": 0, "transform": "scale(0.8)"});
+                            }, 3000);
+                        }
+                    });
+                }
+            }
+        }
+    </script>
+
 <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
