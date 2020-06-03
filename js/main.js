@@ -502,7 +502,7 @@ $( document ).ready(function() {
 
     let about_home_link = document.getElementById("jh-about-page-logo");
     let tech_home_link = document.getElementById("jh-tech-page-logo");
-    // let portfolio_home_link = document.getElementById("jh-portfolio-page-logo");
+    let portfolio_home_link = document.getElementById("jh-portfolio-page-logo");
     let awards_home_link = document.getElementById("jh-awards-page-logo");
     let contact_home_link = document.getElementById("jh-contact-page-logo");
 
@@ -513,7 +513,8 @@ $( document ).ready(function() {
     const fg3 = document.getElementById("fg3");
     const fg = [fg1, fg2, fg3];
 
-    const home_links = [about_home_link, tech_home_link, awards_home_link, contact_home_link];
+    // Enable links here
+    const home_links = [about_home_link, tech_home_link, portfolio_home_link, awards_home_link, contact_home_link];
 
     // Add EventListener to each link
     home_links.forEach(element => {

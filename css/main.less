@@ -348,6 +348,20 @@ body,html {
   letter-spacing: 0.4em !important;
 }
 
+// Awards Switch
+.content-switch {
+  width: 1vw;
+  .abs;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  //
+  z-index: 9999 !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 //-------------------------------------------------------------
 
 body {
@@ -660,12 +674,119 @@ body {
 
     //-------------------------------------------------------------
 
-    // Awards
-    #jh-awards {
+    // Portfolio
+
+    #jh-portfolio {
       .section-template;
       //
       .display(block); // just for dev
       opacity: 1; // just for dev
+      //
+      .container-fluid {
+
+        .jh-portfolio-content {
+
+          .jh-page-container-content {
+            .fs;
+            .nobound;
+            .rel;
+            //
+            overflow: visible;
+
+            .jh-page-container-fill {
+              width: 100%;
+              height: 100%;
+              //
+              overflow: visible;
+
+              //-------------------------------------------------------------
+
+              // Thumbnail Holder
+              .jh-page-thumb-holder {
+                height: 35vh;
+                //
+                margin-bottom: 2.5vh;
+
+                .jh-page-thumb {
+                  width: 70%;
+                  height: @max;
+                  margin: auto;
+                }
+              }
+
+              //-------------------------------------------------------------
+
+              .jh-pf-header {
+                font-size: 2.5vw;
+                margin-bottom: 2vh;
+              }
+
+              .jh-pf-subheader {
+                font-size: 0.8vw;
+              }
+
+              //-------------------------------------------------------------
+
+              .jh-page-paragraph:first-child {
+                margin-bottom: 1vh;
+                font-size: 1.2vw;
+              }
+
+              .jh-page-paragraph:last-child {
+                margin-bottom: 0;
+              }
+
+              //-------------------------------------------------------------
+            }
+          }
+
+          // See the Project
+          .jh-read-more-button {
+            bottom: -16vh;
+
+            &:hover {
+              span {
+                color: @main-font-color !important;
+              }
+            }
+          }
+        }
+
+        //-------------------------------------------------------------
+
+        // Content Sections
+
+        #jh-portfolio-content-1 {
+          transition: opacity 1s;
+        }
+
+        #jh-portfolio-content-2, #jh-portfolio-content-3 {
+          .display(none);
+          opacity: 0;
+          transition: opacity 1s;
+        }
+
+        //-------------------------------------------------------------
+
+        #jh-portfolio-switch-left {
+          .content-switch;
+          left: 17%;
+        }
+
+        #jh-portfolio-switch-right {
+          .content-switch;
+          right: 17%;
+        }
+
+        //-------------------------------------------------------------
+      }
+    }
+
+    //-------------------------------------------------------------
+
+    // Awards
+    #jh-awards {
+      .section-template;
       //
       .container-fluid {
 
@@ -756,27 +877,13 @@ body {
 
         //-------------------------------------------------------------
 
-        // Awards Switch
-        .awards-switch {
-          width: 1vw;
-          .abs;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          //
-          z-index: 9999 !important;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
         #jh-awards-switch-left {
-          .awards-switch;
+          .content-switch;
           left: 17%;
         }
 
         #jh-awards-switch-right {
-          .awards-switch;
+          .content-switch;
           right: 17%;
         }
 
