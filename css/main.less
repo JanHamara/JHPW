@@ -160,11 +160,10 @@ body,html {
     .jh-thumb-text {
       .abs;
       width: 15vw;
-      right: -1.5vw;
       bottom: 11vw;
-      transform: rotate(-90deg);
+      transform: rotate(90deg);
       //
-      opacity: 0.5;
+      opacity: 1;
     }
 
     //-------------------------------------------------------------
@@ -210,11 +209,11 @@ body,html {
           color: @main-font-color !important;
           font-style: normal !important;
           font-weight: 500 !important;
+        }
 
-          .jh-red-divider {
-            .display(inline);
-            color: @highlight-red;
-          }
+        .jh-red-divider {
+          .display(inline) !important;
+          color: @highlight-red !important;
         }
       }
     }
@@ -260,7 +259,7 @@ body,html {
     .jh-page-counter {
       .position;
       bottom: 9vh;
-      right: 0vw;
+      right: 0;
       transform: translate(-50%, -50%);
       overflow: visible;
       //
@@ -336,6 +335,20 @@ body,html {
     }
   }
 }
+
+.awards-heading-style {
+  color: @light-font-color !important;
+  font-family: ingra-2, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 1vw !important;
+  //
+  line-height: 4vh !important;
+  margin-bottom: 5vh !important;
+  letter-spacing: 0.4em !important;
+}
+
+//-------------------------------------------------------------
 
 body {
   background: @main-bg-color;
@@ -424,7 +437,7 @@ body {
       opacity: 1;
       transition: opacity 1s;
       //
-      opacity: 0;     // just for dev [Contact]
+      opacity: 0; // just for dev [Contact]
       .display(none); // just for dev [Contact]
 
       .container-fluid {
@@ -630,10 +643,14 @@ body {
         }
       }
 
+      //-------------------------------------------------------------
+
       #jh-tech-stack-2 {
         width: 36%;
         margin: auto;
       }
+
+      //-------------------------------------------------------------
 
       #jh-tech-stack-3 {
         width: 60%;
@@ -643,14 +660,142 @@ body {
 
     //-------------------------------------------------------------
 
+    // Awards
+    #jh-awards {
+      .section-template;
+      //
+      .display(block); // just for dev
+      opacity: 1; // just for dev
+      //
+      .container-fluid {
+
+        //-------------------------------------------------------------
+
+        // Awards Hero Image
+        .awards-hero-image {
+          width: 25vw;
+          height: auto;
+          //
+          .abs;
+          //
+          opacity: 0.7;
+        }
+
+        // Awards Hero Image 1
+        #jh-awards-hero-image {
+          .awards-hero-image;
+          left: 7%;
+          top: 14%;
+          transform: translate(-50%, -50%) rotate(-120deg);
+        }
+
+        // Awards Hero Image 1
+        #jh-awards-hero-image-2 {
+          .awards-hero-image;
+          right: 9%;
+          bottom: 17%;
+          transform: translate(50%, 50%) rotate(20deg);
+        }
+
+        //-------------------------------------------------------------
+
+        // Thumb Text
+        .jh-thumb-text {
+          left: -2.5vw;
+        }
+
+        //-------------------------------------------------------------
+
+        // Page Content
+        .jh-awards-content {
+
+          .jh-page-container-content {
+            .fs;
+            .nobound;
+            .rel;
+
+            .jh-page-container-fill {
+              width: 100%;
+              height: auto;
+              .p-center;
+
+              .jh-page-paragraph:first-child {
+                margin-bottom: 1vh;
+                font-size: 1.2vw;
+              }
+
+              .jh-page-paragraph:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          // See the Project
+          .jh-read-more-button {
+            bottom: -10vh;
+
+            &:hover {
+              span {
+                color: @main-font-color !important;
+              }
+            }
+          }
+        }
+
+        // Content Sections
+
+        #jh-awards-content-1 {
+          transition: opacity 1s;
+        }
+
+        #jh-awards-content-2, #jh-awards-content-3 {
+          .display(none);
+          opacity: 0;
+          transition: opacity 1s;
+        }
+
+        //-------------------------------------------------------------
+
+        // Awards Switch
+        .awards-switch {
+          width: 1vw;
+          .abs;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          //
+          z-index: 9999 !important;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #jh-awards-switch-left {
+          .awards-switch;
+          left: 17%;
+        }
+
+        #jh-awards-switch-right {
+          .awards-switch;
+          right: 17%;
+        }
+
+        //-------------------------------------------------------------
+      }
+    }
+
+    //-------------------------------------------------------------
+
     // Contact
     #jh-contact {
       .section-template;
       //
-      .display(block); // just for dev
-      opacity: 1;      // just for dev
-      //
       .container-fluid {
+
+        // Thumb Text
+        .jh-thumb-text {
+          right: -1.5vw;
+        }
 
         //-------------------------------------------------------------
 

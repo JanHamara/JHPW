@@ -324,9 +324,7 @@ $( document ).ready(function() {
 
     jh_read_more_1.on('mouseenter', function() {
         document.getElementById("jh-rm-1-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
-    });
-
-    jh_read_more_1.on('mouseleave', function() {
+    }).on('mouseleave', function() {
         document.getElementById("jh-rm-1-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
     });
 
@@ -505,7 +503,7 @@ $( document ).ready(function() {
     let about_home_link = document.getElementById("jh-about-page-logo");
     let tech_home_link = document.getElementById("jh-tech-page-logo");
     // let portfolio_home_link = document.getElementById("jh-portfolio-page-logo");
-    // let awards_home_link = document.getElementById("jh-awards-page-logo");
+    let awards_home_link = document.getElementById("jh-awards-page-logo");
     let contact_home_link = document.getElementById("jh-contact-page-logo");
 
     let form = $('#jh-cf');
@@ -515,7 +513,7 @@ $( document ).ready(function() {
     const fg3 = document.getElementById("fg3");
     const fg = [fg1, fg2, fg3];
 
-    const home_links = [about_home_link, tech_home_link, contact_home_link];
+    const home_links = [about_home_link, tech_home_link, awards_home_link, contact_home_link];
 
     // Add EventListener to each link
     home_links.forEach(element => {
