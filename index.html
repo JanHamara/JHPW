@@ -41,7 +41,6 @@
     <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/style.css'>
     <link rel="stylesheet" href="./css/vendor/glitch.css">
 
-
     <!-- All css should be bundled here / Webpack -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -55,7 +54,6 @@
 
     <!--        Landing Page         -->
     <main id="jh-main-content">
-
 
         <!-- ----------------------------------------------------------------------------------------------------------- -->
 
@@ -734,18 +732,34 @@
         <!--        Menu         -->
         <section id="jh-menu">
             <div class="container-fluid">
+                <!-- ---------------------------------------------- -->
 
-                <!--    Menu Logo    -->
-                <img id="jh-menu-logo" src="./assets/01_Logos/04_Logo_Solo_White_Outline/logo_solo_white_outline_1000px.png" class="img-responsive" alt="hero-logo">
+                <!--        Page Logo Image         -->
+                <img id="jh-menu-page-logo" class="jh-page-logo" src="./assets/01_Logos/12_Logo_Signature_White/logo_signature_white_500px.png" class="img-responsive" alt="page-logo">
 
-                <!--    Menu List    -->
-                <ul id="jh-menu-list" class="list-unstyled">
-                    <li id="about_page">About</li>
-                    <li id="tech_stack_page">Tech Stack</li>
-                    <li id="portfolio_page">Portfolio</li>
-                    <li id="awards_page">Awards</li>
-                    <li id="contact_page">Contact</li>
-                </ul>
+                <!-- ---------------------------------------------- -->
+
+                <div id="jh-menu-content" class="jh-page-container">
+
+                    <!--    Menu List    -->
+                    <div id="jh-menu-list">
+                        <div id="about_page" class="jh-menu-item">
+                            <img src="./assets/00_IMG/06_Menu/01_Menu_About.png" class="img-responsive" alt="jh-menu-item-image">
+                        </div>
+                        <div id="tech_stack_page" class="jh-menu-item">
+                            <img src="./assets/00_IMG/06_Menu/02_Menu_Tech_Stack.png" class="img-responsive" alt="jh-menu-item-image">
+                        </div>
+                        <div id="portfolio_page" class="jh-menu-item">
+                            <img src="./assets/00_IMG/06_Menu/03_Menu_Portfolio.png" class="img-responsive" alt="jh-menu-item-image">
+                        </div>
+                        <div id="awards_page" class="jh-menu-item">
+                            <img src="./assets/00_IMG/06_Menu/04_Menu_Awards.png" class="img-responsive" alt="jh-menu-item-image">
+                        </div>
+                        <div id="contact_page" class="jh-menu-item">
+                            <img src="./assets/00_IMG/06_Menu/05_Menu_Contact.png" class="img-responsive" alt="jh-menu-item-image">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -110,7 +110,7 @@ body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, as
   }
 }
 
-body,html {
+body,html, ul, li {
   .fs;
   color: @main-font-color !important;
   font-family: @font !important;
@@ -376,28 +376,6 @@ body {
 
     //-------------------------------------------------------------
 
-    ul {
-      font-family: @font !important;
-      color: @main-font-color !important;
-      list-style-type: none;
-
-      li {
-        font-family: @font !important;
-        color: @main-font-color !important;
-        list-style-type: none;
-        opacity: 0.7;
-        transition: opacity 1s;
-
-        &:hover {
-          cursor: pointer;
-          opacity: 1;
-          transition: opacity 1s;
-        }
-      }
-    }
-
-    //-------------------------------------------------------------
-
     // Menu Icon
 
     #menu-icon {
@@ -513,32 +491,33 @@ body {
     // Menu
 
     #jh-menu {
-      width: @max;
-      height: 100vh;
-      color: @main-font-color !important;
+      .section-template;
       //
-      opacity: 0;
-      transition: opacity 1s;
-
+      .display(block); // just for dev
+      opacity: 1; // just for dev
+      //
       .container-fluid {
         .fs;
         .nobound;
 
-        img#jh-menu-logo {
-          .p-center;
-          width: 6vw;
-          //
-          top: 17%;
-        }
-
-        ul#jh-menu-list {
-          font-family: @font !important;
-          color: @main-font-color !important;
+        #jh-menu-list {
+          .nobound;
+          height: auto;
           //
           .p-center;
 
-          li {
+          .jh-menu-item {
+            .nobound;
+            height: 2vh;
+            text-transform: uppercase;
+            //
+            font-size: 1vw;
+            margin: 3vh 0;
 
+            img {
+              height: 100%;
+              width: auto;
+            }
           }
         }
       }
@@ -678,9 +657,6 @@ body {
 
     #jh-portfolio {
       .section-template;
-      //
-      .display(block); // just for dev
-      opacity: 1; // just for dev
       //
       .container-fluid {
 
