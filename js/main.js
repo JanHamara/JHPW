@@ -400,6 +400,12 @@ $( document ).ready(function() {
         });
     }
 
+    let tech_event = new MouseEvent('mouseover', {
+        'view': window,
+        'bubbles': true,
+        'cancelable': true
+    });
+
     // -----------------------------------------------------------------------------------------------------------------
 
     // Tech Stack Page / - Read More Button

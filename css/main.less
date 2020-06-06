@@ -123,6 +123,12 @@ body,html, ul, li {
   overflow-y: scroll;
 }
 
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
 //-------------------------------------------------------------
 
 //                        Main CSS
@@ -214,6 +220,21 @@ body,html, ul, li {
         .jh-red-divider {
           .display(inline) !important;
           color: @highlight-red !important;
+        }
+
+        // InText Links
+        .thumb-image-link {
+          .display(inline);
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          img {
+            .display(inline);
+            width: 7.7vw;
+          }
         }
       }
     }
@@ -478,7 +499,7 @@ body {
           left: 50%;
           bottom: 0;
           transform: translate(-50%, 0%);
-          width: 27vw;
+          width: 25vw;
         }
       }
     }
@@ -492,12 +513,14 @@ body {
         .fs;
         .nobound;
 
+        // Menu List
         #jh-menu-list {
           .nobound;
           height: auto;
           //
           .p-center;
 
+          // Menu Item
           .jh-menu-item {
             .nobound;
             height: 1.8vh;
@@ -517,6 +540,29 @@ body {
               height: 100%;
               width: auto;
               margin: auto;
+            }
+          }
+        }
+
+        // Social Media
+        #jh-social-media {
+
+          a {
+            .display(inline-block);
+            .nobound;
+            //
+            margin: 0 1vw;
+            opacity: 0.7;
+
+            &:hover {
+              opacity: 1;
+            }
+
+            img {
+              .display(inline-block);
+              .nobound;
+              //
+              width: 2.5vh;
             }
           }
         }

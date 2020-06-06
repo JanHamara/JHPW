@@ -104,6 +104,9 @@ li {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+a:hover {
+  text-decoration: none !important;
+}
 .section-template {
   background: #10100f;
   display: none;
@@ -171,6 +174,17 @@ li {
 .section-template .container-fluid .jh-page-container .jh-page-paragraph .jh-red-divider {
   display: inline !important;
   color: #af291f !important;
+}
+.section-template .container-fluid .jh-page-container .jh-page-paragraph .thumb-image-link {
+  display: inline;
+  opacity: 0.8;
+}
+.section-template .container-fluid .jh-page-container .jh-page-paragraph .thumb-image-link:hover {
+  opacity: 1;
+}
+.section-template .container-fluid .jh-page-container .jh-page-paragraph .thumb-image-link img {
+  display: inline;
+  width: 7.7vw;
 }
 .section-template .container-fluid .jh-read-more-button {
   position: absolute;
@@ -383,7 +397,7 @@ body main header#jh-header .container-fluid img#jh-hero-image {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0%);
-  width: 27vw;
+  width: 25vw;
 }
 body main #jh-menu .container-fluid {
   width: 100%;
@@ -417,6 +431,22 @@ body main #jh-menu .container-fluid #jh-menu-list .jh-menu-item img {
   height: 100%;
   width: auto;
   margin: auto;
+}
+body main #jh-menu .container-fluid #jh-social-media a {
+  display: inline-block;
+  margin: 0%;
+  padding: 0%;
+  margin: 0 1vw;
+  opacity: 0.7;
+}
+body main #jh-menu .container-fluid #jh-social-media a:hover {
+  opacity: 1;
+}
+body main #jh-menu .container-fluid #jh-social-media a img {
+  display: inline-block;
+  margin: 0%;
+  padding: 0%;
+  width: 2.5vh;
 }
 body main #jh-about .container-fluid #jh-about-content-1 {
   display: block;

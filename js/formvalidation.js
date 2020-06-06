@@ -194,12 +194,42 @@ function validateMail() {
 
 <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
+// Clearing & Error Functions
+
+function fireMailEmptyError() {
+    let errorInput = jh_cf_email;
+    let errorMsg = $("<div class='errorMessage'></div>").text('FILL OUT MISSING INFORMATION!');
+    errorInput.after(errorMsg);
+    fg2.classList.add("error");
+}
+
+function fireMailError() {
+    let errorInput = jh_cf_email;
+    let errorMsg = $("<div class='errorMessage'></div>").text('EMAIL FORMAT INCORRECT!');
+    errorInput.after(errorMsg);
+    fg2.classList.add("error");
+}
+
+function clearErrors() {
+    $('.errorMessage').remove();
+    $('.errorMessage2').remove();
+}
+
+function revalidate() {
+    if (validateForm()) {
+        validateMail();
+    }
+}
+
+<!--  -----------------------------------------------------------------------------------------------------------------  -->
+
 function formSubmit() {
     clearErrors();
     // Check if all fields are filled
     if (validateForm()) {
         // Check for validity of email address
         if (validateMail()) {
+            alert("mail validated");
             let form = $('#jh-cf');
             let form_alert = $('.form-submitted');
             let dataString = form.serialize();
@@ -221,34 +251,5 @@ function formSubmit() {
                 }
             });
         }
-    }
-}
-
-<!--  -----------------------------------------------------------------------------------------------------------------  -->
-
-// Clearing & Error Functions
-
-function fireMailEmptyError() {
-    let errorInput = jh_cf_email;
-    let errorMsg = $("<div class='errorMessage'></div>").text('FILL OUT MISSING INFORMATION!');
-    errorInput.after(errorMsg);
-    fg2.classList.add("error");
-}
-
-function fireMailError() {
-    let errorInput = jh_cf_email;
-    let errorMsg = $("<div class='errorMessage'></div>").text('EMAIL FORMAT INCORRECT!');
-    errorInput.after(errorMsg);
-    fg2.classList.add("error");
-}
-
-function clearErrors() {
-    ($('.errorMessage')).remove();
-    ($('.errorMessage2')).remove();
-}
-
-function revalidate() {
-    if (validateForm()) {
-        validateMail();
     }
 }
