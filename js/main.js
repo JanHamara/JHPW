@@ -20,12 +20,6 @@ $( document ).ready(function() {
     // Variables
     //
 
-    // Menu Open = True / Menu Closed = False
-    let menu = false;
-
-    // Menu Icon
-    const menu_icon = document.getElementById("menu-icon");
-
     // -------------------------------------------------------------------------------------------------
 
     // Pages
@@ -54,22 +48,37 @@ $( document ).ready(function() {
 
     // Menu Page Variables
 
+        // Menu Open = True / Menu Closed = False
+        let menu = false;
+
         // Menu Page
         const menu_page = document.getElementById("jh-menu");
 
-        // Menu Logo
-        const menu_logo = document.getElementById("menu-icon-default");
+        // Menu Icon
+        const menu_icon = document.getElementById("menu-icon");
 
         // Menu Tooltip Text
         let menu_tooltip = document.getElementById("menu-icon-tooltip");
+
+        // Menu Logo
+        const menu_logo = document.getElementById("menu-icon-default");
 
     // -------------------------------------------------------------------------------------------------
 
     // Pages Array
     const all_pages = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page];
 
-    // Links Array
-    const all_links = [about_link, tech_stack_link, portfolio_link, awards_link, contact_link];
+    // -------------------------------------------------------------------------------------------------
+
+    // Helping Set
+
+    let about_set = [about_link, about_page];
+    let tech_set = [tech_stack_link, tech_stack_page];
+    let portfolio_set = [portfolio_link, portfolio_page];
+    let awards_set = [awards_link, awards_page];
+    let contact_set = [contact_link, contact_page];
+    //
+    let full_set = [about_set, tech_set, portfolio_set, awards_set, contact_set];
 
     // -------------------------------------------------------------------------------------------------
 
@@ -85,6 +94,33 @@ $( document ).ready(function() {
             menu = false;
         }
     });
+
+    full_set.forEach(element => link(element));
+
+    function link(link) {
+        link[0].addEventListener('click', function() {
+            //  if Menu is - Closed
+            if (testMenuState(menu)) {                                              // testMenuState()
+                openMenu(all_pages, menu_page, menu_logo, menu_tooltip);            // openMenu()
+                menu = true;
+                // if Menu is - Open
+            } else {
+                closeMenu(menu_page, menu_logo, menu_tooltip);             // closeMenu()
+                menu = false;
+            }
+
+            setTimeout(function () {
+                // Add section to the DOM
+                link[1].style.display = 'block';
+                // Show the section
+                setTimeout(function () {
+                    link[1].style.opacity = "1";
+                }, 200);
+            }, 700)
+
+            current = link[1];
+        });
+    }
 
     // -------------------------------------------------
 
@@ -114,6 +150,8 @@ $( document ).ready(function() {
         changeMenuLogo(logo, logo_tooltip);
     }
 
+    // -------------------------------------------------
+
     // - hideElement()
     function hideElement(element) {
         // Hide the sections
@@ -123,6 +161,8 @@ $( document ).ready(function() {
             element.style.display = 'none';
         }, 1000);
     }
+
+    // -------------------------------------------------
 
     // - showMenu()
     function showMenu(menu) {
@@ -134,16 +174,34 @@ $( document ).ready(function() {
         }, 1000);
     }
 
+    // -------------------------------------------------
+
     // changeMenuLogo()
     function changeMenuLogo(logo, tooltip) {
         logo.src = "./assets/04_Icons/04_Menu_Open.png";
         tooltip.innerHTML = "CLOSE";
     }
 
+    // -------------------------------------------------
+
     // changeMenuLogoBack()
     function changeMenuLogoBack(logo, tooltip) {
         logo.src = "./assets/04_Icons/03_Menu_Default.png";
         tooltip.innerHTML = "MENU";
+    }
+
+    // -------------------------------------------------
+
+    // showPage()
+    function showPage(element, element_2) {
+        // If the element.id of clicked link matches one in full_set array - then display that page
+        if (element.id === element_2[0]) {
+            // Show the section
+            showSection(element_2[1]);
+            // Now section is shown:
+                // menu = false;
+                // current = [current page]     e.g. about_page (not just string, the whole html element)
+        }
     }
 
     // -------------------------------------------------
@@ -160,64 +218,20 @@ $( document ).ready(function() {
         // Remove menu and display section that was previously displayed [previous]
         setTimeout(function () {
             menu.style.display = 'none';
-            previous.style.display = 'block';
+            if (previous) {
+                previous.style.display = 'block';
+            }
         }, 1000);
 
         // Show [previous] sections
         setTimeout(function () {
-            previous.style.opacity = "1";
-        }, 1500);
+            if (previous) {
+                previous.style.opacity = "1";
+            }
+        }, 1200);
     }
 
-    // -------------------------------------------------------------------------------------------------
-
-    // Links Event Listeners
-    all_links.forEach(element => element.addEventListener('click', function() {
-        let about_set = ["about_page", about_page];
-        let tech_set = ["tech_stack_page", tech_stack_page];
-        let portfolio_set = ["portfolio_page", portfolio_page];
-        let awards_set = ["awards_page", awards_page];
-        let contact_set = ["contact_page", contact_page];
-
-        let full_set = [about_set, tech_set, portfolio_set, awards_set, contact_set];
-
-        // Show relevant page
-        full_set.forEach(element_2 => showPage(element, element_2, menu_page, menu_logo, menu_tooltip, current));
-
-        // If ID of the link equals the ID of our page -> set CURRENT page as that page
-        full_set.forEach(element_3 => (element.id === element_3[0]) ? current = element_3[1] : false);
-
-        menu = false;
-    }));
-
-    // -------------------------------------------------------------------------------------------------
-
-    // showPage()
-    function showPage(element, element_2, menu_page, menu_logo, menu_tooltip) {
-        // If the element.id of clicked link matches one in full_set array - then display that page
-        if (element.id === element_2[0]) {
-            // Close menu first
-            closeMenuDefault(menu_page, menu_logo, menu_tooltip);
-            // Show the section
-            showSection(element_2[1]);
-            // Now section is shown:
-                // menu = false;
-                // current = [current page]     e.g. about_page (not just string, the whole html element)
-        }
-    }
-
-    // -------------------------------------------------------------------------------------------------
-
-    // closeMenuDefault() - Only close Menu [not showing any section]
-    function closeMenuDefault(menu, logo, logo_tooltip) {
-        menu.style.opacity = "0";
-        changeMenuLogoBack(logo, logo_tooltip);
-        setTimeout(function () {
-            menu.style.display = 'none';
-        }, 1000);
-    }
-
-    // -------------------------------------------------------------------------------------------------
+    // -------------------------------------------------
 
     // showSection()
     function showSection(section) {
@@ -228,12 +242,6 @@ $( document ).ready(function() {
             section.style.opacity = "1";
         }, 1500);
     }
-
-    // -------------------------------------------------------------------------------------------------
-
-
-
-
 
     // -----------------------------------------------------------------------------------------------------------------
 
@@ -248,9 +256,9 @@ $( document ).ready(function() {
     let jh_pc_current = $("#jh-pc-current");
     let jh_rm_text_1 = $("#jh-rm-1-text");
 
-    let jh_about_content_1 = $('#jh-about-content-1');
-    let jh_about_content_2 = $('#jh-about-content-2');
-    let jh_about_content_3 = $('#jh-about-content-3');
+    let jh_about_content_1 = $("#jh-about-content-1");
+    let jh_about_content_2 = $("#jh-about-content-2");
+    let jh_about_content_3 = $("#jh-about-content-3");
 
     jh_read_more_1.on('click', function() {
         if (read_more_1 === 1) {
@@ -330,12 +338,6 @@ $( document ).ready(function() {
 
     // -----------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
     // -----------------------------------------------------------------------------------------------------------------
 
     // Tech Stack Page
@@ -407,9 +409,9 @@ $( document ).ready(function() {
     let jh_pc2_current = $("#jh-pc2-current");
     let jh_rm_text_2 = $("#jh-rm-2-text");
 
-    let jh_tech_content_1 = $('#jh-tech-content-1');
-    let jh_tech_content_2 = $('#jh-tech-content-2');
-    let jh_tech_content_3 = $('#jh-tech-content-3');
+    let jh_tech_content_1 = $("#jh-tech-content-1");
+    let jh_tech_content_2 = $("#jh-tech-content-2");
+    let jh_tech_content_3 = $("#jh-tech-content-3");
 
     jh_read_more_2.on('click', function() {
         if (read_more_2 === 1) {
@@ -486,13 +488,9 @@ $( document ).ready(function() {
 
     jh_read_more_2.on('mouseenter', function() {
         document.getElementById("jh-rm-2-sign").src = "./assets/00_IMG/01_About/about-pc-divider.png";
-    });
-
-    jh_read_more_2.on('mouseleave', function() {
+    }).on('mouseleave', function() {
         document.getElementById("jh-rm-2-sign").src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
     });
-
-
 
     // -----------------------------------------------------------------------------------------------------------------
 
@@ -516,10 +514,12 @@ $( document ).ready(function() {
 
     // Enable links here
     const home_links = [about_home_link, tech_home_link, portfolio_home_link, awards_home_link, contact_home_link, menu_home_link];
+    const all_pages_2 = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, menu_page];
+
 
     // Add EventListener to each link
     home_links.forEach(element => {
-        addHomeLink(element, all_pages);
+        addHomeLink(element, all_pages_2);
     });
 
     function addHomeLink(element, pages) {
@@ -532,7 +532,7 @@ $( document ).ready(function() {
                 document.getElementById("jh-header").style.display = "block";
                 setTimeout(function() {
                     document.getElementById("jh-header").style.opacity = "1";
-                }, 1000);
+                }, 100);
             }, 1000);
         });
     }
