@@ -42,6 +42,134 @@
 
 //------------------------------------------------------------------------------
 
+// Animations
+
+// ------------------------------------------------------------------------------
+
+// Zoom Out Down
+
+@-webkit-keyframes jh-zoom-out-down {
+  from {
+    opacity: 0;
+    transform: translate(0, -10vh) scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px) scale(1);
+  }
+}
+
+@keyframes jh-zoom-out-down {
+  from {
+    opacity: 0;
+    transform: translate(0, -10vh) scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px) scale(1);
+  }
+}
+
+//-------------------------------------------------------------
+
+// Zoom Out Right
+
+@-webkit-keyframes jh-zoom-out-right {
+  from {
+    opacity: 0;
+    transform: translate(-10vh, 0) scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px) scale(1);
+  }
+}
+
+@keyframes jh-zoom-out-right {
+  from {
+    opacity: 0;
+    transform: translate(-10vh, 0) scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px) scale(1);
+  }
+}
+
+//-------------------------------------------------------------
+
+// Zoom Out Right
+
+@-webkit-keyframes jh-zoom-out-left {
+  from {
+    opacity: 0;
+    transform: translate(10vh, 0) scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px) scale(1);
+  }
+}
+
+@keyframes jh-zoom-out-left {
+  from {
+    opacity: 0;
+    transform: translate(10vh, 0) scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px) scale(1);
+  }
+}
+
+//-------------------------------------------------------------
+
+// Zoom Out Right
+
+@-webkit-keyframes jh-fade-up {
+  from {
+    opacity: 0;
+    transform: translate(0, 5vh);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes jh-fade-up {
+  from {
+    opacity: 0;
+    transform: translate(0, 5vh);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+}
+
+//-------------------------------------------------------------
+
+// Zoom Out Right
+
+@-webkit-keyframes jh-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes jh-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 //------------------------------------------------------------------------------
 
 // Classes
@@ -447,7 +575,9 @@ body {
       height: 100vh;
       color: @main-font-color;
       //
-      opacity: 1;
+      .display(none); // just for dev
+      opacity: 0; // just for dev
+      //
       transition: opacity 1s;
       //
       .container-fluid {
@@ -698,6 +828,10 @@ body {
     // Portfolio
 
     #jh-portfolio {
+      //
+      .display; // just for dev
+      opacity: 1; // just for dev
+      //
       .container-fluid {
 
         .jh-portfolio-content {
@@ -707,26 +841,66 @@ body {
             .nobound;
             .rel;
             //
-            overflow: visible;
+            overflow: visible !important;
 
             .jh-page-container-fill {
               width: 100%;
               height: 100%;
               //
-              overflow: visible;
+              overflow: visible !important;
 
               //-------------------------------------------------------------
 
               // Thumbnail Holder
               .jh-page-thumb-holder {
                 height: 35vh;
+                overflow: visible !important;
                 //
-                margin-bottom: 2.5vh;
+                margin-bottom: 8vh;
 
-                .jh-page-thumb {
+                .jh-figure {
                   width: 70%;
                   height: @max;
                   margin: auto;
+                  overflow: visible !important;
+                  //
+                  .rel;
+
+                  .figure-item {
+                    width: @max;
+                    height: @max;
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    //
+                    opacity: 0;
+                  }
+
+                  //-------------------------------------------------------------
+
+                  // Internship Hunter
+
+                  .f1-1 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/00_Internship_Hunter/IH_1.png");
+                    animation: 1s jh-zoom-out-down forwards;
+                    z-index: 9999 !important;
+                  }
+
+                  .f1-2 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/00_Internship_Hunter/IH_2.png");
+                    animation: 1s jh-zoom-out-right forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  .f1-3 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/00_Internship_Hunter/IH_3.png");
+                    animation: 1s jh-zoom-out-left forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  //-------------------------------------------------------------
+
                 }
               }
 
@@ -735,10 +909,16 @@ body {
               .jh-pf-header {
                 font-size: 2.5vw;
                 margin-bottom: 2vh;
+                //
+                opacity: 0;
+                animation: 1s jh-fade-up 0.5s forwards;
               }
 
               .jh-pf-subheader {
                 font-size: 0.8vw;
+                //
+                opacity: 0;
+                animation: 1s jh-fade-up 0.5s forwards;
               }
 
               //-------------------------------------------------------------
@@ -759,6 +939,9 @@ body {
           // See the Project
           .jh-read-more-button {
             bottom: -16vh;
+            //
+            opacity: 0;
+            animation: 1s jh-fade-in 0.7s forwards;
 
             &:hover {
               span {
