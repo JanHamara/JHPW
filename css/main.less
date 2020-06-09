@@ -42,9 +42,9 @@
 // Big Screens [ 16:9 aspect ratio ]
 @HD-screen: ~"only screen and (min-width: 1280px)"; // 1366 x 768 - common large display [W3C]
 @FullHD-screen: ~"only screen and (min-width: 1920px)"; // 1920 x 1080 - larger display [W3C]
-@QHD-screen: ~"only screen and (min-width: 2560px)"; // 2560 - high-definition desktop display - 27” monitors and bigger
-@4K-screen: ~"only screen and (min-width: 3840px)"; // 4K screens
-@8K-screen: ~"only screen and (min-width: 7680px)"; // 8K screens
+@QHD-screen: ~"only screen and (min-width: 2560px)"; // 2560 x 1440 - high-definition desktop display - 27” monitors and bigger
+@4K-screen: ~"only screen and (min-width: 3840px)"; // 3840 x 2160 - 4K screens
+@8K-screen: ~"only screen and (min-width: 7680px)"; // 7680 x 4800 - 8K screens
 
 //------------------------------------------------------------------------------
 
@@ -584,7 +584,7 @@ body {
         //
         .display(none); // you need to sort this out at the end, for big screens etc.
 
-        @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape {
+        @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
           .display(none);
         }
       }
@@ -751,7 +751,7 @@ body {
             top: 20%;
           }
 
-          @media @tablet-landscape {
+          @media @tablet-landscape, @iPad-Pro-landscape {
             width: 6vw;
           }
         }
@@ -760,10 +760,11 @@ body {
         #jh-menu-list {
           .nobound;
           height: auto;
+          width: 90%;
           //
           .p-center;
 
-          @media @tablet-small, @tablet-big, @tablet-landscape {
+          @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape, @smartphone-all-landscape {
             transform: translate(-50%, -50%) scale(1.1);
           }
 
@@ -778,7 +779,7 @@ body {
             //
             opacity: 0.7;
 
-            @media @smartphone-all {
+            @media @smartphone-all, @smartphone-all-landscape {
               margin: 4vh 0;
             }
 
