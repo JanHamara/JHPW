@@ -22,23 +22,29 @@
 // Media Queries
 // -------------------------
 
+
+// Smartphone General
 @smartphone-all: ~"only screen and (max-width: 479px) and (orientation: portrait)";
-@smartphone-all-landscape: ~"only screen and (max-width: 736px) and (orientation: landscape)";
+@smartphone-all-landscape: ~"only screen and (max-width: 824px) and (orientation: landscape)";
 
+// Smartphone [Sizes]
 @smartphone-small: ~"only screen and (max-width: 330px) and (orientation: portrait)";
-
 @smartphone: ~"only screen and (min-width: 330px) and (max-width: 400px) and (orientation: portrait)";
-
 @smartphone-medium: ~"only screen and (min-width: 400px) and (max-width: 410px) and (orientation: portrait)";
-
 @smartphone-big: ~"only screen and (min-width: 410px) and (max-width: 479px) and (orientation: portrait)";
 
+// Tablets
 @tablet-small: ~"only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait)";
 @tablet-big: ~"only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait)";
+@tablet-landscape: ~"only screen and (width: 1024px) and (height: 768px) and (orientation: landscape)";
+@iPad-Pro-landscape: ~"only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape)";
 
-@iPad-landscape: ~"only screen and (width: 1024px) and (height: 768px) and (orientation: landscape)";
-
-@big-screen: ~"only screen and (min-width: 1900px)";
+// Big Screens [ 16:9 aspect ratio ]
+@HD-screen: ~"only screen and (min-width: 1280px)"; // 1366 x 768 - common large display [W3C]
+@FullHD-screen: ~"only screen and (min-width: 1920px)"; // 1920 x 1080 - larger display [W3C]
+@QHD-screen: ~"only screen and (min-width: 2560px)"; // 2560 - high-definition desktop display - 27” monitors and bigger
+@4K-screen: ~"only screen and (min-width: 3840px)"; // 4K screens
+@8K-screen: ~"only screen and (min-width: 7680px)"; // 8K screens
 
 //------------------------------------------------------------------------------
 
@@ -263,6 +269,7 @@ a {
 
 //-------------------------------------------------------------
 
+// Section Template
 .section-template {
   background: @main-bg-color;
   //
@@ -485,6 +492,7 @@ a {
   }
 }
 
+// Awards Heading Style
 .awards-heading-style {
   color: @light-font-color !important;
   font-family: ingra-2, sans-serif !important;
@@ -531,8 +539,8 @@ body {
       width: 2.5vw;
       //
       .position;
-      top: 13.5vh;
-      right: 4vw;
+      top: 11vh;
+      right: 3.5vw;
       transform: translate(-50%, -50%);
       //
       overflow: visible !important;
@@ -540,6 +548,26 @@ body {
       opacity: 0.7;
       transition: opacity 1s;
       z-index: 9999 !important;
+
+      @media @HD-screen {
+        top: 10vh;
+      }
+
+      @media @smartphone-all {
+        width: 10vw;
+        top: 7vh;
+        right: 3vw;
+      }
+
+      @media @tablet-small, @tablet-big {
+        width: 6vw;
+        top: 8vh;
+      }
+
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        width: 4vw;
+        top: 9vh;
+      }
 
       #menu-icon-default {
         .fs;
@@ -552,6 +580,13 @@ body {
         //
         opacity: 0;
         transition: opacity 1s;
+
+        //
+        .display(none); // you need to sort this out at the end, for big screens etc.
+
+        @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape {
+          .display(none);
+        }
       }
 
       &:hover {
@@ -574,10 +609,6 @@ body {
       width: @max;
       height: 100vh;
       color: @main-font-color;
-      //
-      .display(none); // just for dev
-      opacity: 0; // just for dev
-      //
       transition: opacity 1s;
       //
       .container-fluid {
@@ -592,6 +623,16 @@ body {
 
           @media @smartphone-all {
             width: 20vw;
+            top: 20%;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 14vw;
+          }
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            width: 8vw;
+            top: 19%;
           }
         }
 
@@ -603,6 +644,16 @@ body {
 
           @media @smartphone-all {
             width: 70vw;
+            top: 38%;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 58vw;
+          }
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            width: 38vw;
+            top: 39%;
           }
         }
 
@@ -619,8 +670,22 @@ body {
           opacity: 0.8;
 
           @media @smartphone-all {
-            font-size: 2.43vw;
-            width: 70vw;
+            font-size: 2.4vw;
+            width: @max;
+            top: 43%;
+            font-weight: 700;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: @max;
+            font-size: 2vw;
+            top: 40%;
+          }
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            width: @max;
+            font-size: 1.3vw;
+            top: 45%;
           }
         }
 
@@ -630,6 +695,22 @@ body {
           bottom: 0;
           transform: translate(-50%, 0%);
           width: 25vw;
+
+          @media @HD-screen {
+            width: 28vw;
+          }
+
+          @media @smartphone-all {
+            width: 90vw;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 70vw;
+          }
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            width: 35vw;
+          }
         }
       }
     }
@@ -639,9 +720,41 @@ body {
     // Menu
 
     #jh-menu {
+      //
+      .display(none);
+      opacity: 0;
+
       .container-fluid {
         .fs;
         .nobound;
+
+        // Menu Hero Image
+        #jh-menu-hero-image {
+          @media @smartphone-all, @tablet-small, @tablet-big {
+            .display(none);
+          }
+        }
+
+        // Menu Page Logo
+        #jh-menu-page-logo {
+          @media @smartphone-all {
+            width: 20vw;
+            top: 19%;
+          }
+
+          @media @smartphone-all-landscape {
+
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 13vw;
+            top: 20%;
+          }
+
+          @media @tablet-landscape {
+            width: 6vw;
+          }
+        }
 
         // Menu List
         #jh-menu-list {
@@ -649,6 +762,10 @@ body {
           height: auto;
           //
           .p-center;
+
+          @media @tablet-small, @tablet-big, @tablet-landscape {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
 
           // Menu Item
           .jh-menu-item {
@@ -660,6 +777,10 @@ body {
             margin: 3vh 0;
             //
             opacity: 0.7;
+
+            @media @smartphone-all {
+              margin: 4vh 0;
+            }
 
             &:hover {
               cursor: pointer;
@@ -677,12 +798,28 @@ body {
         // Social Media
         #jh-social-media {
 
+          @media @smartphone-all {
+            bottom: 19vh;
+          }
+
+          @media @tablet-small, @tablet-big {
+            bottom: 15vh;
+          }
+
           a {
             .display(inline-block);
             .nobound;
             //
             margin: 0 1vw;
             opacity: 0.7;
+
+            @media @smartphone-all {
+              margin: 0 5vw;
+            }
+
+            @media @tablet-small, @tablet-big {
+              margin: 0 3vw;
+            }
 
             &:hover {
               opacity: 1;
@@ -829,9 +966,6 @@ body {
 
     #jh-portfolio {
       //
-      .display; // just for dev
-      opacity: 1; // just for dev
-      //
       .container-fluid {
 
         .jh-portfolio-content {
@@ -857,6 +991,14 @@ body {
                 overflow: visible !important;
                 //
                 margin-bottom: 8vh;
+                opacity: 0.9;
+                transition: transform 2s, opacity 1s;
+
+                &:hover {
+                  opacity: 1;
+                  transform: scale(1.1);
+                  transition: transform 2s, opacity 1s;
+                }
 
                 .jh-figure {
                   width: 70%;
@@ -895,6 +1037,72 @@ body {
 
                   .f1-3 {
                     background-image: url("../assets/03_Projects/00_Project_Thumbnails/00_Internship_Hunter/IH_3.png");
+                    animation: 1s jh-zoom-out-left forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  //-------------------------------------------------------------
+
+                  // Notify
+
+                  .f2-1 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/01_Notify/IH_1.png");
+                    animation: 1s jh-zoom-out-down forwards;
+                    z-index: 9999 !important;
+                  }
+
+                  .f2-2 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/01_Notify/IH_2.png");
+                    animation: 1s jh-zoom-out-right forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  .f2-3 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/01_Notify/IH_3.png");
+                    animation: 1s jh-zoom-out-left forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  //-------------------------------------------------------------
+
+                  // MEU
+
+                  .f3-1 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/02_MEU/IH_1.png");
+                    animation: 1s jh-zoom-out-down forwards;
+                    z-index: 9999 !important;
+                  }
+
+                  .f3-2 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/02_MEU/IH_2.png");
+                    animation: 1s jh-zoom-out-right forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  .f3-3 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/02_MEU/IH_3.png");
+                    animation: 1s jh-zoom-out-left forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  //-------------------------------------------------------------
+
+                  // EmmanuelDelay
+
+                  .f4-1 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/03_EmmanuelDelay/IH_1.png");
+                    animation: 1s jh-zoom-out-down forwards;
+                    z-index: 9999 !important;
+                  }
+
+                  .f4-2 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/03_EmmanuelDelay/IH_2.png");
+                    animation: 1s jh-zoom-out-right forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  .f4-3 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/03_EmmanuelDelay/IH_3.png");
                     animation: 1s jh-zoom-out-left forwards;
                     z-index: 9998 !important;
                   }
@@ -959,7 +1167,8 @@ body {
           transition: opacity 1s;
         }
 
-        #jh-portfolio-content-2, #jh-portfolio-content-3 {
+        // Add new portfolio items here - not to display by default
+        #jh-portfolio-content-2, #jh-portfolio-content-3, #jh-portfolio-content-4 {
           .display(none);
           opacity: 0;
           transition: opacity 1s;
