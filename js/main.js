@@ -295,14 +295,14 @@ $( document ).ready(function() {
     }
 
     function RM1_goto2() {
-        document.getElementById("jh-bar-indicator-thumb").style.top = "103.5px";
+        document.getElementById("jh-bar-indicator-thumb").style.top = "15vh";
         jh_pc_current.html("02");
         RM1_show_2();
         read_more_1 = 2;
     }
 
     function RM1_goto3() {
-        document.getElementById("jh-bar-indicator-thumb").style.top = "207px";
+        document.getElementById("jh-bar-indicator-thumb").style.top = "30vh";
         jh_pc_current.html("03");
         RM1_show_3();
         jh_rm_text_1.html("GO BACK");
@@ -391,7 +391,7 @@ $( document ).ready(function() {
     // Fill the ts_ array
     for (let i = 0; i < 20; i++) {
         ts_[i+1] = [ts[i], tsimg[i], tsthumb[i],
-            ("./assets/04_Icons/01_Tech_Stack/" + tsnormal[i]), ("./assets/04_Icons/01_Tech_Stack/" + tshover[i]) ]
+            ("./assets/04_Icons/01_Tech_Stack/" + tshover[i]), ("./assets/04_Icons/01_Tech_Stack/" + tshover[i]) ]
     }
 
     // Array to hold all elements
@@ -454,7 +454,7 @@ $( document ).ready(function() {
     }
 
     function RM2_goto2() {
-        document.getElementById("jh-bar-indicator-2-thumb").style.top = "103.5px";
+        document.getElementById("jh-bar-indicator-2-thumb").style.top = "15vh";
         jh_pc2_current.html("02");
         RM2_show_2();
         jh_rm_text_2.html("GRAPHIC DESIGN / WEB DESIGN");
@@ -462,7 +462,7 @@ $( document ).ready(function() {
     }
 
     function RM2_goto3() {
-        document.getElementById("jh-bar-indicator-2-thumb").style.top = "207px";
+        document.getElementById("jh-bar-indicator-2-thumb").style.top = "30vh";
         jh_pc2_current.html("03");
         RM2_show_3();
         jh_rm_text_2.html("FRONT END / WEB DEVELOPMENT");

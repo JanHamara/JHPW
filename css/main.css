@@ -200,6 +200,10 @@ li {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+html,
+body {
+  background: #10100f;
+}
 a:hover {
   text-decoration: none !important;
 }
@@ -223,6 +227,18 @@ a:hover {
   height: 100%;
   width: auto;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-hero-image {
+    display: inline-block;
+    opacity: 0.1;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-hero-image {
+    display: inline-block;
+    opacity: 0.3;
+  }
+}
 .section-template .container-fluid .jh-thumb-text {
   position: absolute;
   width: 15vw;
@@ -241,6 +257,22 @@ a:hover {
 .section-template .container-fluid .jh-page-logo:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-logo {
+    width: 15vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-logo {
+    width: 10vw;
+    top: 13vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-logo {
+    width: 6vw;
+  }
+}
 .section-template .container-fluid .jh-page-container {
   position: absolute;
   top: 50%;
@@ -251,7 +283,24 @@ a:hover {
   height: 45vh;
   overflow: visible;
 }
-.section-template .container-fluid .jh-page-container .jh-page-paragraph {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-container {
+    width: 80vw;
+  }
+}
+.section-template .container-fluid .jh-page-container .jh-page-container-centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
   color: #8f8f8f !important;
   font-family: ingra-2, sans-serif !important;
   font-weight: 200 !important;
@@ -261,26 +310,79 @@ a:hover {
   margin-bottom: 5vh;
   letter-spacing: 0.4em;
 }
-.section-template .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong {
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
+    font-size: 2vw;
+    font-weight: 500 !important;
+    color: #b5b0b0 !important;
+    margin-bottom: 2vh;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
+    font-size: 1vw;
+    margin-bottom: 4vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
+    font-size: 1.2vw;
+  }
+}
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph span.jh-strong {
   display: inline;
   color: #d1d1d1 !important;
   font-style: normal !important;
   font-weight: 500 !important;
 }
-.section-template .container-fluid .jh-page-container .jh-page-paragraph .jh-red-divider {
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph span.jh-strong {
+    color: white !important;
+  }
+}
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .jh-red-divider {
   display: inline !important;
   color: #af291f !important;
 }
-.section-template .container-fluid .jh-page-container .jh-page-paragraph .thumb-image-link {
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link {
   display: inline;
   opacity: 0.8;
 }
-.section-template .container-fluid .jh-page-container .jh-page-paragraph .thumb-image-link:hover {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link {
+    opacity: 1;
+  }
+}
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link:hover {
   opacity: 1;
 }
-.section-template .container-fluid .jh-page-container .jh-page-paragraph .thumb-image-link img {
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link img {
   display: inline;
   width: 7.7vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link img {
+    width: 16vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link img {
+    width: 12.7vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .thumb-image-link img {
+    width: 10vw;
+  }
+}
+.section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-pp-last {
+  margin-bottom: 0 !important;
 }
 .section-template .container-fluid .jh-read-more-button {
   position: absolute;
@@ -293,6 +395,36 @@ a:hover {
   font-style: normal !important;
   font-size: 0.9vw;
   letter-spacing: 0.4em;
+  overflow: visible;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-read-more-button {
+    text-align: center;
+    width: 80%;
+    bottom: 14vh;
+    font-size: 2vw;
+    font-weight: 500 !important;
+    color: white !important;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-read-more-button {
+    bottom: 11.5vh;
+    font-weight: 500 !important;
+    color: white !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-read-more-button {
+    bottom: 11.5vh;
+    font-size: 1.5vw;
+    color: white !important;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-read-more-button {
+    font-size: 1.2vw;
+  }
 }
 .section-template .container-fluid .jh-read-more-button:hover {
   cursor: pointer;
@@ -300,13 +432,44 @@ a:hover {
 .section-template .container-fluid .jh-read-more-button:hover span {
   color: #d1d1d1 !important;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-read-more-button:hover span {
+    color: white !important;
+  }
+}
 .section-template .container-fluid .jh-read-more-button img {
   display: inline-block;
   width: 0.6vw;
   margin-right: 0.2vw;
 }
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-read-more-button img {
+    width: 1vw;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-read-more-button img {
+    width: 1.7vw;
+  }
+}
 .section-template .container-fluid .jh-read-more-button span {
   display: inline-block;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid #jh-rm-1-sign,
+  .section-template .container-fluid #jh-rm-2-sign {
+    display: none;
+  }
+}
+.section-template .container-fluid #jh-rm-1-sign-mobile,
+.section-template .container-fluid #jh-rm-2-sign-mobile {
+  display: none;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid #jh-rm-1-sign-mobile,
+  .section-template .container-fluid #jh-rm-2-sign-mobile {
+    display: inline-block;
+  }
 }
 .section-template .container-fluid .jh-page-counter {
   position: absolute;
@@ -317,6 +480,22 @@ a:hover {
   width: 8vw;
   height: 4.25vh;
   font-size: 1.5vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-counter {
+    display: none;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-counter {
+    right: 1.5vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-counter {
+    right: 1vw;
+    bottom: 9.5vh;
+  }
 }
 .section-template .container-fluid .jh-page-counter div {
   display: inline-block;
@@ -355,6 +534,21 @@ a:hover {
   width: 0.1vw;
   background: #8f8f8f;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-bar-indicator {
+    display: none;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-bar-indicator {
+    right: 6.4vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-bar-indicator {
+    right: 5.5vw;
+  }
+}
 .section-template .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container {
   width: 100%;
   height: 100%;
@@ -390,6 +584,32 @@ a:hover {
 }
 .content-switch:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .jh-page-paragraph-desktop {
+    display: none !important;
+  }
+}
+.jh-page-paragraph-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .jh-page-paragraph-mobile {
+    display: block !important;
+  }
+}
+.jh-page-paragraph-tablet {
+  display: none !important;
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .jh-page-paragraph-tablet {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .tablet-clear {
+    display: none;
+  }
 }
 body {
   background: #10100f;
@@ -465,6 +685,8 @@ body main header#jh-header {
   height: 100vh;
   color: #d1d1d1;
   transition: opacity 1s;
+  display: none;
+  opacity: 0;
 }
 body main header#jh-header .container-fluid {
   width: 100%;
@@ -656,7 +878,7 @@ body main #jh-menu .container-fluid #jh-menu-list .jh-menu-item img {
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #jh-menu .container-fluid #jh-social-media {
-    bottom: 19vh;
+    bottom: 15vh;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -705,8 +927,35 @@ body main #jh-about .container-fluid #jh-about-content-3 {
   opacity: 0;
   transition: 1s opacity;
 }
+body main #jh-tech-stack {
+  display: block;
+  opacity: 1;
+}
 body main #jh-tech-stack .container-fluid .jh-page-container .jh-page-paragraph:first-child {
   font-size: 1.2vw !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-tech-stack .container-fluid .jh-page-container .jh-page-paragraph:first-child {
+    font-size: 2.5vw !important;
+    margin-bottom: 4vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-tech-stack .container-fluid .jh-page-container .jh-page-paragraph:first-child {
+    font-size: 2vw !important;
+    margin-bottom: 6vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-tech-stack .container-fluid .jh-page-container .jh-page-paragraph:first-child {
+    font-size: 2vw !important;
+    margin-bottom: 6vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-tech-stack .container-fluid .jh-read-more-button {
+    bottom: 14vh;
+  }
 }
 body main #jh-tech-stack .container-fluid #jh-tech-content-1 {
   display: block;
@@ -750,13 +999,38 @@ body main #jh-tech-stack .jh-tech-stack-list .jh-tech-stack-list-item span.jh-ts
   letter-spacing: 0.1em;
   font-weight: 100;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-tech-stack .jh-tech-stack-list .jh-tech-stack-list-item span.jh-tsl-thumb {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-tech-stack .jh-tsl-desktop {
+    display: none;
+  }
+}
+body main #jh-tech-stack .jh-tsl-mobile {
+  display: none;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-tech-stack .jh-tsl-mobile {
+    display: flex;
+    width: 70%;
+    height: 7vh;
+    margin: 3vh auto 0;
+  }
+}
+body main #jh-tech-stack .jh-tsl-mobile-1 {
+  margin: 6vh auto 0 !important;
+}
 body main #jh-tech-stack #jh-tech-stack-2 {
   width: 36%;
-  margin: auto;
+  margin: 7vh auto 0;
 }
 body main #jh-tech-stack #jh-tech-stack-3 {
   width: 60%;
-  margin: auto;
+  margin: 7vh auto 0;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content {
   width: 100%;
