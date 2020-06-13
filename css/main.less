@@ -13,6 +13,7 @@
 @font: 'ingra-2', sans-serif;
 @font2: 'beloved-sans', sans-serif;
 @main-font-color: rgb(209, 209, 209);
+@main-font-color-2: #bbb9b9;
 @light-font-color: rgb(143, 143, 143);
 @main-bg-color: rgb(16, 16, 15);
 
@@ -204,7 +205,7 @@
   text-align: @align;
 }
 
-/*   Mixin for perfect absolute positioning - centering    */
+/*    Mixin for perfect absolute positioning - centering    */
 .p-center {
   .position;
   top: 50%;
@@ -373,90 +374,16 @@ a {
         width: @max;
 
         .jh-page-paragraph {
-          color: @light-font-color !important;
-          font-family: ingra-2, sans-serif !important;
-          font-weight: 200 !important;
-          font-style: normal !important;
-          font-size: 1vw;
-          //
-          line-height: 4vh;
-          margin-bottom: 5vh;
-          letter-spacing: 0.4em;
-
-          @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
-            font-size: 2vw;
-            font-weight: 500 !important;
-            color: #b5b0b0 !important;
-            //
-            margin-bottom: 2vh;
-          }
-
-          @media @smartphone-all-landscape {
-            font-size: 1vw;
-            margin-bottom: 4vh;
-          }
-
-          @media @tablet-small, @tablet-big {
-            font-size: 1.5vw;
-            margin-bottom: 3vh;
-          }
-
-          @media @tablet-landscape, @iPad-Pro-landscape {
-            font-size: 1.2vw;
-          }
-
-          span.jh-strong {
-            .display(inline);
-            //
-            color: @main-font-color !important;
-            font-style: normal !important;
-            font-weight: 500 !important;
-
-            @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
-              color: white !important;
-            }
-          }
-
-          .jh-red-divider {
-            .display(inline) !important;
-            color: @highlight-red !important;
-          }
-
-          // InText Links
-          .thumb-image-link {
-            .display(inline);
-            opacity: 0.8;
-
-            @media @smartphone-all {
-              opacity: 1;
-            }
-
-            &:hover {
-              opacity: 1;
-            }
-
-            img {
-              .display(inline);
-              width: 7.7vw;
-
-              @media @smartphone-all {
-                width: 16vw;
-              }
-
-              @media @tablet-small, @tablet-big {
-                width: 12.7vw;
-              }
-
-              @media @tablet-landscape, @iPad-Pro-landscape {
-                width: 10vw;
-              }
-            }
-          }
+          .jh-pp;
         }
 
         .jh-pp-last {
           margin-bottom: 0 !important;
         }
+      }
+
+      .jh-page-paragraph {
+        .jh-pp;
       }
     }
 
@@ -676,10 +603,98 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   //
-  z-index: 9999 !important;
+  z-index: 9998 !important;
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.jh-pp {
+  color: @light-font-color !important;
+  font-family: ingra-2, sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 1vw;
+  //
+  line-height: 4vh;
+  margin-bottom: 5vh;
+  letter-spacing: 0.4em;
+
+  @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+    font-size: 2vw;
+    font-weight: 500 !important;
+    color: #b5b0b0 !important;
+    //
+    margin-bottom: 2vh;
+  }
+
+  @media @smartphone-all-landscape {
+    font-size: 1vw;
+    margin-bottom: 4vh;
+  }
+
+  @media @tablet-small, @tablet-big {
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+  }
+
+  @media @tablet-landscape, @iPad-Pro-landscape {
+    font-size: 1.2vw;
+  }
+
+  span.jh-strong {
+    .display(inline);
+    //
+    color: @main-font-color !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+
+    @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+      color: white !important;
+    }
+  }
+
+  .jh-red-divider {
+    .display(inline) !important;
+    color: @highlight-red !important;
+
+    @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape  {
+      font-weight: 500 !important;
+      color: red !important;
+      transform: scale(1.2) !important;
+    }
+  }
+
+  // InText Links
+  .thumb-image-link {
+    .display(inline);
+    opacity: 0.8;
+
+    @media @smartphone-all {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      .display(inline);
+      width: 7.7vw;
+
+      @media @smartphone-all {
+        width: 16vw;
+      }
+
+      @media @tablet-small, @tablet-big {
+        width: 12.7vw;
+      }
+
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        width: 10vw;
+      }
+    }
   }
 }
 
@@ -1071,10 +1086,6 @@ body {
 
     // Tech Stack
     #jh-tech-stack {
-      //
-      .display; // just for dev
-      opacity: 1; // just for dev
-      //
       .container-fluid {
 
         .jh-page-container {
@@ -1220,6 +1231,9 @@ body {
 
     #jh-portfolio {
       //
+      .display; // just for dev
+      opacity: 1; // just for dev
+      //
       .container-fluid {
 
         .jh-portfolio-content {
@@ -1248,10 +1262,19 @@ body {
                 opacity: 0.9;
                 transition: transform 2s, opacity 1s;
 
+                @media @tablet-small, @tablet-big, @smartphone-all {
+                  height: 40vh;
+                  margin-bottom: 0vh;
+                }
+
                 &:hover {
                   opacity: 1;
                   transform: scale(1.1);
                   transition: transform 2s, opacity 1s;
+
+                  @media @smartphone-all {
+                    transform: none;
+                  }
                 }
 
                 .jh-figure {
@@ -1261,6 +1284,10 @@ body {
                   overflow: visible !important;
                   //
                   .rel;
+
+                  @media @smartphone-all {
+                    width: 60%;
+                  }
 
                   .figure-item {
                     width: @max;
@@ -1370,17 +1397,48 @@ body {
 
               .jh-pf-header {
                 font-size: 2.5vw;
-                margin-bottom: 2vh;
+                margin-bottom: 3vh;
                 //
                 opacity: 0;
                 animation: 1s jh-fade-up 0.5s forwards;
+
+                @media @smartphone-all {
+                  font-size: 4.7vw;
+                  margin-top: -8vh;
+                }
+
+                @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 3.5vw;
+                  margin-bottom: 1vh;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  margin-bottom: 2.5vh;
+                }
               }
 
               .jh-pf-subheader {
-                font-size: 0.8vw;
+                font-size: 0.9vw;
+                color: @main-font-color-2 !important;
+                font-weight: 500 !important;
                 //
                 opacity: 0;
                 animation: 1s jh-fade-up 0.5s forwards;
+
+                @media @smartphone-all, @smartphone-all-landscape {
+                  color: white !important;
+                  font-weight: 500 !important;
+                }
+
+                @media @smartphone-all {
+                  font-size: 2vw;
+                  margin-top: -2vh;
+                  letter-spacing: 0.3em;
+                }
+
+                @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 1.3vw;
+                }
               }
 
               //-------------------------------------------------------------
@@ -1400,10 +1458,18 @@ body {
 
           // See the Project
           .jh-read-more-button {
-            bottom: -16vh;
+            bottom: -19vh;
             //
             opacity: 0;
             animation: 1s jh-fade-in 0.7s forwards;
+
+            @media @smartphone-all {
+              bottom: -12vh;
+            }
+
+            @media @tablet-landscape, @iPad-Pro-landscape {
+              bottom: -18vh;
+            }
 
             &:hover {
               span {
@@ -1433,11 +1499,61 @@ body {
         #jh-portfolio-switch-left {
           .content-switch;
           left: 17%;
+
+          @media @smartphone-all {
+            width: 3.5vw;
+            left: 8vw;
+          }
+
+          @media @smartphone-all-landscape {
+            left: 18%;
+            width: 2vw;
+          }
+
+          @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+            width: 2vw;
+            left: 10%;
+          }
         }
 
         #jh-portfolio-switch-right {
           .content-switch;
           right: 17%;
+
+          @media @smartphone-all {
+            width: 3.5vw;
+            right: 6vw;
+          }
+
+          @media @smartphone-all-landscape {
+            width: 2vw;
+          }
+
+          @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+            width: 2vw;
+            right: 10%;
+          }
+        }
+
+        #jh-portfolio-switch-mobile-left, #jh-portfolio-switch-mobile-right {
+          .content-switch;
+          z-index: 9999 !important;
+          height: 20vh;
+          width: 25vw;
+          //
+          .display(none);
+
+          @media @smartphone-all {
+            .display(block);
+          }
+        }
+
+        #jh-portfolio-switch-mobile-left {
+          left: 0;
+        }
+
+        #jh-portfolio-switch-mobile-right {
+          right: -25vw;
         }
 
         //-------------------------------------------------------------

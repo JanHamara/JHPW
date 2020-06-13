@@ -15,6 +15,8 @@ const rightSwitch = $("#jh-awards-switch-right");
 // Portfolio Switches
 const leftPSwitch = $("#jh-portfolio-switch-left");
 const rightPSwitch = $("#jh-portfolio-switch-right");
+const leftPOSwitch = $("#jh-portfolio-switch-mobile-left");
+const rightPOSwitch = $("#jh-portfolio-switch-mobile-right");
 
 // -----------------------
 
@@ -120,7 +122,27 @@ leftPSwitch.on("click", function() {
     }
 });
 
+leftPOSwitch.on("click", function() {
+    if (currentPortfolioItem > 0) {
+        previousSection(currentPortfolioItem, portfolioItems);
+        currentPortfolioItem = currentPortfolioItem - 1;
+    } else if (currentPortfolioItem === 0)  {
+        lastSection(totalPortfolioItems, portfolioItems);
+        currentPortfolioItem = totalPortfolioItems;
+    }
+});
+
 rightPSwitch.on("click", function() {
+    if (currentPortfolioItem < totalPortfolioItems) {
+        nextSection(currentPortfolioItem, portfolioItems);
+        currentPortfolioItem = currentPortfolioItem + 1;
+    } else if (currentPortfolioItem === totalPortfolioItems) {
+        firstSection(totalPortfolioItems, portfolioItems);
+        currentPortfolioItem = 0;
+    }
+});
+
+rightPOSwitch.on("click", function() {
     if (currentPortfolioItem < totalPortfolioItems) {
         nextSection(currentPortfolioItem, portfolioItems);
         currentPortfolioItem = currentPortfolioItem + 1;
