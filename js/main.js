@@ -158,6 +158,7 @@ $( document ).ready(function() {
     // -------------------------------------------------
 
     // - hideElement()
+
     function hideElement(element) {
         // Hide the sections
         element.style.opacity = "0";
@@ -170,6 +171,7 @@ $( document ).ready(function() {
     // -------------------------------------------------
 
     // - showMenu()
+
     function showMenu(menu) {
         // Add menu to the DOM
         menu.style.display = 'block';
@@ -182,6 +184,7 @@ $( document ).ready(function() {
     // -------------------------------------------------
 
     // changeMenuLogo()
+
     function changeMenuLogo(logo, tooltip) {
         if (isMobile) {
             logo.src = "./assets/04_Icons/04_Menu_Open.png";
@@ -194,6 +197,7 @@ $( document ).ready(function() {
     // -------------------------------------------------
 
     // changeMenuLogoBack()
+
     function changeMenuLogoBack(logo, tooltip) {
         logo.src = "./assets/04_Icons/03_Menu_Default.png";
         tooltip.innerHTML = "MENU";
@@ -202,6 +206,7 @@ $( document ).ready(function() {
     // -------------------------------------------------
 
     // showPage()
+
     function showPage(element, element_2) {
         // If the element.id of clicked link matches one in full_set array - then display that page
         if (element.id === element_2[0]) {

@@ -303,7 +303,7 @@ a:hover {
 .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
   color: #8f8f8f !important;
   font-family: ingra-2, sans-serif !important;
-  font-weight: 200 !important;
+  font-weight: 900 !important;
   font-style: normal !important;
   font-size: 1vw;
   line-height: 4vh;
@@ -313,7 +313,7 @@ a:hover {
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
     font-size: 2vw;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: #b5b0b0 !important;
     margin-bottom: 2vh;
   }
@@ -344,6 +344,7 @@ a:hover {
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph span.jh-strong {
     color: white !important;
+    font-weight: 900 !important;
   }
 }
 .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .jh-red-divider {
@@ -352,7 +353,7 @@ a:hover {
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph .jh-red-divider {
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: red !important;
     transform: scale(1.2) !important;
   }
@@ -394,7 +395,7 @@ a:hover {
 .section-template .container-fluid .jh-page-container .jh-page-paragraph {
   color: #8f8f8f !important;
   font-family: ingra-2, sans-serif !important;
-  font-weight: 200 !important;
+  font-weight: 900 !important;
   font-style: normal !important;
   font-size: 1vw;
   line-height: 4vh;
@@ -404,7 +405,7 @@ a:hover {
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-paragraph {
     font-size: 2vw;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: #b5b0b0 !important;
     margin-bottom: 2vh;
   }
@@ -435,6 +436,7 @@ a:hover {
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong {
     color: white !important;
+    font-weight: 900 !important;
   }
 }
 .section-template .container-fluid .jh-page-container .jh-page-paragraph .jh-red-divider {
@@ -443,7 +445,7 @@ a:hover {
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-paragraph .jh-red-divider {
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: red !important;
     transform: scale(1.2) !important;
   }
@@ -498,14 +500,14 @@ a:hover {
     width: 80%;
     bottom: 14vh;
     font-size: 2vw;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: white !important;
   }
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
   .section-template .container-fluid .jh-read-more-button {
     bottom: 11.5vh;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: white !important;
   }
 }
@@ -620,6 +622,11 @@ a:hover {
   bottom: 0;
   margin-left: 0.7vw;
 }
+@media only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .section-template .container-fluid .jh-page-counter .jh-pc-container .jh-pc-total {
+    font-weight: 900 !important;
+  }
+}
 .section-template .container-fluid .jh-bar-indicator {
   position: absolute;
   top: 50%;
@@ -683,7 +690,7 @@ a:hover {
 .jh-pp {
   color: #8f8f8f !important;
   font-family: ingra-2, sans-serif !important;
-  font-weight: 200 !important;
+  font-weight: 900 !important;
   font-style: normal !important;
   font-size: 1vw;
   line-height: 4vh;
@@ -693,7 +700,7 @@ a:hover {
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .jh-pp {
     font-size: 2vw;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: #b5b0b0 !important;
     margin-bottom: 2vh;
   }
@@ -724,6 +731,7 @@ a:hover {
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .jh-pp span.jh-strong {
     color: white !important;
+    font-weight: 900 !important;
   }
 }
 .jh-pp .jh-red-divider {
@@ -732,7 +740,7 @@ a:hover {
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .jh-pp .jh-red-divider {
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     color: red !important;
     transform: scale(1.2) !important;
   }
@@ -1012,9 +1020,6 @@ body main #jh-menu .container-fluid {
   padding: 0%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  body main #jh-menu .container-fluid #jh-menu-hero-image {
-    display: none;
-  }
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #jh-menu .container-fluid #jh-menu-page-logo {
@@ -1407,6 +1412,7 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-read-more-but
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-read-more-button {
     bottom: -12vh;
+    font-weight: 900 !important;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
