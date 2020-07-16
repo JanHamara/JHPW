@@ -337,9 +337,10 @@ a:hover {
 }
 .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph span.jh-strong {
   display: inline;
+  font-family: ingra-2, sans-serif !important;
   color: #d1d1d1 !important;
   font-style: normal !important;
-  font-weight: 500 !important;
+  font-weight: 900 !important;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph span.jh-strong {
@@ -429,9 +430,10 @@ a:hover {
 }
 .section-template .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong {
   display: inline;
+  font-family: ingra-2, sans-serif !important;
   color: #d1d1d1 !important;
   font-style: normal !important;
-  font-weight: 500 !important;
+  font-weight: 900 !important;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong {
@@ -724,9 +726,10 @@ a:hover {
 }
 .jh-pp span.jh-strong {
   display: inline;
+  font-family: ingra-2, sans-serif !important;
   color: #d1d1d1 !important;
   font-style: normal !important;
-  font-weight: 500 !important;
+  font-weight: 900 !important;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .jh-pp span.jh-strong {
@@ -1127,6 +1130,23 @@ body main #jh-about .container-fluid #jh-about-content-3 {
   opacity: 0;
   transition: 1s opacity;
 }
+body main #jh-tech-stack .container-fluid #jh-tech-content-1 .jh-page-container-centering .jh-page-paragraph .jh-strong,
+body main #jh-tech-stack .container-fluid #jh-tech-content-2 .jh-page-container-centering .jh-page-paragraph .jh-strong,
+body main #jh-tech-stack .container-fluid #jh-tech-content-3 .jh-page-container-centering .jh-page-paragraph .jh-strong {
+  display: inline;
+  font-family: ingra-2, sans-serif !important;
+  color: #d1d1d1 !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-tech-stack .container-fluid #jh-tech-content-1 .jh-page-container-centering .jh-page-paragraph .jh-strong,
+  body main #jh-tech-stack .container-fluid #jh-tech-content-2 .jh-page-container-centering .jh-page-paragraph .jh-strong,
+  body main #jh-tech-stack .container-fluid #jh-tech-content-3 .jh-page-container-centering .jh-page-paragraph .jh-strong {
+    color: white !important;
+    font-weight: 900 !important;
+  }
+}
 body main #jh-tech-stack .container-fluid .jh-page-container .jh-page-paragraph:first-child {
   font-size: 1.2vw !important;
 }
@@ -1193,12 +1213,12 @@ body main #jh-tech-stack .jh-tech-stack-list .jh-tech-stack-list-item span.jh-ts
   text-align: center;
   font-size: 0.7vw;
   letter-spacing: 0.1em;
-  font-weight: 100;
+  font-weight: 900 !important;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #jh-tech-stack .jh-tech-stack-list .jh-tech-stack-list-item span.jh-tsl-thumb {
     font-size: 1.5vw;
-    font-weight: 500;
+    font-weight: 500 !important;
   }
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
