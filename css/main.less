@@ -621,8 +621,8 @@ a {
   font-style: normal !important;
   font-size: 1vw;
   //
-  line-height: 4vh;
-  margin-bottom: 5vh;
+  line-height: 4.5vh;
+  margin-bottom: 4vh;
   letter-spacing: 0.4em;
 
   @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
@@ -633,6 +633,10 @@ a {
     margin-bottom: 2vh;
   }
 
+  @media @smartphone-all {
+    line-height: 3.5vh;
+  }
+
   @media @smartphone-all-landscape {
     font-size: 1vw;
     margin-bottom: 4vh;
@@ -641,10 +645,13 @@ a {
   @media @tablet-small, @tablet-big {
     font-size: 1.5vw;
     margin-bottom: 3vh;
+    line-height: 4vh;
   }
 
   @media @tablet-landscape, @iPad-Pro-landscape {
     font-size: 1.2vw;
+    margin-bottom: 3vh;
+    line-height: 4vh;
   }
 
   span.jh-strong {
@@ -704,6 +711,14 @@ a {
   }
 }
 
+.jh-strong-break {
+  .display(inline) !important;
+
+  @media @smartphone-all {
+    .display(block) !important;
+  }
+}
+
 // Mobile Line Breaker
 .jh-page-paragraph-desktop {
   @media @smartphone-all {
@@ -717,6 +732,14 @@ a {
    @media @smartphone-all {
      .display(block) !important;
    }
+}
+
+.jh-pp-m {
+  .aligntext(justify);
+  width: 85%;
+
+
+  margin: auto;
 }
 
 .jh-page-paragraph-tablet {
@@ -1482,7 +1505,7 @@ body {
               //-------------------------------------------------------------
 
               .jh-page-paragraph:first-child {
-                margin-bottom: 1vh;
+                margin-bottom: 2vh;
                 font-size: 1.2vw;
               }
 
@@ -1545,7 +1568,7 @@ body {
           }
 
           @media @smartphone-all-landscape {
-            left: 18%;
+            left: 16%;
             width: 2vw;
           }
 
@@ -1565,6 +1588,7 @@ body {
           }
 
           @media @smartphone-all-landscape {
+            right: 15%;
             width: 2vw;
           }
 
@@ -1615,6 +1639,14 @@ body {
           .abs;
           //
           opacity: 0.7;
+
+          @media @smartphone-all {
+            width: 40vw;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 35vw;
+          }
         }
 
         // Awards Hero Image 1
@@ -1623,6 +1655,15 @@ body {
           left: 7%;
           top: 14%;
           transform: translate(-50%, -50%) rotate(-120deg);
+
+          @media @smartphone-all {
+            top: 7%;
+          }
+
+          @media @tablet-small, @tablet-big {
+            left: 8%;
+            top: 12%;
+          }
         }
 
         // Awards Hero Image 1
@@ -1631,6 +1672,24 @@ body {
           right: 9%;
           bottom: 17%;
           transform: translate(50%, 50%) rotate(20deg);
+
+          @media @tablet-small, @tablet-big {
+            right: 13%;
+            bottom: 12%;
+          }
+
+          @media @smartphone-all {
+            bottom: 7%;
+          }
+        }
+
+        // Thumb Text
+        #jh-awards-thumb-text {
+          @media @smartphone-all {
+            width: 25vw;
+            bottom: 18vw !important;
+            left: -4vw !important;
+          }
         }
 
         //-------------------------------------------------------------
@@ -1649,15 +1708,51 @@ body {
             .fs;
             .nobound;
             .rel;
+            overflow: visible;
+
+            @media @smartphone-all {
+              width: 75%;
+              margin: auto;
+            }
+
+            @media @tablet-small, @tablet-big {
+              width: 93%;
+              margin: auto;
+            }
 
             .jh-page-container-fill {
               width: 100%;
               height: auto;
               .p-center;
 
+              .jh-page-paragraph {
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.3vw;
+                }
+              }
+
               .jh-page-paragraph:first-child {
-                margin-bottom: 1vh;
+                margin-bottom: 2vh;
                 font-size: 1.2vw;
+
+                @media @smartphone-all {
+                  font-size: 2.5vw !important;
+                }
+
+                @media @smartphone-all-landscape {
+                  margin-bottom: 3vh;
+                  line-height: 200%;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.8vw;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 1.5vw;
+                  margin-bottom: 3vh;
+                }
               }
 
               .jh-page-paragraph:last-child {
@@ -1695,11 +1790,51 @@ body {
         #jh-awards-switch-left {
           .content-switch;
           left: 17%;
+
+          @media @smartphone-all {
+            width: 3.5vw;
+            left: 8%;
+          }
+
+          @media @smartphone-all-landscape {
+            width: 2vw;
+            left: 16%;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 2vw;
+            left: 7%;
+          }
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            width: 2vw;
+            left: 10%;
+          }
         }
 
         #jh-awards-switch-right {
           .content-switch;
           right: 17%;
+
+          @media @smartphone-all {
+            width: 3.5vw;
+            right: 6%;
+          }
+
+          @media @smartphone-all-landscape {
+            width: 2vw;
+            right: 15%;
+          }
+
+          @media @tablet-small, @tablet-big {
+            width: 2vw;
+            right: 6%;
+          }
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            width: 2vw;
+            right: 10%;
+          }
         }
 
         //-------------------------------------------------------------

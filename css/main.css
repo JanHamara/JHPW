@@ -306,8 +306,8 @@ a:hover {
   font-weight: 900 !important;
   font-style: normal !important;
   font-size: 1vw;
-  line-height: 4vh;
-  margin-bottom: 5vh;
+  line-height: 4.5vh;
+  margin-bottom: 4vh;
   letter-spacing: 0.4em;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
@@ -316,6 +316,11 @@ a:hover {
     font-weight: 900 !important;
     color: #b5b0b0 !important;
     margin-bottom: 2vh;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
+    line-height: 3.5vh;
   }
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -328,11 +333,14 @@ a:hover {
   .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
     font-size: 1.5vw;
     margin-bottom: 3vh;
+    line-height: 4vh;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph {
     font-size: 1.2vw;
+    margin-bottom: 3vh;
+    line-height: 4vh;
   }
 }
 .section-template .container-fluid .jh-page-container .jh-page-container-centering .jh-page-paragraph span.jh-strong {
@@ -399,8 +407,8 @@ a:hover {
   font-weight: 900 !important;
   font-style: normal !important;
   font-size: 1vw;
-  line-height: 4vh;
-  margin-bottom: 5vh;
+  line-height: 4.5vh;
+  margin-bottom: 4vh;
   letter-spacing: 0.4em;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
@@ -409,6 +417,11 @@ a:hover {
     font-weight: 900 !important;
     color: #b5b0b0 !important;
     margin-bottom: 2vh;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-template .container-fluid .jh-page-container .jh-page-paragraph {
+    line-height: 3.5vh;
   }
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -421,11 +434,14 @@ a:hover {
   .section-template .container-fluid .jh-page-container .jh-page-paragraph {
     font-size: 1.5vw;
     margin-bottom: 3vh;
+    line-height: 4vh;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .section-template .container-fluid .jh-page-container .jh-page-paragraph {
     font-size: 1.2vw;
+    margin-bottom: 3vh;
+    line-height: 4vh;
   }
 }
 .section-template .container-fluid .jh-page-container .jh-page-paragraph span.jh-strong {
@@ -695,8 +711,8 @@ a:hover {
   font-weight: 900 !important;
   font-style: normal !important;
   font-size: 1vw;
-  line-height: 4vh;
-  margin-bottom: 5vh;
+  line-height: 4.5vh;
+  margin-bottom: 4vh;
   letter-spacing: 0.4em;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
@@ -705,6 +721,11 @@ a:hover {
     font-weight: 900 !important;
     color: #b5b0b0 !important;
     margin-bottom: 2vh;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .jh-pp {
+    line-height: 3.5vh;
   }
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -717,11 +738,14 @@ a:hover {
   .jh-pp {
     font-size: 1.5vw;
     margin-bottom: 3vh;
+    line-height: 4vh;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .jh-pp {
     font-size: 1.2vw;
+    margin-bottom: 3vh;
+    line-height: 4vh;
   }
 }
 .jh-pp span.jh-strong {
@@ -779,6 +803,14 @@ a:hover {
     width: 10vw;
   }
 }
+.jh-strong-break {
+  display: inline !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .jh-strong-break {
+    display: block !important;
+  }
+}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   .jh-page-paragraph-desktop {
     display: none !important;
@@ -791,6 +823,11 @@ a:hover {
   .jh-page-paragraph-mobile {
     display: block !important;
   }
+}
+.jh-pp-m {
+  text-align: justify;
+  width: 85%;
+  margin: auto;
 }
 .jh-page-paragraph-tablet {
   display: none !important;
@@ -1418,7 +1455,7 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
   }
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
   font-size: 1.2vw;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:last-child {
@@ -1472,7 +1509,7 @@ body main #jh-portfolio .container-fluid #jh-portfolio-switch-left:hover {
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
   body main #jh-portfolio .container-fluid #jh-portfolio-switch-left {
-    left: 18%;
+    left: 16%;
     width: 2vw;
   }
 }
@@ -1501,6 +1538,7 @@ body main #jh-portfolio .container-fluid #jh-portfolio-switch-right:hover {
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
   body main #jh-portfolio .container-fluid #jh-portfolio-switch-right {
+    right: 15%;
     width: 2vw;
   }
 }
@@ -1544,6 +1582,16 @@ body main #jh-awards .container-fluid .awards-hero-image {
   position: absolute;
   opacity: 0.7;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .awards-hero-image {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .awards-hero-image {
+    width: 35vw;
+  }
+}
 body main #jh-awards .container-fluid #jh-awards-hero-image {
   width: 25vw;
   height: auto;
@@ -1552,6 +1600,27 @@ body main #jh-awards .container-fluid #jh-awards-hero-image {
   left: 7%;
   top: 14%;
   transform: translate(-50%, -50%) rotate(-120deg);
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image {
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image {
+    top: 7%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image {
+    left: 8%;
+    top: 12%;
+  }
 }
 body main #jh-awards .container-fluid #jh-awards-hero-image-2 {
   width: 25vw;
@@ -1562,6 +1631,34 @@ body main #jh-awards .container-fluid #jh-awards-hero-image-2 {
   bottom: 17%;
   transform: translate(50%, 50%) rotate(20deg);
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image-2 {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image-2 {
+    width: 35vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image-2 {
+    right: 13%;
+    bottom: 12%;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-hero-image-2 {
+    bottom: 7%;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-thumb-text {
+    width: 25vw;
+    bottom: 18vw !important;
+    left: -4vw !important;
+  }
+}
 body main #jh-awards .container-fluid .jh-thumb-text {
   left: -2.5vw;
 }
@@ -1571,6 +1668,19 @@ body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-cont
   margin: 0%;
   padding: 0%;
   position: relative;
+  overflow: visible;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content {
+    width: 93%;
+    margin: auto;
+  }
 }
 body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill {
   width: 100%;
@@ -1580,9 +1690,36 @@ body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-cont
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph {
+    font-size: 1.3vw;
+  }
+}
 body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
   font-size: 1.2vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
+    font-size: 2.5vw !important;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
+    margin-bottom: 3vh;
+    line-height: 200%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+  }
 }
 body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:last-child {
   margin-bottom: 0;
@@ -1613,6 +1750,30 @@ body main #jh-awards .container-fluid #jh-awards-switch-left {
 body main #jh-awards .container-fluid #jh-awards-switch-left:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-switch-left {
+    width: 3.5vw;
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-awards .container-fluid #jh-awards-switch-left {
+    width: 2vw;
+    left: 16%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-switch-left {
+    width: 2vw;
+    left: 7%;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-awards .container-fluid #jh-awards-switch-left {
+    width: 2vw;
+    left: 10%;
+  }
+}
 body main #jh-awards .container-fluid #jh-awards-switch-right {
   width: 1vw;
   position: absolute;
@@ -1623,6 +1784,30 @@ body main #jh-awards .container-fluid #jh-awards-switch-right {
 }
 body main #jh-awards .container-fluid #jh-awards-switch-right:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-switch-right {
+    width: 3.5vw;
+    right: 6%;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-awards .container-fluid #jh-awards-switch-right {
+    width: 2vw;
+    right: 15%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-awards .container-fluid #jh-awards-switch-right {
+    width: 2vw;
+    right: 6%;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-awards .container-fluid #jh-awards-switch-right {
+    width: 2vw;
+    right: 10%;
+  }
 }
 body main #jh-contact .container-fluid .jh-thumb-text {
   right: -1.5vw;
