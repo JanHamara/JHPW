@@ -16,7 +16,7 @@
 @main-font-color-2: #bbb9b9;
 @light-font-color: rgb(143, 143, 143);
 @main-bg-color: rgb(16, 16, 15);
-
+//
 @highlight-red: rgb(175, 41, 31);
 
 //--------------------------
@@ -105,7 +105,7 @@
 
 //-------------------------------------------------------------
 
-// Zoom Out Right
+// Zoom Out Left
 
 @-webkit-keyframes jh-zoom-out-left {
   from {
@@ -131,7 +131,7 @@
 
 //-------------------------------------------------------------
 
-// Zoom Out Right
+// Fade Up
 
 @-webkit-keyframes jh-fade-up {
   from {
@@ -157,7 +157,7 @@
 
 //-------------------------------------------------------------
 
-// Zoom Out Right
+// Fade In
 
 @-webkit-keyframes jh-fade-in {
   from {
@@ -767,9 +767,14 @@ body {
         right: 3vw;
       }
 
+      @media @smartphone-all-landscape {
+        width: 3.5vw;
+        right: 2.5vw;
+      }
+
       @media @tablet-small, @tablet-big {
-        width: 6vw;
-        top: 8vh;
+        width: 7vw;
+        top: 7vh;
       }
 
       @media @tablet-landscape, @iPad-Pro-landscape {
@@ -790,7 +795,8 @@ body {
         transition: opacity 1s;
 
         //
-        .display(none); // you need to sort this out at the end, for big screens etc.
+        //.display(none);
+        // you need to sort this out at the end, for big screens etc.
 
         @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
           .display(none);
@@ -887,16 +893,22 @@ body {
             font-weight: 700;
           }
 
+          @media @smartphone-all-landscape {
+            font-weight: 700;
+          }
+
           @media @tablet-small, @tablet-big {
             width: @max;
             font-size: 2vw;
             top: 40%;
+            font-weight: 700;
           }
 
           @media @tablet-landscape, @iPad-Pro-landscape {
             width: @max;
             font-size: 1.3vw;
             top: 45%;
+            font-weight: 700;
           }
         }
 
@@ -1825,6 +1837,5 @@ body {
     }
 
     //-------------------------------------------------------------
-
   }
 }

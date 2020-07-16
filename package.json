@@ -1,7 +1,7 @@
 {
   "name": "jhpw",
   "version": "1.0.0",
-  "description": "Personal Website",
+  "description": "Jan Hamara | Personal Website",
   "main": "main.js",
   "dependencies": {
     "core-js": "^3.6.5",
