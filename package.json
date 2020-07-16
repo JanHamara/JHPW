@@ -5,7 +5,8 @@
   "main": "main.js",
   "dependencies": {
     "core-js": "^3.6.5",
-    "lessc": "^1.0.2"
+    "lessc": "^1.0.2",
+    "websocket-extensions": ">=0.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
