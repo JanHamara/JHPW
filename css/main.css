@@ -1439,7 +1439,7 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape) {
   body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-subheader {
     color: white !important;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
   }
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -1452,6 +1452,7 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-subheader {
     font-size: 1.3vw;
+    font-weight: 900 !important;
   }
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-paragraph:first-child {
