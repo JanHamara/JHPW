@@ -1812,11 +1812,21 @@ body main #jh-awards .container-fluid #jh-awards-switch-right:hover {
 body main #jh-contact .container-fluid .jh-thumb-text {
   right: -1.5vw;
 }
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid .jh-thumb-text {
+    right: -2vw;
+  }
+}
 body main #jh-contact .container-fluid #jh-contact-hero-image {
   height: 80%;
   position: absolute;
   top: 15%;
   left: 0;
+}
+@media only screen and (min-width: 3840px), only screen and (min-width: 7680px) {
+  body main #jh-contact .container-fluid #jh-contact-hero-image {
+    height: 70%;
+  }
 }
 body main #jh-contact .container-fluid #jh-contact-content {
   overflow: visible;
@@ -1826,9 +1836,19 @@ body main #jh-contact .container-fluid #jh-contact-form {
   margin: auto;
   overflow: visible;
 }
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form {
+    width: 75%;
+  }
+}
 body main #jh-contact .container-fluid #jh-contact-form form#jh-cf {
   width: 100%;
   overflow: visible;
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf {
+    margin-top: 4vh;
+  }
 }
 body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group .jh-cf-indicator {
   display: inline-block;
@@ -1861,6 +1881,25 @@ body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group t
   letter-spacing: 0.4em;
   text-transform: uppercase !important;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group input,
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group textarea {
+    font-size: 2vw;
+    color: #d1d1d1 !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group input,
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group textarea {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group input,
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-group textarea {
+    font-size: 1.2vw;
+  }
+}
 body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .form-control {
   padding: 0 !important;
 }
@@ -1874,6 +1913,13 @@ body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg2 {
   line-height: 7vh;
   margin-bottom: 4vh;
   overflow: visible;
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg1,
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg2 {
+    height: 9vh;
+    line-height: 9vh;
+  }
 }
 body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg2 {
   float: right;
@@ -1897,6 +1943,11 @@ body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .fg3 textarea
 body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .error {
   border-bottom: 0.5px #af291f solid;
 }
+@media only screen and (min-width: 3840px), only screen and (min-width: 7680px) {
+  body main #jh-contact .container-fluid #jh-contact-form form#jh-cf .error {
+    border-bottom: 1px #af291f solid;
+  }
+}
 body main #jh-contact .container-fluid #jh-contact-form .errorMessage,
 body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
   text-align: left;
@@ -1907,10 +1958,64 @@ body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
   position: absolute;
   bottom: -90%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage,
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
+    font-size: 1.5vw !important;
+    line-height: 220%;
+    bottom: -70%;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage,
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
+    line-height: 220%;
+    bottom: -50% !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage,
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
+    font-size: 1vw !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage,
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
+    bottom: -80%;
+  }
+}
 body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
   bottom: -11%;
 }
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
+    bottom: -15% !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-contact-form .errorMessage2 {
+    bottom: -9%;
+  }
+}
 body main #jh-contact .container-fluid #jh-submit-form:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-submit-form {
+    bottom: 16vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-submit-form {
+    bottom: 13.5vh;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-contact .container-fluid #jh-contact-thumb-text {
+    width: 25vw;
+    bottom: 9vh !important;
+    right: -4vw !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

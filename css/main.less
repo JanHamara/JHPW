@@ -1850,6 +1850,10 @@ body {
         // Thumb Text
         .jh-thumb-text {
           right: -1.5vw;
+
+          @media @smartphone-all-landscape {
+            right: -2vw;
+          }
         }
 
         //-------------------------------------------------------------
@@ -1860,6 +1864,10 @@ body {
           position: absolute;
           top: 15%;
           left: 0;
+
+          @media @4K-screen, @8K-screen {
+            height: 70%;
+          }
         }
 
         //-------------------------------------------------------------
@@ -1874,9 +1882,17 @@ body {
           margin: auto;
           overflow: visible;
 
+          @media @smartphone-all-landscape {
+            width: 75%;
+          }
+
           form#jh-cf {
             width: @max;
             overflow: visible;
+
+            @media @tablet-landscape, @iPad-Pro-landscape {
+              margin-top: 4vh;
+            }
 
             .form-group {
 
@@ -1916,6 +1932,19 @@ body {
                 line-height: 4vh;
                 letter-spacing: 0.4em;
                 text-transform: uppercase !important;
+
+                @media @smartphone-all {
+                  font-size: 2vw;
+                  color: @main-font-color !important;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.5vw;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 1.2vw;
+                }
               }
             }
 
@@ -1939,6 +1968,11 @@ body {
               margin-bottom: 4vh;
               //
               overflow: visible;
+
+              @media @smartphone-all-landscape {
+                height: 9vh;
+                line-height: 9vh;
+              }
             }
 
             .fg2 {
@@ -1967,6 +2001,10 @@ body {
 
             .error {
               border-bottom: 0.5px @highlight-red solid;
+
+              @media @4K-screen, @8K-screen {
+                border-bottom: 1px @highlight-red solid;
+              }
             }
           }
 
@@ -1979,10 +2017,37 @@ body {
             //
             .abs;
             bottom: -90%;
+
+            @media @smartphone-all {
+              font-size: 1.5vw !important;
+              line-height: 220%;
+              bottom: -70%;
+            }
+
+            @media @smartphone-all-landscape {
+              line-height: 220%;
+              bottom: -50% !important;
+            }
+
+            @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+              font-size: 1vw !important;
+            }
+
+            @media @tablet-small, @tablet-big {
+              bottom: -80%;
+            }
           }
 
           .errorMessage2 {
             bottom: -11%;
+
+            @media @smartphone-all-landscape {
+              bottom: -15% !important;
+            }
+
+            @media @tablet-small, @tablet-big {
+              bottom: -9%;
+            }
           }
         }
 
@@ -1993,6 +2058,26 @@ body {
         #jh-submit-form {
           &:hover {
             cursor: pointer;
+          }
+
+          @media @smartphone-all {
+            bottom: 16vh;
+          }
+
+          @media @tablet-small, @tablet-big {
+            bottom: 13.5vh;
+          }
+        }
+
+        //-------------------------------------------------------------
+
+        // Submit Button
+
+        #jh-contact-thumb-text {
+          @media @smartphone-all {
+            width: 25vw;
+            bottom: 9vh !important;
+            right: -4vw !important;
           }
         }
       }
