@@ -1406,6 +1406,21 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
   animation: 1s jh-zoom-out-left forwards;
   z-index: 9998 !important;
 }
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f5-1 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/04_Chirurgie_Plastique/IH_1.png");
+  animation: 1s jh-zoom-out-down forwards;
+  z-index: 9999 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f5-2 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/04_Chirurgie_Plastique/IH_2.png");
+  animation: 1s jh-zoom-out-right forwards;
+  z-index: 9998 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f5-3 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/04_Chirurgie_Plastique/IH_3.png");
+  animation: 1s jh-zoom-out-left forwards;
+  z-index: 9998 !important;
+}
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-header {
   font-size: 2.5vw;
   margin-bottom: 3vh;
@@ -1486,7 +1501,8 @@ body main #jh-portfolio .container-fluid #jh-portfolio-content-1 {
 }
 body main #jh-portfolio .container-fluid #jh-portfolio-content-2,
 body main #jh-portfolio .container-fluid #jh-portfolio-content-3,
-body main #jh-portfolio .container-fluid #jh-portfolio-content-4 {
+body main #jh-portfolio .container-fluid #jh-portfolio-content-4,
+body main #jh-portfolio .container-fluid #jh-portfolio-content-5 {
   display: none;
   opacity: 0;
   transition: opacity 1s;

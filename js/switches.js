@@ -52,7 +52,7 @@ portfolioItems = document.getElementsByClassName("jh-portfolio-content");
 // Current Awards on Display
 let currentPortfolioItem = 0;
 // Total Number of Awards
-let totalPortfolioItems = 3; // Total number of items, minus 1
+let totalPortfolioItems = 4; // Total number of items, minus 1
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -196,7 +196,7 @@ for (let i = 0; i < totalAwardsNumber; i++) {
     });
 }
 
-for (let i = 0; i < totalPortfolioItems; i++) {
+for (let i = 0; i < (totalPortfolioItems + 1); i++) {
     portfolioButtons[i].addEventListener('mouseenter', function() {
         portfolioButtons[i].children[0].src = pcDivider;
     });
