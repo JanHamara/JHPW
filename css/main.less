@@ -260,6 +260,13 @@ body,html, ul, li {
 
 html, body {
   background: @main-bg-color;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 a {
@@ -327,9 +334,11 @@ a {
     // Page Logo Image
     .jh-page-logo {
       .p-center;
+      position: fixed !important;
       width: 4vw;
       //
       top: 13.5vh;
+      z-index: 9999 !important;
 
       &:hover {
         cursor: pointer;
@@ -766,7 +775,7 @@ body {
 
   main {
     width: @max;
-    height: 100vh;
+    height: auto;
 
     //-------------------------------------------------------------
 
@@ -1584,6 +1593,7 @@ body {
         #jh-portfolio-switch-left {
           .content-switch;
           left: 17%;
+          transition: opacity 1s;
 
           @media @smartphone-all {
             width: 3.5vw;
@@ -1604,6 +1614,7 @@ body {
         #jh-portfolio-switch-right {
           .content-switch;
           right: 17%;
+          transition: opacity 1s;
 
           @media @smartphone-all {
             width: 3.5vw;
@@ -1626,6 +1637,7 @@ body {
           z-index: 9999 !important;
           height: 20vh;
           width: 25vw;
+          transition: opacity 1s;
           //
           .display(none);
 
@@ -1643,6 +1655,51 @@ body {
         }
 
         //-------------------------------------------------------------
+      }
+    }
+
+    #jh-p1 {
+      display: none;
+      opacity: 0;
+      transition: opacity 1s;
+      //
+      height: auto !important;
+      min-height: 100vh !important;
+
+      .container-fluid {
+        height: 100vh;
+
+        .jh-page-container-content {
+          height: @max;
+
+          .jh-page-container-fill {
+
+            .pitem-header {
+              .aligntext(left);
+              font-size: 2vw;
+              font-family: ingra-2, sans-serif !important;
+              color: @main-font-color !important;
+              font-style: normal !important;
+              font-weight: 900 !important;
+              letter-spacing: 0.4em !important;
+              margin-bottom: 4vh;
+
+              .pitem-header-sign {
+                .display(inline-block);
+                height: 1.2vw;
+                width: auto;
+              }
+            }
+
+            .pitem-content {
+              .aligntext(left) !important;
+            }
+          }
+        }
+
+        #jh-p1-link1 {
+          bottom: -15vh;
+        }
       }
     }
 

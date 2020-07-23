@@ -28,6 +28,8 @@ const rightSwitchImg = document.getElementById("jh-as-img-right");
 const leftPSwitchImg = document.getElementById("jh-pf-img-left");
 const rightPSwitchImg = document.getElementById("jh-pf-img-right");
 
+let switches = [leftPSwitch, rightPSwitch, leftPOSwitch, rightPOSwitch];
+
 // -----------------------
 
 // Divider Source Images
@@ -207,7 +209,43 @@ for (let i = 0; i < (totalPortfolioItems + 1); i++) {
 
 // -----------------------------------------------------------------------------------------------------------------
 
-// > Read More Button - onClick()
+// Portfolio / Display portfolio item functionality
+
+let link_P1 = jQuery("#jh-portfolio-item-1");
+let link_P2 = jQuery("#jh-portfolio-item-2");
+
+let P1 = jQuery("#jh-p1");
+let P2 = jQuery("#jh-p2");
+
+// let links_P = [link_P1, link_P2];
+// let P = [P1, P2];
+
+let LP1 = [link_P1, P1, "#jh-p1"];
+let LP2 = [link_P2, P2, "#jh-p2"];
+
+let LP = [LP1, LP2];
+
+LP.forEach(el => linkPItem(el, switches));
+
+function linkPItem(item, switches) {
+    item[0].on('click', function() {
+        hideSwitches(switches);
+        item[1].css({"display": "block"});
+        item[1].css({"opacity": "1"});
+        window.scrollBy(0, 800);
+    });
+}
+
+function hideSwitches(switches) {
+    switches.forEach(el => hideSwitch(el));
+}
+
+function hideSwitch(element) {
+    element.css({"opacity": "0"});
+    setTimeout(function() {
+        element.css({"display": "none"});
+    }, 1000);
+}
 
 
 

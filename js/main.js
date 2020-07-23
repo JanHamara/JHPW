@@ -568,5 +568,7 @@ $( document ).ready(function() {
         fg.forEach(element => element.classList.remove("error"));
         form.trigger("reset");
     }
+
+    // -----------------------------------------------------------------------------------------------------------------
 });
 
