@@ -90,7 +90,7 @@ $( document ).ready(function() {
     // -------------------------------------------------------------------------------------------------
 
     // Pages Array
-    const all_pages = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page];
+    const all_pages = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, p1];
 
     // -------------------------------------------------------------------------------------------------
 
