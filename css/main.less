@@ -411,6 +411,7 @@ a {
       font-style: normal !important;
       font-size: 0.9vw;
       letter-spacing: 0.4em;
+      transition: opacity 1s;
       //
       overflow: visible;
 
@@ -784,7 +785,7 @@ body {
     #menu-icon {
       width: 2.5vw;
       //
-      .position;
+      .position(fixed);
       top: 11vh;
       right: 3.5vw;
       transform: translate(-50%, -50%);
@@ -1117,14 +1118,7 @@ body {
         }
 
         // 2
-        #jh-about-content-2 {
-          .display(none);
-          opacity: 0;
-          transition: 1s opacity;
-        }
-
-        // 3
-        #jh-about-content-3 {
+        #jh-about-content-2, #jh-about-content-3 {
           .display(none);
           opacity: 0;
           transition: 1s opacity;
@@ -1554,6 +1548,7 @@ body {
             bottom: -19vh;
             //
             opacity: 0;
+            transition: opacity 1s;
             animation: 1s jh-fade-in 0.7s forwards;
 
             @media @smartphone-all {
@@ -1697,8 +1692,26 @@ body {
           }
         }
 
-        #jh-p1-link1 {
-          bottom: -15vh;
+        // Content
+        #jh-p1-01 {
+          .display(block);
+          opacity: 1;
+          transition: 1s opacity;
+        }
+
+        #jh-p1-02, #jh-p1-03, #jh-p1-04 {
+          .display(none);
+          opacity: 0;
+          transition: 1s opacity;
+        }
+
+        // Bar Indicator
+        #jh-p1-bar-indicator {
+          .jh-bar-indicator-thumb-container {
+            #jh-p1-bar-indicator-thumb {
+              height: 25%;
+            }
+          }
         }
       }
     }
@@ -1844,6 +1857,7 @@ body {
           // See the Project
           .jh-read-more-button {
             bottom: -10vh;
+            transition: opacity 1s;
 
             &:hover {
               span {

@@ -521,6 +521,7 @@ a:hover {
   font-style: normal !important;
   font-size: 0.9vw;
   letter-spacing: 0.4em;
+  transition: opacity 1s;
   overflow: visible;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -863,7 +864,7 @@ body main {
 }
 body main #menu-icon {
   width: 2.5vw;
-  position: absolute;
+  position: fixed;
   top: 11vh;
   right: 3.5vw;
   transform: translate(-50%, -50%);
@@ -1168,11 +1169,7 @@ body main #jh-about .container-fluid #jh-about-content-1 {
   opacity: 1;
   transition: 1s opacity;
 }
-body main #jh-about .container-fluid #jh-about-content-2 {
-  display: none;
-  opacity: 0;
-  transition: 1s opacity;
-}
+body main #jh-about .container-fluid #jh-about-content-2,
 body main #jh-about .container-fluid #jh-about-content-3 {
   display: none;
   opacity: 0;
@@ -1491,6 +1488,7 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-read-more-button {
   bottom: -19vh;
   opacity: 0;
+  transition: opacity 1s;
   animation: 1s jh-fade-in 0.7s forwards;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -1638,8 +1636,20 @@ body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
   text-align: left !important;
 }
-body main #jh-p1 .container-fluid #jh-p1-link1 {
-  bottom: -15vh;
+body main #jh-p1 .container-fluid #jh-p1-01 {
+  display: block;
+  opacity: 1;
+  transition: 1s opacity;
+}
+body main #jh-p1 .container-fluid #jh-p1-02,
+body main #jh-p1 .container-fluid #jh-p1-03,
+body main #jh-p1 .container-fluid #jh-p1-04 {
+  display: none;
+  opacity: 0;
+  transition: 1s opacity;
+}
+body main #jh-p1 .container-fluid #jh-p1-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb {
+  height: 25%;
 }
 body main #jh-awards .container-fluid .awards-hero-image {
   width: 25vw;
@@ -1791,6 +1801,7 @@ body main #jh-awards .container-fluid .jh-awards-content .jh-page-container-cont
 }
 body main #jh-awards .container-fluid .jh-awards-content .jh-read-more-button {
   bottom: -10vh;
+  transition: opacity 1s;
 }
 body main #jh-awards .container-fluid .jh-awards-content .jh-read-more-button:hover span {
   color: #d1d1d1 !important;
