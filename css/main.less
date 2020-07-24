@@ -1666,8 +1666,10 @@ body {
 
         .jh-page-container-content {
           height: @max;
+          overflow: visible !important;
 
           .jh-page-container-fill {
+            overflow: visible !important;
 
             .pitem-header {
               .aligntext(left);
@@ -1688,6 +1690,52 @@ body {
 
             .pitem-content {
               .aligntext(left) !important;
+            }
+
+            .portfolio-image-content {
+              height: 25.5vh;
+              overflow: visible !important;
+
+              .jh-figure {
+                .fs;
+                overflow: visible !important;
+
+                .figure-item {
+                  width: @max;
+                  height: @max;
+                  position: absolute;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  overflow: visible !important;
+                  //
+                  opacity: 0;
+                }
+
+                .p1-1 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/01.png");
+                  animation: 3s jh-fade-in 0.5s forwards;
+                  z-index: 9998 !important;
+                }
+
+                .p1-1_2 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/02.png");
+                  animation: 2s jh-zoom-out-down 0.5s forwards;
+                  z-index: 9999 !important;
+                }
+
+                .p1-1_3 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/03.png");
+                  animation: 2s jh-zoom-out-right 1s forwards;
+                  z-index: 9999 !important;
+                }
+
+                .p1-1_4 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/04.png");
+                  animation: 2s jh-zoom-out-left 1s forwards;
+                  z-index: 9999 !important;
+                }
+              }
             }
           }
         }
