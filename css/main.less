@@ -1692,6 +1692,24 @@ body {
               .aligntext(left) !important;
             }
 
+            .pitem-video-content {
+              height: 40vh;
+
+              #jh-demo-bg {
+                .abs;
+                top: 2.2vh;
+                opacity: 0;
+                animation: 3s jh-fade-in 0.5s forwards;
+              }
+
+              iframe {
+                .position(static);
+                opacity: 0;
+                animation: 1s jh-zoom-out-down 0.5s forwards;
+                z-index: 9999 !important;
+              }
+            }
+
             .portfolio-image-content {
               height: 25.5vh;
               overflow: visible !important;
@@ -1712,6 +1730,8 @@ body {
                   opacity: 0;
                 }
 
+                // ------------------------------------------------ P1-02
+
                 .p1-1 {
                   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/01.png");
                   animation: 3s jh-fade-in 0.5s forwards;
@@ -1720,19 +1740,45 @@ body {
 
                 .p1-1_2 {
                   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/02.png");
-                  animation: 2s jh-zoom-out-down 0.5s forwards;
+                  animation: 1s jh-zoom-out-down 0.5s forwards;
                   z-index: 9999 !important;
                 }
 
                 .p1-1_3 {
                   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/03.png");
-                  animation: 2s jh-zoom-out-right 1s forwards;
+                  animation: 1s jh-zoom-out-right 0.7s forwards;
                   z-index: 9999 !important;
                 }
 
                 .p1-1_4 {
                   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/04.png");
-                  animation: 2s jh-zoom-out-left 1s forwards;
+                  animation: 1s jh-zoom-out-left 0.7s forwards;
+                  z-index: 9999 !important;
+                }
+
+                // ------------------------------------------------ P1-03
+
+                .p1-2 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/01.png");
+                  animation: 3s jh-fade-in 0.5s forwards;
+                  z-index: 9998 !important;
+                }
+
+                .p1-2_2 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/02.png");
+                  animation: 1s jh-zoom-out-down 0.5s forwards;
+                  z-index: 9999 !important;
+                }
+
+                .p1-2_3 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/03.png");
+                  animation: 1s jh-zoom-out-right 0.7s forwards;
+                  z-index: 9999 !important;
+                }
+
+                .p1-2_4 {
+                  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/04.png");
+                  animation: 1s jh-zoom-out-left 0.7s forwards;
                   z-index: 9999 !important;
                 }
               }

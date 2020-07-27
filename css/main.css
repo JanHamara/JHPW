@@ -1639,6 +1639,21 @@ body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
   text-align: left !important;
 }
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
+  height: 40vh;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+  position: absolute;
+  top: 2.2vh;
+  opacity: 0;
+  animation: 3s jh-fade-in 0.5s forwards;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
+  position: static;
+  opacity: 0;
+  animation: 1s jh-zoom-out-down 0.5s forwards;
+  z-index: 9999 !important;
+}
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
   height: 25.5vh;
   overflow: visible !important;
@@ -1665,17 +1680,37 @@ body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/02.png");
-  animation: 2s jh-zoom-out-down 0.5s forwards;
+  animation: 1s jh-zoom-out-down 0.5s forwards;
   z-index: 9999 !important;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/03.png");
-  animation: 2s jh-zoom-out-right 1s forwards;
+  animation: 1s jh-zoom-out-right 0.7s forwards;
   z-index: 9999 !important;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/04.png");
-  animation: 2s jh-zoom-out-left 1s forwards;
+  animation: 1s jh-zoom-out-left 0.7s forwards;
+  z-index: 9999 !important;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2 {
+  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/01.png");
+  animation: 3s jh-fade-in 0.5s forwards;
+  z-index: 9998 !important;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2 {
+  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/02.png");
+  animation: 1s jh-zoom-out-down 0.5s forwards;
+  z-index: 9999 !important;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3 {
+  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/03.png");
+  animation: 1s jh-zoom-out-right 0.7s forwards;
+  z-index: 9999 !important;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4 {
+  background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/04.png");
+  animation: 1s jh-zoom-out-left 0.7s forwards;
   z-index: 9999 !important;
 }
 body main #jh-p1 .container-fluid #jh-p1-01 {
