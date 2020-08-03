@@ -1729,7 +1729,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
   }
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
-body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2 {
   position: absolute;
   top: 2.1vh;
   opacity: 0;
@@ -1737,19 +1739,25 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
-  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2 {
     display: none;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
-  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2 {
     top: 13.36vh;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
-  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2 {
     top: 7vh;
   }
 }
@@ -1768,6 +1776,10 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
     width: 43% !important;
     margin: auto !important;
   }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
+  text-align: left;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
@@ -1857,6 +1869,26 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
     transform: scale(1.3);
   }
 }
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo-2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo-2 {
+  display: inline-block;
+  width: 41%;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img {
+  margin-right: 1vw;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2 {
+  display: inline-block;
+  width: 45%;
+}
 body main #jh-p1 .container-fluid #jh-p1-01,
 body main #jh-p2 .container-fluid #jh-p1-01,
 body main #jh-p1 .container-fluid #jh-p2-01,
@@ -1876,16 +1908,20 @@ body main #jh-p2 .container-fluid #jh-p2-02,
 body main #jh-p1 .container-fluid #jh-p2-03,
 body main #jh-p2 .container-fluid #jh-p2-03,
 body main #jh-p1 .container-fluid #jh-p2-04,
-body main #jh-p2 .container-fluid #jh-p2-04 {
+body main #jh-p2 .container-fluid #jh-p2-04,
+body main #jh-p1 .container-fluid #jh-p2-05,
+body main #jh-p2 .container-fluid #jh-p2-05 {
   display: none;
   opacity: 0;
   transition: 1s opacity;
 }
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
-body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
+body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb {
+  height: 25%;
+}
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
 body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb {
-  height: 25%;
+  height: 20%;
 }
 body main #jh-p1 .container-fluid .jh-number-indicator,
 body main #jh-p2 .container-fluid .jh-number-indicator {
@@ -1899,7 +1935,7 @@ body main #jh-p2 .container-fluid .jh-number-indicator {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 49%;
-  left: 15%;
+  left: 14%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   body main #jh-p1 .container-fluid .jh-number-indicator,

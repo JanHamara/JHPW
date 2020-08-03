@@ -1719,6 +1719,8 @@ body {
               }
             }
 
+            // ----------------------------------
+
             .pitem-content {
               .aligntext(left) !important;
 
@@ -1746,6 +1748,8 @@ body {
               }
             }
 
+            // ----------------------------------
+
             .pitem-video-content {
               height: 40vh;
 
@@ -1754,7 +1758,7 @@ body {
                 margin: auto;
               }
 
-              #jh-demo-bg {
+              #jh-demo-bg, #jh-demo-bg-2 {
                 .abs;
                 top: 2.1vh;
                 opacity: 0;
@@ -1785,6 +1789,10 @@ body {
                   margin: auto !important;
                 }
               }
+            }
+
+            .pitem-image-content {
+              .aligntext(left);
             }
 
             .portfolio-image-content {
@@ -1874,6 +1882,24 @@ body {
                 }
               }
             }
+
+            // ----------------------------------
+
+            // Notify - Elements
+
+            #p2-notify-logo, #p2-notify-logo-2 {
+              .display(inline-block);
+              width: 41%;
+            }
+
+            #p2-notify-logo, #p2-notify-img {
+              margin-right: 1vw;
+            }
+
+            #p2-notify-img, #p2-notify-img2 {
+              .display(inline-block);
+              width: 45%;
+            }
           }
         }
 
@@ -1884,7 +1910,7 @@ body {
           transition: 1s opacity;
         }
 
-        #jh-p1-02, #jh-p1-03, #jh-p1-04, #jh-p2-02, #jh-p2-03, #jh-p2-04 {
+        #jh-p1-02, #jh-p1-03, #jh-p1-04, #jh-p2-02, #jh-p2-03, #jh-p2-04, #jh-p2-05 {
           .display(none);
           opacity: 0;
           transition: 1s opacity;
@@ -1893,8 +1919,11 @@ body {
         // Bar Indicator
         .jh-bar-indicator {
           .jh-bar-indicator-thumb-container {
-            #jh-p1-bar-indicator-thumb, #jh-p2-bar-indicator-thumb {
+            #jh-p1-bar-indicator-thumb {
               height: 25%;
+            }
+            #jh-p2-bar-indicator-thumb {
+              height: 20%;
             }
           }
         }
@@ -1908,7 +1937,7 @@ body {
           height: 45vh;
           .p-center;
           top: 49%;
-          left: 15%;
+          left: 14%;
 
           @media @smartphone-all, @tablet-small, @tablet-big {
             .display(none);

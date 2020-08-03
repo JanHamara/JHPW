@@ -52,6 +52,7 @@ let jh_P2_1 = $("#jh-p2-01");
 let jh_P2_2 = $("#jh-p2-02");
 let jh_P2_3 = $("#jh-p2-03");
 let jh_P2_4 = $("#jh-p2-04");
+let jh_P2_5 = $("#jh-p2-05");
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -71,16 +72,17 @@ let P1_4to1 = [jh_P1_4, jh_P1_1, "0vh", "01", "02 | SPRITE DESIGN", "1", "01"];
 
 // ------------
 
-let P2_1to2 = [jh_P2_1, jh_P2_2, "11.33vh", "02", "03 | WEBSITE DESIGN", "2", "02"];
-let P2_2to3 = [jh_P2_2, jh_P2_3, "22.66vh", "03", "04 | APP DESIGN", "3", "03"];
-let P2_3to4 = [jh_P2_3, jh_P2_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
-let P2_4to1 = [jh_P2_4, jh_P2_1, "0vh", "01", "02 | LOGO DESIGN", "1", "01"];
+let P2_1to2 = [jh_P2_1, jh_P2_2, "9vh", "02", "03 | LOGO DESIGN", "2", "02"];
+let P2_2to3 = [jh_P2_2, jh_P2_3, "18vh", "03", "04 | WEBSITE DESIGN", "3", "03"];
+let P2_3to4 = [jh_P2_3, jh_P2_4, "27vh", "04", "05 | APP DESIGN", "4", "04"];
+let P2_4to5 = [jh_P2_4, jh_P2_5, "36vh", "51", "BACK TO PORTFOLIO", "5", "05"];
+let P2_5to1 = [jh_P2_5, jh_P2_1, "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
 
 // -----------------------------------------------------------------------------------------------------------------
 
 // Data Bundle
 let P1_func = [["1", P1_1to2], ["2", P1_2to3], ["3", P1_3to4], ["4", P1_4to1]];
-let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to1]];
+let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to5], ["5", P2_5to1]];
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -94,9 +96,10 @@ let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to1]];
 // [5] - Bar Indicator
 // [6] - Portfolio Item - Main Container
 // [7] - Number of Sections
+// [8] - Number Indicator 2
 
 let P1_data = [P1_func, P1_button, P1_button_text, P1_counter, P1_number_indicator, P1_bar_indicator, p1, "4", P1_num_indicator];
-let P2_data = [P2_func, P2_button, P2_button_text, P2_counter, P2_number_indicator, P2_bar_indicator, p2, "4", P2_num_indicator];
+let P2_data = [P2_func, P2_button, P2_button_text, P2_counter, P2_number_indicator, P2_bar_indicator, p2, "5", P2_num_indicator];
 
 // -----------------------------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------
@@ -204,3 +207,19 @@ function showSwitch(element) {
 }
 
 // -----------------------------------------------------------------------------------------------------------------
+
+// Notify Logo Animation
+
+// const notify_logo = document.getElementById("p2-notify-logo");
+// const animation_frames = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"];
+// let i = 0;
+//
+// do {
+//     animation_frames.forEach(el => animateNotify(el, notify_logo));
+// } while (i < 1);
+//
+// function animateNotify(el, logo) {
+//     setInterval(function() {
+//         logo.src = "./assets/03_Projects/01%20Apps/01%20Notify/animation/05.png";
+//     }, 200);
+// }

@@ -220,9 +220,11 @@ for (let i = 0; i < (totalPortfolioItems + 1); i++) {
 
 // Portfolio / Display portfolio item functionality
 
+// These open particular portfolio presentations
 let link_P1 = jQuery("#jh-portfolio-item-1");
 let link_P2 = jQuery("#jh-portfolio-item-2");
 
+// Portfolio Item Containers
 let P1 = jQuery("#jh-p1");
 let P2 = jQuery("#jh-p2");
 
