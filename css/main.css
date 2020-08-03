@@ -203,18 +203,21 @@ li {
 html,
 body {
   background: #10100f;
-  -ms-overflow-style: none;
+  -ms-overflow-style: none !important;
   /* IE and Edge */
-  scrollbar-width: none;
+  scrollbar-width: none !important;
   /* Firefox */
   /* Hide scrollbar for Chrome, Safari and Opera */
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 a:hover {
   text-decoration: none !important;
+}
+.vp-outro {
+  display: none !important;
 }
 .section-template {
   background: #10100f;
@@ -1604,24 +1607,44 @@ body main #jh-portfolio .container-fluid #jh-portfolio-switch-mobile-left {
 body main #jh-portfolio .container-fluid #jh-portfolio-switch-mobile-right {
   right: -25vw;
 }
-body main #jh-p1 {
+body main #jh-p1,
+body main #jh-p2 {
   display: none;
   opacity: 0;
   transition: opacity 1s;
   height: auto !important;
   min-height: 100vh !important;
 }
-body main #jh-p1 .container-fluid {
+body main #jh-p1 .container-fluid,
+body main #jh-p2 .container-fluid {
   height: 100vh;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content {
+body main #jh-p1 .container-fluid .jh-page-container-content,
+body main #jh-p2 .container-fluid .jh-page-container-content {
   height: 100%;
   overflow: visible !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content {
+    width: 85vw;
+    margin: auto;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-p1 .container-fluid .jh-page-container-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content {
+    width: 88%;
+    margin: auto;
+    transform: translate(2vw, 0);
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill {
   overflow: visible !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
   text-align: left;
   font-size: 2vw;
   font-family: ingra-2, sans-serif !important;
@@ -1631,39 +1654,146 @@ body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-
   letter-spacing: 0.4em !important;
   margin-bottom: 4vh;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
+    font-size: 2.5vw;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
   display: inline-block;
   height: 1.2vw;
   width: auto;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
+    height: 2.7vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
+    font-size: 2.1vw;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
   text-align: left !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
+    display: none !important;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile {
+    display: block !important;
+    text-align: left !important;
+    font-size: 2vw !important;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet {
+  display: none !important;
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet {
+    display: block !important;
+    text-align: left !important;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
   height: 40vh;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
+    width: 90%;
+    margin: auto;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
   position: absolute;
-  top: 2.2vh;
+  top: 2.1vh;
   opacity: 0;
   animation: 3s jh-fade-in 0.5s forwards;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+    top: 13.36vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg {
+    top: 7vh;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
   position: static;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   animation: 1s jh-zoom-out-down 0.5s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
+    width: 43% !important;
+    margin: auto !important;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
   height: 25.5vh;
   overflow: visible !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
+    height: 19vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
+    height: 20vh;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure {
   width: 100%;
   height: 100%;
   overflow: visible !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1673,60 +1803,121 @@ body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-
   overflow: visible !important;
   opacity: 0;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/01.png");
   animation: 3s jh-fade-in 0.5s forwards;
   z-index: 9998 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/02.png");
   animation: 1s jh-zoom-out-down 0.5s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/03.png");
   animation: 1s jh-zoom-out-right 0.7s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/04.png");
   animation: 1s jh-zoom-out-left 0.7s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/01.png");
   animation: 3s jh-fade-in 0.5s forwards;
   z-index: 9998 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/02.png");
   animation: 1s jh-zoom-out-down 0.5s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/03.png");
   animation: 1s jh-zoom-out-right 0.7s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4 {
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/04.png");
   animation: 1s jh-zoom-out-left 0.7s forwards;
   z-index: 9999 !important;
 }
-body main #jh-p1 .container-fluid #jh-p1-01 {
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3 {
+    transform: scale(1.3);
+  }
+}
+body main #jh-p1 .container-fluid #jh-p1-01,
+body main #jh-p2 .container-fluid #jh-p1-01,
+body main #jh-p1 .container-fluid #jh-p2-01,
+body main #jh-p2 .container-fluid #jh-p2-01 {
   display: block;
   opacity: 1;
   transition: 1s opacity;
 }
 body main #jh-p1 .container-fluid #jh-p1-02,
+body main #jh-p2 .container-fluid #jh-p1-02,
 body main #jh-p1 .container-fluid #jh-p1-03,
-body main #jh-p1 .container-fluid #jh-p1-04 {
+body main #jh-p2 .container-fluid #jh-p1-03,
+body main #jh-p1 .container-fluid #jh-p1-04,
+body main #jh-p2 .container-fluid #jh-p1-04,
+body main #jh-p1 .container-fluid #jh-p2-02,
+body main #jh-p2 .container-fluid #jh-p2-02,
+body main #jh-p1 .container-fluid #jh-p2-03,
+body main #jh-p2 .container-fluid #jh-p2-03,
+body main #jh-p1 .container-fluid #jh-p2-04,
+body main #jh-p2 .container-fluid #jh-p2-04 {
   display: none;
   opacity: 0;
   transition: 1s opacity;
 }
-body main #jh-p1 .container-fluid #jh-p1-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb {
+body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
+body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
+body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
+body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb {
   height: 25%;
+}
+body main #jh-p1 .container-fluid .jh-number-indicator,
+body main #jh-p2 .container-fluid .jh-number-indicator {
+  font-size: 7vw;
+  font-weight: 900 !important;
+  opacity: 0.1;
+  transition: opacity 1s;
+  height: 45vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 49%;
+  left: 15%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-number-indicator,
+  body main #jh-p2 .container-fluid .jh-number-indicator {
+    display: none;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-p1 .container-fluid .jh-number-indicator,
+  body main #jh-p2 .container-fluid .jh-number-indicator {
+    left: 11%;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #jh-p1 .container-fluid .jh-page-counter,
+  body main #jh-p2 .container-fluid .jh-page-counter {
+    font-weight: 900 !important;
+  }
 }
 body main #jh-awards .container-fluid .awards-hero-image {
   width: 25vw;
