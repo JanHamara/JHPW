@@ -75,7 +75,7 @@ let P1_4to1 = [jh_P1_4, jh_P1_1, "0vh", "01", "02 | SPRITE DESIGN", "1", "01"];
 let P2_1to2 = [jh_P2_1, jh_P2_2, "9vh", "02", "03 | LOGO DESIGN", "2", "02"];
 let P2_2to3 = [jh_P2_2, jh_P2_3, "18vh", "03", "04 | WEBSITE DESIGN", "3", "03"];
 let P2_3to4 = [jh_P2_3, jh_P2_4, "27vh", "04", "05 | APP DESIGN", "4", "04"];
-let P2_4to5 = [jh_P2_4, jh_P2_5, "36vh", "51", "BACK TO PORTFOLIO", "5", "05"];
+let P2_4to5 = [jh_P2_4, jh_P2_5, "36vh", "05", "BACK TO PORTFOLIO", "5", "05"];
 let P2_5to1 = [jh_P2_5, jh_P2_1, "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
 
 // -----------------------------------------------------------------------------------------------------------------
@@ -207,19 +207,3 @@ function showSwitch(element) {
 }
 
 // -----------------------------------------------------------------------------------------------------------------
-
-// Notify Logo Animation
-
-// const notify_logo = document.getElementById("p2-notify-logo");
-// const animation_frames = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"];
-// let i = 0;
-//
-// do {
-//     animation_frames.forEach(el => animateNotify(el, notify_logo));
-// } while (i < 1);
-//
-// function animateNotify(el, logo) {
-//     setInterval(function() {
-//         logo.src = "./assets/03_Projects/01%20Apps/01%20Notify/animation/05.png";
-//     }, 200);
-// }
