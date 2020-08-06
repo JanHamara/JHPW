@@ -1454,7 +1454,13 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
     margin-top: -8vh;
   }
 }
-@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-header {
+    font-size: 4.3vw;
+    margin-bottom: 1.5vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-header {
     font-size: 3.5vw;
     margin-bottom: 1vh;
@@ -1485,7 +1491,13 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
     letter-spacing: 0.3em;
   }
 }
-@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-subheader {
+    font-size: 1.7vw;
+    font-weight: 900 !important;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-subheader {
     font-size: 1.3vw;
     font-weight: 900 !important;
@@ -1508,6 +1520,11 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-read-more-but
   body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-read-more-button {
     bottom: -12vh;
     font-weight: 900 !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-read-more-button {
+    bottom: -16vh;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
@@ -1792,6 +1809,12 @@ body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
   text-align: left;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
+    text-align: center;
+  }
+}
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
   height: 25.5vh;
@@ -1887,6 +1910,14 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
   display: inline-block;
   width: 41%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo-2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo-2 {
+    width: 48%;
+  }
+}
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-logo {
   margin-right: 1vw;
@@ -1899,11 +1930,47 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
   width: 47%;
   transition: transform 1s;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2 {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2 {
+    display: block;
+    width: 55%;
+    margin: auto;
+  }
+}
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:first-child,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:first-child,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2:first-child,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2:first-child {
   margin-right: 2vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:first-child,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:first-child,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2:first-child,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2:first-child {
+    margin: 5vh auto;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:first-child,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:first-child,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2:first-child,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img2:first-child {
+    margin: 5vh auto;
+  }
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:hover,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill #p2-notify-img:hover,
@@ -1945,11 +2012,50 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
   transform: scale(1.2) translate(0vw, -5vw);
   transition: transform 1s;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-tablet,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-tablet {
+    display: none;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-tablet,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-tablet {
+    width: 66%;
+    transform: translate(0, 13vh) scale(1.4) !important;
+  }
+}
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-tablet,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-tablet {
-    transform: translate(-8vw, 5vw) !important;
+    transform: translate(-8vw, 5vw) scale(1.2) !important;
   }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile {
+  display: none;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile {
+    display: block;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile div img,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile div img {
+  display: inline-block;
+  width: 20%;
+  margin: 3vh;
+  transition: transform 1s;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile div img:hover,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile div img:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile div #p2-notify-m-app3,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .notify-mobile div #p2-notify-m-app3 {
+  width: 16.8%;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer {
@@ -2025,6 +2131,12 @@ body main #jh-p2 .container-fluid .jh-number-indicator {
   body main #jh-p1 .container-fluid .jh-page-counter,
   body main #jh-p2 .container-fluid .jh-page-counter {
     font-weight: 900 !important;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-read-more-button,
+  body main #jh-p2 .container-fluid .jh-read-more-button {
+    bottom: 10vh;
   }
 }
 body main #jh-awards .container-fluid .awards-hero-image {

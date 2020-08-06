@@ -1508,7 +1508,12 @@ body {
                   margin-top: -8vh;
                 }
 
-                @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+                @media @tablet-small, @tablet-big {
+                  font-size: 4.3vw;
+                  margin-bottom: 1.5vh;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
                   font-size: 3.5vw;
                   margin-bottom: 1vh;
                 }
@@ -1537,7 +1542,12 @@ body {
                   letter-spacing: 0.3em;
                 }
 
-                @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.7vw;
+                  font-weight: 900 !important;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
                   font-size: 1.3vw;
                   font-weight: 900 !important;
                 }
@@ -1569,6 +1579,10 @@ body {
             @media @smartphone-all {
               bottom: -12vh;
               font-weight: 900 !important;
+            }
+
+            @media @tablet-small, @tablet-big {
+              bottom: -16vh;
             }
 
             @media @tablet-landscape, @iPad-Pro-landscape {
@@ -1804,6 +1818,10 @@ body {
 
             .pitem-image-content {
               .aligntext(left);
+
+              @media @smartphone-all {
+                .aligntext;
+              }
             }
 
             .portfolio-image-content {
@@ -1901,6 +1919,10 @@ body {
             #p2-notify-logo, #p2-notify-logo-2 {
               .display(inline-block);
               width: 41%;
+
+              @media @smartphone-all {
+                width: 48%;
+              }
             }
 
             #p2-notify-logo {
@@ -1912,8 +1934,28 @@ body {
               width: 47%;
               transition: transform 1s;
 
+              @media @smartphone-all {
+                .display;
+                width: 70%;
+                margin: auto;
+              }
+
+              @media @tablet-small, @tablet-big {
+                .display;
+                width: 55%;
+                margin: auto;
+              }
+
               &:first-child {
                 margin-right: 2vw;
+
+                @media @smartphone-all {
+                  margin: 5vh auto;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  margin: 5vh auto;
+                }
               }
 
               &:hover {
@@ -1948,8 +1990,43 @@ body {
             }
 
             .notify-tablet {
+              @media @smartphone-all {
+                .display(none);
+              }
+
+              @media @tablet-small, @tablet-big {
+                width: 66%;
+                transform: translate(0, 13vh) scale(1.4) !important;
+              }
+
               @media @tablet-landscape, @iPad-Pro-landscape {
-                transform: translate(-8vw, 5vw) !important;
+                transform: translate(-8vw, 5vw) scale(1.2) !important;
+              }
+            }
+
+            .notify-mobile {
+              .display(none);
+
+              @media @smartphone-all {
+                .display;
+              }
+
+              div {
+                img {
+                  .display(inline-block);
+                  width: 20%;
+                  margin: 3vh;
+                  transition: transform 1s;
+
+                  &:hover {
+                    transform: scale(1.2);
+                    transition: transform 1s;
+                  }
+                }
+
+                #p2-notify-m-app3 {
+                  width: 16.8%;
+                }
               }
             }
 
@@ -1992,6 +2069,7 @@ body {
           }
         }
 
+        // Number Indicator
         .jh-number-indicator {
           font-size: 7vw;
           font-weight: 900 !important;
@@ -2012,9 +2090,17 @@ body {
           }
         }
 
+        // Page Counter
         .jh-page-counter {
           @media @smartphone-all-landscape, @tablet-landscape, @iPad-Pro-landscape {
             font-weight: 900 !important;
+          }
+        }
+
+        // Read More Button
+        .jh-read-more-button {
+          @media @smartphone-all {
+            bottom: 10vh;
           }
         }
       }
