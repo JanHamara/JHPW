@@ -17,8 +17,8 @@ let switches2 = [leftPSwitch2, rightPSwitch2, leftPOSwitch2, rightPOSwitch2];
 // Portfolio Items
 const p1 = document.getElementById("jh-p1");
 const p2 = document.getElementById("jh-p2");
-// const p3 = document.getElementById("jh-p3");
-// const p4 = document.getElementById("jh-p4");
+const p3 = document.getElementById("jh-p3");
+const p4 = document.getElementById("jh-p4");
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -37,6 +37,7 @@ let jh_P1_2 = $("#jh-p1-02");
 let jh_P1_3 = $("#jh-p1-03");
 let jh_P1_4 = $("#jh-p1-04");
 
+// ------------------
 
 // P2 - Notify
 
@@ -53,6 +54,40 @@ let jh_P2_2 = $("#jh-p2-02");
 let jh_P2_3 = $("#jh-p2-03");
 let jh_P2_4 = $("#jh-p2-04");
 let jh_P2_5 = $("#jh-p2-05");
+
+// ------------------
+
+// P3 - MEU
+
+let P3_counter = "1";                                       // Counter
+let P3_button = $("#jh-p3-link");                           // Read More Button
+let P3_button_text = $("#jh-p3-link-text");                 // Read More Button - Text
+let P3_number_indicator = $("#jh-p3-pc-current");           // Number Indicator
+let P3_bar_indicator = $("#jh-p3-bar-indicator-thumb");     // Bar Indicator
+let P3_num_indicator = $("#jh-p3-number-indicator");        // Heading Number Indicator
+
+// Sections
+let jh_P3_1 = $("#jh-p3-01");
+let jh_P3_2 = $("#jh-p3-02");
+let jh_P3_3 = $("#jh-p3-03");
+let jh_P3_4 = $("#jh-p3-04");
+
+// ------------------
+
+// P4 - Emmanuel Delay
+
+let P4_counter = "1";                                       // Counter
+let P4_button = $("#jh-p4-link");                           // Read More Button
+let P4_button_text = $("#jh-p4-link-text");                 // Read More Button - Text
+let P4_number_indicator = $("#jh-p4-pc-current");           // Number Indicator
+let P4_bar_indicator = $("#jh-p4-bar-indicator-thumb");     // Bar Indicator
+let P4_num_indicator = $("#jh-p4-number-indicator");        // Heading Number Indicator
+
+// Sections
+let jh_P4_1 = $("#jh-p4-01");
+let jh_P4_2 = $("#jh-p4-02");
+let jh_P4_3 = $("#jh-p4-03");
+let jh_P4_4 = $("#jh-p4-04");
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -78,11 +113,27 @@ let P2_3to4 = [jh_P2_3, jh_P2_4, "27vh", "04", "05 | APP DESIGN", "4", "04"];
 let P2_4to5 = [jh_P2_4, jh_P2_5, "36vh", "05", "BACK TO PORTFOLIO", "5", "05"];
 let P2_5to1 = [jh_P2_5, jh_P2_1, "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
 
+// ------------
+
+let P3_1to2 = [jh_P3_1, jh_P3_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
+let P3_2to3 = [jh_P3_2, jh_P3_3, "22.66vh", "03", "04 | WEBSITE DESIGN", "3", "03"];
+let P3_3to4 = [jh_P3_3, jh_P3_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
+let P3_4to1 = [jh_P3_4, jh_P3_1, "0vh", "01", "02 | WEB DESIGN", "1", "01"];
+
+// ------------
+
+let P4_1to2 = [jh_P4_1, jh_P4_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
+let P4_2to3 = [jh_P4_2, jh_P4_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
+let P4_3to4 = [jh_P4_3, jh_P4_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
+let P4_4to1 = [jh_P4_4, jh_P4_1, "0vh", "01", "02 | WEBSITE", "1", "01"];
+
 // -----------------------------------------------------------------------------------------------------------------
 
 // Data Bundle
 let P1_func = [["1", P1_1to2], ["2", P1_2to3], ["3", P1_3to4], ["4", P1_4to1]];
 let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to5], ["5", P2_5to1]];
+let P3_func = [["1", P3_1to2], ["2", P3_2to3], ["3", P3_3to4], ["4", P3_4to1]];
+let P4_func = [["1", P4_1to2], ["2", P4_2to3], ["3", P4_3to4], ["4", P4_4to1]];
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -100,6 +151,8 @@ let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to5], [
 
 let P1_data = [P1_func, P1_button, P1_button_text, P1_counter, P1_number_indicator, P1_bar_indicator, p1, "4", P1_num_indicator];
 let P2_data = [P2_func, P2_button, P2_button_text, P2_counter, P2_number_indicator, P2_bar_indicator, p2, "5", P2_num_indicator];
+let P3_data = [P3_func, P3_button, P3_button_text, P3_counter, P3_number_indicator, P3_bar_indicator, p3, "4", P3_num_indicator];
+let P4_data = [P4_func, P4_button, P4_button_text, P4_counter, P4_number_indicator, P4_bar_indicator, p4, "4", P4_num_indicator];
 
 // -----------------------------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------
@@ -108,7 +161,7 @@ let P2_data = [P2_func, P2_button, P2_button_text, P2_counter, P2_number_indicat
 // This variable holds separate sets of data - one per each portfolio item
 // !!!
 
-let portfolioData = [P1_data, P2_data];
+let portfolioData = [P1_data, P2_data, P3_data, P4_data];
 
 // -----------------------------------------------------------------------------------------------------------------
 

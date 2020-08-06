@@ -223,18 +223,26 @@ for (let i = 0; i < (totalPortfolioItems + 1); i++) {
 // These open particular portfolio presentations
 let link_P1 = jQuery("#jh-portfolio-item-1");
 let link_P2 = jQuery("#jh-portfolio-item-2");
+let link_P3 = jQuery("#jh-portfolio-item-3");
+let link_P4 = jQuery("#jh-portfolio-item-4");
 
 // Portfolio Item Containers
 let P1 = jQuery("#jh-p1");
 let P2 = jQuery("#jh-p2");
+let P3 = jQuery("#jh-p3");
+let P4 = jQuery("#jh-p4");
 
 // let links_P = [link_P1, link_P2];
 // let P = [P1, P2];
 
 let LP1 = [link_P1, P1, "#jh-p1"];
 let LP2 = [link_P2, P2, "#jh-p2"];
+let LP3 = [link_P3, P3, "#jh-p3"];
+let LP4 = [link_P4, P4, "#jh-p4"];
 
-let LP = [LP1, LP2];
+let LP = [LP1, LP2, LP3, LP4];
+
+// -----------------------------------------------------------------------------------------------------------------
 
 LP.forEach(el => linkPItem(el, switches));
 

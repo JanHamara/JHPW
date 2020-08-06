@@ -297,10 +297,14 @@ $( document ).ready(function() {
 
     let p1_home_link = document.getElementById("jh-p1-page-logo");
     let p2_home_link = document.getElementById("jh-p2-page-logo");
+    let p3_home_link = document.getElementById("jh-p3-page-logo");
+    let p4_home_link = document.getElementById("jh-p4-page-logo");
 
     // Portfolio Pages
     let p1_page = document.getElementById("jh-p1");
     let p2_page = document.getElementById("jh-p2");
+    let p3_page = document.getElementById("jh-p3");
+    let p4_page = document.getElementById("jh-p4");
 
     // -----------------------------------------------------------------------------------------------------------------
 
@@ -315,8 +319,8 @@ $( document ).ready(function() {
     // -----------------------------------------------------------------------------------------------------------------
 
     // Enable links here
-    const home_links = [about_home_link, tech_home_link, portfolio_home_link, awards_home_link, contact_home_link, menu_home_link, p1_home_link, p2_home_link];
-    const all_pages_2 = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, menu_page, p1_page, p2_page];
+    const home_links = [about_home_link, tech_home_link, portfolio_home_link, awards_home_link, contact_home_link, menu_home_link, p1_home_link, p2_home_link, p3_home_link, p4_home_link];
+    const all_pages_2 = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, menu_page, p1_page, p2_page, p3_page, p4_page];
 
     // Add EventListener to each link
     home_links.forEach(element => {
