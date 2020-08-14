@@ -1783,7 +1783,7 @@ body {
                 margin: auto;
               }
 
-              #jh-demo-bg, #jh-demo-bg-2 {
+              #jh-demo-bg, #jh-demo-bg-2, #jh-demo-bg-3 {
                 .abs;
                 top: 2.1vh;
                 opacity: 0;
@@ -1799,6 +1799,14 @@ body {
 
                 @media @tablet-landscape, @iPad-Pro-landscape {
                   top: 7vh;
+                }
+              }
+
+              #jh-demo-bg-3 {
+                transform: scale(0.99) !important;
+
+                @media @smartphone-all-landscape {
+                  transform: translate(0, 5vw);
                 }
               }
 
@@ -1827,6 +1835,12 @@ body {
 
                 @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
                   transform: scale(1.57) translate(0,0.2vw) !important;
+                }
+              }
+
+              #jh-iframe-meu {
+                @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+                  transform: scale(1.34) translate(0,0vw) !important;
                 }
               }
             }

@@ -116,7 +116,7 @@ let P2_5to1 = [jh_P2_5, jh_P2_1, "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
 // ------------
 
 let P3_1to2 = [jh_P3_1, jh_P3_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
-let P3_2to3 = [jh_P3_2, jh_P3_3, "22.66vh", "03", "04 | WEBSITE DESIGN", "3", "03"];
+let P3_2to3 = [jh_P3_2, jh_P3_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
 let P3_3to4 = [jh_P3_3, jh_P3_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
 let P3_4to1 = [jh_P3_4, jh_P3_1, "0vh", "01", "02 | WEB DESIGN", "1", "01"];
 
