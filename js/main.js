@@ -328,6 +328,9 @@ $( document ).ready(function() {
     const all_pages_2 = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, menu_page,
         p1_page, p2_page, p3_page, p4_page, p5_page, p6_page];
 
+    const backButton3 = jQuery("#menu-icon-2");
+
+
     // Add EventListener to each link
     home_links.forEach(element => {
         addHomeLink(element, all_pages_2, menu_logo, menu_tooltip);
@@ -339,8 +342,10 @@ $( document ).ready(function() {
                 clearForm();
             // }
             homePage(pages, logo, logo_tooltip);
+            backButton3.css({"opacity":"0"});
             setTimeout(function() {
                 document.getElementById("jh-header").style.display = "block";
+                backButton3.css({"display":"none"});
                 setTimeout(function() {
                     document.getElementById("jh-header").style.opacity = "1";
                 }, 100);

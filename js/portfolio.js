@@ -223,6 +223,8 @@ let portfolioData = [P1_data, P2_data, P3_data, P4_data, P5_data, P6_data];
 
 // -----------------------------------------------------------------------------------------------------------------
 
+const portGallery = jQuery("#jh-portfolio");
+
 portfolioData.forEach(el => setGallery(el));
 
 function setGallery(portfolio) {
@@ -232,7 +234,7 @@ function setGallery(portfolio) {
         portfolio[0].every(function changeSection(element) {
             if (portfolio[3] === element[0]) {
                 if (element[0] === portfolio[7]) {
-                    endLoop(portfolio[6], switches2);
+                    endLoop(portfolio[6], portGallery);
                     goToNextSection(element[1], portfolio);
                 } else {
                     goToNextSection(element[1], portfolio);
@@ -289,15 +291,18 @@ function goToNextSection(data, portfolio) {
 
 // End Loop
 
-function endLoop(current, switches) {
-    showSwitches(switches);
+const backButton2 = jQuery("#menu-icon-2");
 
-    current.style.opacity = 0;
+function endLoop(current, portfolio) {
+    current.style.opacity = "0";
+    backButton2.css({"opacity":"0"});
+
     setTimeout(function() {
         current.style.display = "none";
-    }, 100);
-
-    window.scrollBy(0, 0);
+        portfolio.css({"display": "block"});
+        portfolio.css({"opacity": "1"});
+        backButton2.css({"display":"none"});
+    }, 1000);
 }
 
 // -----------------------------------------------------------------------------------------------------------------

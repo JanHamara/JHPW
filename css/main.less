@@ -424,7 +424,7 @@ a {
       font-family: ingra-2, sans-serif !important;
       font-weight: 200 !important;
       font-style: normal !important;
-      font-size: 0.9vw;
+      font-size: 1vw;
       letter-spacing: 0.4em;
       transition: opacity 1s;
       //
@@ -797,7 +797,7 @@ body {
 
     // Menu Icon
 
-    #menu-icon {
+    #menu-icon, #menu-icon-2 {
       width: 2.5vw;
       //
       .position(fixed);
@@ -836,11 +836,11 @@ body {
         top: 9vh;
       }
 
-      #menu-icon-default {
+      #menu-icon-default, #menu-icon-default-2 {
         .fs;
       }
 
-      #menu-icon-tooltip {
+      #menu-icon-tooltip, #menu-icon-tooltip-2 {
         margin-top: 1.5vh;
         font-size: 0.7vw;
         font-weight: 600;
@@ -862,10 +862,45 @@ body {
         opacity: 1;
         transition: opacity 1s;
 
-        #menu-icon-tooltip {
+        #menu-icon-tooltip, #menu-icon-tooltip-2 {
           opacity: 1;
           transition: opacity 1s;
         }
+      }
+    }
+
+    #menu-icon-2 {
+      .display(none);
+      opacity: 0;
+      //
+      right: unset;
+      left: 4.5vw;
+      //
+      transition: opacity 1s;
+
+      &:hover {
+        opacity: 1 !important;
+        transition: opacity 1s;
+      }
+
+      @media @smartphone-all {
+        left: 11vw;
+        right: unset;
+      }
+
+      @media @smartphone-all-landscape {
+        left: 5vw;
+        right: unset;
+      }
+
+      @media @tablet-small, @tablet-big {
+        left: 9vw;
+        right: unset;
+      }
+
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        left: 7vw;
+        right: unset;
       }
     }
 
@@ -879,9 +914,6 @@ body {
       color: @main-font-color;
       transition: opacity 1s;
       //
-      .display(none); // just for dev
-      opacity: 0; // just for dev
-
       .container-fluid {
         .fs;
         .nobound;
@@ -1310,8 +1342,7 @@ body {
 
     #jh-portfolio {
       //
-      .display; // just for dev
-      opacity: 1; // just for dev
+      transition: opacity 0.5s;
       //
       .container-fluid {
 
@@ -1623,12 +1654,12 @@ body {
 
         // Content Sections
 
-        #jh-portfolio-content-1 {
+        #jh-portfolio-content-2 {
           transition: opacity 1s;
         }
 
         // Add new portfolio items here - not to display by default
-        #jh-portfolio-content-2, #jh-portfolio-content-3, #jh-portfolio-content-4, #jh-portfolio-content-5, #jh-portfolio-content-6 {
+        #jh-portfolio-content-1, #jh-portfolio-content-3, #jh-portfolio-content-4, #jh-portfolio-content-5, #jh-portfolio-content-6 {
           .display(none);
           opacity: 0;
           transition: opacity 1s;
@@ -1707,7 +1738,7 @@ body {
     #jh-p1, #jh-p2, #jh-p3, #jh-p4, #jh-p5, #jh-p6 {
       display: none;
       opacity: 0;
-      transition: opacity 1s;
+      transition: opacity 1s !important;
       //
       height: auto !important;
       min-height: 100vh !important;

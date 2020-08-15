@@ -250,28 +250,44 @@ let LP = [LP1, LP2, LP3, LP4, LP5, LP6];
 
 // -----------------------------------------------------------------------------------------------------------------
 
-LP.forEach(el => linkPItem(el, switches));
+const port = jQuery("#jh-portfolio");
+const backButton = jQuery("#menu-icon-2");
 
-function linkPItem(item, switches) {
+LP.forEach(el => linkPItem(el, port, backButton));
+
+function linkPItem(item, port, button) {
     item[0].on('click', function() {
-        hideSwitches(switches);
         item[1].css({"display": "block"});
+
+        // Hide portfolio gallery
+        port.css({"opacity": "0"});
+        setTimeout(function() {
+            port.css({"display": "none"});
+        }, 800);
+        //
         item[1].css({"opacity": "1"});
-        window.scrollBy(0, 2000);
-        if (_isMobile) {
-            // You will want to hide #portfolio in here
-        }
+        // Show close button
+        button.css({"display": "block"});
+        setTimeout(function() {
+            button.css({"opacity": "0.5"});
+        }, 1000);
     });
 }
 
-function hideSwitches(switches) {
-    switches.forEach(el => hideSwitch(el));
-}
-
-function hideSwitch(element) {
-    element.css({"opacity": "0"});
+backButton.on('click', function() {
+    LP.forEach(el => hidePortfolios(el, port));
+    backButton.css({"opacity":"0"});
     setTimeout(function() {
-        element.css({"display": "none"});
+        backButton.css({"display":"none"});
+    }, 1000);
+});
+
+function hidePortfolios(el, port) {
+    el[1].css({"opacity": "0"});
+    setTimeout(function() {
+        el[1].css({"display": "none"});
+        port.css({"display": "block"});
+        port.css({"opacity": "1"});
     }, 1000);
 }
 
