@@ -1491,6 +1491,28 @@ body {
 
                   //-------------------------------------------------------------
 
+                  // Procreo
+
+                  .f6-1 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+                    animation: 1s jh-zoom-out-down forwards;
+                    z-index: 9999 !important;
+                  }
+
+                  .f6-2 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+                    animation: 1s jh-zoom-out-right forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  .f6-3 {
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+                    animation: 1s jh-zoom-out-left forwards;
+                    z-index: 9998 !important;
+                  }
+
+                  //-------------------------------------------------------------
+
                 }
               }
 
@@ -1606,7 +1628,7 @@ body {
         }
 
         // Add new portfolio items here - not to display by default
-        #jh-portfolio-content-2, #jh-portfolio-content-3, #jh-portfolio-content-4, #jh-portfolio-content-5 {
+        #jh-portfolio-content-2, #jh-portfolio-content-3, #jh-portfolio-content-4, #jh-portfolio-content-5, #jh-portfolio-content-6 {
           .display(none);
           opacity: 0;
           transition: opacity 1s;
@@ -1682,7 +1704,7 @@ body {
       }
     }
 
-    #jh-p1, #jh-p2, #jh-p3, #jh-p4, #jh-p5 {
+    #jh-p1, #jh-p2, #jh-p3, #jh-p4, #jh-p5, #jh-p6 {
       display: none;
       opacity: 0;
       transition: opacity 1s;
@@ -1783,7 +1805,7 @@ body {
                 margin: auto;
               }
 
-              #jh-demo-bg, #jh-demo-bg-2, #jh-demo-bg-3, #jh-demo-bg-4 {
+              #jh-demo-bg, #jh-demo-bg-2, #jh-demo-bg-3, #jh-demo-bg-4, #jh-demo-bg-5 {
                 .abs;
                 top: 2.1vh;
                 opacity: 0;
@@ -1802,7 +1824,7 @@ body {
                 }
               }
 
-              #jh-demo-bg-2, #jh-demo-bg-4 {
+              #jh-demo-bg-2, #jh-demo-bg-4, #jh-demo-bg-5 {
                 transform: scale(0.99) !important;
               }
 
@@ -2088,14 +2110,15 @@ body {
 
         // Content Show / Hide
 
-        #jh-p1-01, #jh-p2-01, #jh-p3-01, #jh-p4-01, #jh-p5-01 {
+        #jh-p1-01, #jh-p2-01, #jh-p3-01, #jh-p4-01, #jh-p5-01, #jh-p6-01 {
           .display(block);
           opacity: 1;
           transition: 1s opacity;
         }
 
         #jh-p1-02, #jh-p1-03, #jh-p1-04, #jh-p2-02, #jh-p2-03, #jh-p2-04, #jh-p2-05,
-        #jh-p3-02, #jh-p3-03, #jh-p3-04, #jh-p4-02, #jh-p4-03, #jh-p4-04, #jh-p5-02, #jh-p5-03, #jh-p5-04 {
+        #jh-p3-02, #jh-p3-03, #jh-p3-04, #jh-p4-02, #jh-p4-03, #jh-p4-04, #jh-p5-02, #jh-p5-03, #jh-p5-04,
+        #jh-p6-02, #jh-p6-03, #jh-p6-04 {
           .display(none);
           opacity: 0;
           transition: 1s opacity;
@@ -2107,7 +2130,8 @@ body {
         // Bar Indicator
         .jh-bar-indicator {
           .jh-bar-indicator-thumb-container {
-            #jh-p1-bar-indicator-thumb, #jh-p3-bar-indicator-thumb, #jh-p4-bar-indicator-thumb, #jh-p5-bar-indicator-thumb {
+            #jh-p1-bar-indicator-thumb, #jh-p3-bar-indicator-thumb, #jh-p4-bar-indicator-thumb, #jh-p5-bar-indicator-thumb,
+            #jh-p6-bar-indicator-thumb{
               height: 25%;
             }
             #jh-p2-bar-indicator-thumb {

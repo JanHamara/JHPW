@@ -20,6 +20,7 @@ const p2 = document.getElementById("jh-p2");
 const p3 = document.getElementById("jh-p3");
 const p4 = document.getElementById("jh-p4");
 const p5 = document.getElementById("jh-p5");
+const p6 = document.getElementById("jh-p6");
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -109,6 +110,23 @@ let jh_P5_4 = $("#jh-p5-04");
 
 // -----------------------------------------------------------------------------------------------------------------
 
+// P6 - Procreo
+
+let P6_counter = "1";                                       // Counter
+let P6_button = $("#jh-p6-link");                           // Read More Button
+let P6_button_text = $("#jh-p6-link-text");                 // Read More Button - Text
+let P6_number_indicator = $("#jh-p6-pc-current");           // Number Indicator
+let P6_bar_indicator = $("#jh-p6-bar-indicator-thumb");     // Bar Indicator
+let P6_num_indicator = $("#jh-p6-number-indicator");        // Heading Number Indicator
+
+// Sections
+let jh_P6_1 = $("#jh-p6-01");
+let jh_P6_2 = $("#jh-p6-02");
+let jh_P6_3 = $("#jh-p6-03");
+let jh_P6_4 = $("#jh-p6-04");
+
+// -----------------------------------------------------------------------------------------------------------------
+
 // Data
 
 // [0] - current section
@@ -152,6 +170,13 @@ let P5_2to3 = [jh_P5_2, jh_P5_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
 let P5_3to4 = [jh_P5_3, jh_P5_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
 let P5_4to1 = [jh_P5_4, jh_P5_1, "0vh", "01", "02 | WEBSITE", "1", "01"];
 
+// ------------
+
+let P6_1to2 = [jh_P6_1, jh_P6_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
+let P6_2to3 = [jh_P6_2, jh_P6_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
+let P6_3to4 = [jh_P6_3, jh_P6_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
+let P6_4to1 = [jh_P6_4, jh_P6_1, "0vh", "01", "02 | WEBSITE", "1", "01"];
+
 // -----------------------------------------------------------------------------------------------------------------
 
 // Data Bundle
@@ -160,6 +185,7 @@ let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to5], [
 let P3_func = [["1", P3_1to2], ["2", P3_2to3], ["3", P3_3to4], ["4", P3_4to1]];
 let P4_func = [["1", P4_1to2], ["2", P4_2to3], ["3", P4_3to4], ["4", P4_4to1]];
 let P5_func = [["1", P5_1to2], ["2", P5_2to3], ["3", P5_3to4], ["4", P5_4to1]];
+let P6_func = [["1", P6_1to2], ["2", P6_2to3], ["3", P6_3to4], ["4", P6_4to1]];
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -180,6 +206,7 @@ let P2_data = [P2_func, P2_button, P2_button_text, P2_counter, P2_number_indicat
 let P3_data = [P3_func, P3_button, P3_button_text, P3_counter, P3_number_indicator, P3_bar_indicator, p3, "4", P3_num_indicator];
 let P4_data = [P4_func, P4_button, P4_button_text, P4_counter, P4_number_indicator, P4_bar_indicator, p4, "4", P4_num_indicator];
 let P5_data = [P5_func, P5_button, P5_button_text, P5_counter, P5_number_indicator, P5_bar_indicator, p5, "4", P5_num_indicator];
+let P6_data = [P6_func, P6_button, P6_button_text, P6_counter, P6_number_indicator, P6_bar_indicator, p6, "4", P6_num_indicator];
 
 // -----------------------------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------
@@ -188,7 +215,7 @@ let P5_data = [P5_func, P5_button, P5_button_text, P5_counter, P5_number_indicat
 // This variable holds separate sets of data - one per each portfolio item
 // !!!
 
-let portfolioData = [P1_data, P2_data, P3_data, P4_data, P5_data];
+let portfolioData = [P1_data, P2_data, P3_data, P4_data, P5_data, P6_data];
 
 // -----------------------------------------------------------------------------------------------------------------
 
