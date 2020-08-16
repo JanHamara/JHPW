@@ -8,12 +8,12 @@ function createAllVariables() {
     let func = [];
     let counter = [];
     const button = [];
-    const button_text = [];
-    const number_indicator = [];
-    const bar_indicator = [];
+    let button_text = [];
+    let number_indicator = [];
+    let bar_indicator = [];
     const p = [];
     let sections = [];
-    const num_indicator = [];
+    let num_indicator = [];
 
     // ---------------------------
 
@@ -61,6 +61,12 @@ function createAllVariables() {
         p_3to4[i] = [jh_P_3[i], jh_P_4[i], "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
         p_4to1[i] = [jh_P_4[i], jh_P_1[i], "0vh", "01", "02 | WEBSITE", "1", "01"];
 
+        // ---------------------------------------------------------------------------------
+        //
+        // Case-specific Modifications
+        //
+
+
         // Internship Hunter
         if (i === 1) {
             p_1to2[i] = [jh_P_1[i], jh_P_2[i], "11.33vh", "02", "03 | INTERFACE DESIGN", "2", "02"];
@@ -81,6 +87,8 @@ function createAllVariables() {
             p_4to1[i] = [jh_P_4[i], jh_P_1[i], "0vh", "01", "02 | WEB DESIGN", "1", "01"];
         }
 
+        // ---------------------------------------------------------------------------------
+
         func[i] = [["1", p_1to2[i]], ["2", p_2to3[i]], ["3", p_3to4[i]], ["4", p_4to1[i]]];
 
         if (i === 2) {
@@ -99,7 +107,7 @@ function createAllVariables() {
         if (i === 2) {
             sections[i] = "5";
         }
-        num_indicator[i] = $("jh-p" + i + "-number-indicator");
+        num_indicator[i] = $("#jh-p" + i + "-number-indicator");
 
         // ---------------------------
 

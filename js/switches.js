@@ -63,7 +63,7 @@ portfolioItems = document.getElementsByClassName("jh-portfolio-content");
 // Current Awards on Display
 let currentPortfolioItem = 0;
 // Total Number of Awards
-let totalPortfolioItems = 5; // Total number of items, minus 1
+let totalPortfolioItems = 7; // Total number of items, minus 1
 
 // -----------------------------------------------------------------------------------------------------------------
 
