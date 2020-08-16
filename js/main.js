@@ -57,14 +57,13 @@ $( document ).ready(function() {
     // -------------------------------------------------------------------------------------------------
 
     // Portfolio Pages
-    const _p1 = document.getElementById("jh-p1");
-    const _p2 = document.getElementById("jh-p2");
-    const _p3 = document.getElementById("jh-p3");
-    const _p4 = document.getElementById("jh-p4");
-    const _p5 = document.getElementById("jh-p5");
-    const _p6 = document.getElementById("jh-p6");
-    const _p7 = document.getElementById("jh-p7");
-    const _p8 = document.getElementById("jh-p8");
+    const _p = [];
+
+    for (let i = 1; i <= 8; ++i) {
+        _p[i] = document.getElementById("jh-p" + i);
+    }
+
+    // -------------------------------------------------------------------------------------------------
 
     // Back Button
     const backButton3 = jQuery("#menu-icon-2");
@@ -97,7 +96,7 @@ $( document ).ready(function() {
 
     // Pages Array
     const all_pages = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page,
-        _p1, _p2, _p3, _p4, _p5, _p6, _p7, _p8];
+        _p[1], _p[2], _p[3], _p[4], _p[5], _p[6], _p[7], _p[8]];
 
     // -------------------------------------------------------------------------------------------------
 
@@ -332,7 +331,7 @@ $( document ).ready(function() {
     const home_links = [about_home_link, tech_home_link, portfolio_home_link, awards_home_link, contact_home_link, menu_home_link,
         p1_home_link, p2_home_link, p3_home_link, p4_home_link, p5_home_link, p6_home_link, p7_home_link, p8_home_link];
     const all_pages_2 = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, menu_page,
-        _p1, _p2, _p3, _p4, _p5, _p6, _p7, _p8];
+        _p[1], _p[2], _p[3], _p[4], _p[5], _p[6], _p[7], _p[8]];
 
     // Add EventListener to each link
     home_links.forEach(element => {

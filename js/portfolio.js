@@ -52,6 +52,8 @@ function createAllVariables() {
 
         if (i === 2) {
             jh_P_5[i] = $("#jh-p" + i + "-05");
+        } else if (i === 7) {
+            jh_P_5[i] = $("#jh-p" + i + "-05");
         }
 
         // ---------------------------
@@ -80,6 +82,12 @@ function createAllVariables() {
             p_3to4[i] = [jh_P_3[i], jh_P_4[i], "27vh", "04", "05 | APP DESIGN", "4", "04"];
             p_4to5[i] = [jh_P_4[i], jh_P_5[i], "36vh", "05", "BACK TO PORTFOLIO", "5", "05"];
             p_5to1[i] = [jh_P_5[i], jh_P_1[i], "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
+        } else if (i === 7) {
+            p_1to2[i] = [jh_P_1[i], jh_P_2[i], "9vh", "02", "03 | WEBSITE DESIGN", "2", "02"];
+            p_2to3[i] = [jh_P_2[i], jh_P_3[i], "18vh", "03", "04 | RESPONSIVE DESIGN", "3", "03"];
+            p_3to4[i] = [jh_P_3[i], jh_P_4[i], "27vh", "04", "05 | DEMO", "4", "04"];
+            p_4to5[i] = [jh_P_4[i], jh_P_5[i], "36vh", "05", "BACK TO PORTFOLIO", "5", "05"];
+            p_5to1[i] = [jh_P_5[i], jh_P_1[i], "0vh", "01", "02 | LOGO DESIGN", "1", "01"];
         }
 
         // Emmanuel Delay
@@ -91,7 +99,7 @@ function createAllVariables() {
 
         func[i] = [["1", p_1to2[i]], ["2", p_2to3[i]], ["3", p_3to4[i]], ["4", p_4to1[i]]];
 
-        if (i === 2) {
+        if (i === 2 || i === 7) {
             func[i] = [["1", p_1to2[i]], ["2", p_2to3[i]], ["3", p_3to4[i]], ["4", p_4to5[i]], ["5", p_5to1[i]]];
         }
 
@@ -104,7 +112,7 @@ function createAllVariables() {
         bar_indicator[i] = $("#jh-p" + i + "-bar-indicator-thumb");
         p[i] = document.getElementById("jh-p" + i);
         sections[i] = "4";
-        if (i === 2) {
+        if (i === 2 || i === 7) {
             sections[i] = "5";
         }
         num_indicator[i] = $("#jh-p" + i + "-number-indicator");

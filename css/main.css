@@ -1509,32 +1509,32 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
   z-index: 9998 !important;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f7-1 {
-  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/06_Seculin/IH_1.png");
   animation: 1s jh-zoom-out-down forwards;
   z-index: 9999 !important;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f7-2 {
-  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/06_Seculin/IH_2.png");
   animation: 1s jh-zoom-out-right forwards;
   z-index: 9998 !important;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f7-3 {
-  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/06_Seculin/IH_3.png");
   animation: 1s jh-zoom-out-left forwards;
   z-index: 9998 !important;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f8-1 {
-  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/07_Digital_Essay/IH_1.png");
   animation: 1s jh-zoom-out-down forwards;
   z-index: 9999 !important;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f8-2 {
-  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/07_Digital_Essay/IH_2.png");
   animation: 1s jh-zoom-out-right forwards;
   z-index: 9998 !important;
 }
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f8-3 {
-  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/07_Digital_Essay/IH_3.png");
   animation: 1s jh-zoom-out-left forwards;
   z-index: 9998 !important;
 }
@@ -2590,6 +2590,51 @@ body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child {
   margin-right: 1vw;
 }
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2 {
+  display: inline-block;
+  width: 48%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2 {
+    display: block;
+    margin: auto !important;
+    width: 80%;
+  }
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child {
+    margin-bottom: 5vw !important;
+  }
+}
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img2:first-child {
+  margin-right: 1vw;
+}
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
@@ -2836,8 +2881,20 @@ body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
 body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
 body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer {
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
   transition: opacity 1s;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer {
+    opacity: 1 !important;
+  }
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
@@ -3094,6 +3151,14 @@ body main #jh-p5 .container-fluid #jh-p7-04,
 body main #jh-p6 .container-fluid #jh-p7-04,
 body main #jh-p7 .container-fluid #jh-p7-04,
 body main #jh-p8 .container-fluid #jh-p7-04,
+body main #jh-p1 .container-fluid #jh-p7-05,
+body main #jh-p2 .container-fluid #jh-p7-05,
+body main #jh-p3 .container-fluid #jh-p7-05,
+body main #jh-p4 .container-fluid #jh-p7-05,
+body main #jh-p5 .container-fluid #jh-p7-05,
+body main #jh-p6 .container-fluid #jh-p7-05,
+body main #jh-p7 .container-fluid #jh-p7-05,
+body main #jh-p8 .container-fluid #jh-p7-05,
 body main #jh-p1 .container-fluid #jh-p8-02,
 body main #jh-p2 .container-fluid #jh-p8-02,
 body main #jh-p3 .container-fluid #jh-p8-02,

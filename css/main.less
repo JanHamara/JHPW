@@ -1547,19 +1547,19 @@ body {
                   // Seculin
 
                   .f7-1 {
-                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/06_Seculin/IH_1.png");
                     animation: 1s jh-zoom-out-down forwards;
                     z-index: 9999 !important;
                   }
 
                   .f7-2 {
-                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/06_Seculin/IH_2.png");
                     animation: 1s jh-zoom-out-right forwards;
                     z-index: 9998 !important;
                   }
 
                   .f7-3 {
-                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/06_Seculin/IH_3.png");
                     animation: 1s jh-zoom-out-left forwards;
                     z-index: 9998 !important;
                   }
@@ -1569,19 +1569,19 @@ body {
                   // Digital Essay
 
                   .f8-1 {
-                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/07_Digital_Essay/IH_1.png");
                     animation: 1s jh-zoom-out-down forwards;
                     z-index: 9999 !important;
                   }
 
                   .f8-2 {
-                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/07_Digital_Essay/IH_2.png");
                     animation: 1s jh-zoom-out-right forwards;
                     z-index: 9998 !important;
                   }
 
                   .f8-3 {
-                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+                    background-image: url("../assets/03_Projects/00_Project_Thumbnails/07_Digital_Essay/IH_3.png");
                     animation: 1s jh-zoom-out-left forwards;
                     z-index: 9998 !important;
                   }
@@ -2060,6 +2060,25 @@ body {
               }
             }
 
+            .p-logo-img2 {
+              .display(inline-block);
+              width: 48%;
+
+              @media @smartphone-all {
+                .display(block);
+                margin: auto !important;
+                width: 80%;
+
+                &:first-child {
+                  margin-bottom: 5vw !important;
+                }
+              }
+
+              &:first-child {
+                margin-right: 1vw;
+              }
+            }
+
             .p-website-img {
               .display(inline-block);
               width: 47%;
@@ -2171,8 +2190,12 @@ body {
             // ----------------------------------
 
             .opacity-changer {
-              opacity: 0.8 !important;
+              opacity: 0.9 !important;
               transition: opacity 1s;
+
+              @media @smartphone-all, @smartphone-all-landscape {
+                opacity: 1 !important;
+              }
 
               &:hover {
                 opacity: 1 !important;
@@ -2194,7 +2217,7 @@ body {
 
         #jh-p1-02, #jh-p1-03, #jh-p1-04, #jh-p2-02, #jh-p2-03, #jh-p2-04, #jh-p2-05,
         #jh-p3-02, #jh-p3-03, #jh-p3-04, #jh-p4-02, #jh-p4-03, #jh-p4-04, #jh-p5-02, #jh-p5-03, #jh-p5-04,
-        #jh-p6-02, #jh-p6-03, #jh-p6-04, #jh-p7-02, #jh-p7-03, #jh-p7-04, #jh-p8-02, #jh-p8-03, #jh-p8-04 {
+        #jh-p6-02, #jh-p6-03, #jh-p6-04, #jh-p7-02, #jh-p7-03, #jh-p7-04, #jh-p7-05, #jh-p8-02, #jh-p8-03, #jh-p8-04 {
           .display(none);
           opacity: 0;
           transition: 1s opacity;
