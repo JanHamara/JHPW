@@ -14,10 +14,6 @@ $( document ).ready(function() {
 
     console.log( "Load DOM: SUCCESS" );
 
-
-
-
-
     // -------------------------------------------------------------------------------------------------
 
     // Mobile Check
@@ -61,7 +57,17 @@ $( document ).ready(function() {
     // -------------------------------------------------------------------------------------------------
 
     // Portfolio Pages
-    const p1 = document.getElementById("jh-p1");
+    const _p1 = document.getElementById("jh-p1");
+    const _p2 = document.getElementById("jh-p2");
+    const _p3 = document.getElementById("jh-p3");
+    const _p4 = document.getElementById("jh-p4");
+    const _p5 = document.getElementById("jh-p5");
+    const _p6 = document.getElementById("jh-p6");
+    const _p7 = document.getElementById("jh-p7");
+    const _p8 = document.getElementById("jh-p8");
+
+    // Back Button
+    const backButton3 = jQuery("#menu-icon-2");
 
     // -------------------------------------------------------------------------------------------------
 
@@ -90,7 +96,8 @@ $( document ).ready(function() {
     // -------------------------------------------------------------------------------------------------
 
     // Pages Array
-    const all_pages = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, p1];
+    const all_pages = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page,
+        _p1, _p2, _p3, _p4, _p5, _p6, _p7, _p8];
 
     // -------------------------------------------------------------------------------------------------
 
@@ -110,8 +117,12 @@ $( document ).ready(function() {
 
     menu_icon.addEventListener('click', function() {
             //  if Menu is - Closed
-        if (testMenuState(menu)) {                                              // testMenuState()
+        if (testMenuState(menu)) { // testMenuState()
+            backButton3.css({"opacity":"0"});
             openMenu(all_pages, menu_page, menu_logo, menu_tooltip);            // openMenu()
+            setTimeout(function() {
+                backButton3.css({"display":"none"});
+            }, 1000);
             menu = true;
             // if Menu is - Open
         } else {
@@ -129,7 +140,8 @@ $( document ).ready(function() {
     function link(link) {
         link[0].addEventListener('click', function() {
             //  if Menu is - Closed
-            if (testMenuState(menu)) {                                              // testMenuState()
+            if (testMenuState(menu)) { // testMenuState()
+
                 openMenu(all_pages, menu_page, menu_logo, menu_tooltip);            // openMenu()
                 menu = true;
                 // if Menu is - Open
@@ -301,14 +313,8 @@ $( document ).ready(function() {
     let p4_home_link = document.getElementById("jh-p4-page-logo");
     let p5_home_link = document.getElementById("jh-p5-page-logo");
     let p6_home_link = document.getElementById("jh-p6-page-logo");
-
-    // Portfolio Pages
-    let p1_page = document.getElementById("jh-p1");
-    let p2_page = document.getElementById("jh-p2");
-    let p3_page = document.getElementById("jh-p3");
-    let p4_page = document.getElementById("jh-p4");
-    let p5_page = document.getElementById("jh-p5");
-    let p6_page = document.getElementById("jh-p6");
+    let p7_home_link = document.getElementById("jh-p7-page-logo");
+    let p8_home_link = document.getElementById("jh-p8-page-logo");
 
     // -----------------------------------------------------------------------------------------------------------------
 
@@ -324,12 +330,9 @@ $( document ).ready(function() {
 
     // Enable links here
     const home_links = [about_home_link, tech_home_link, portfolio_home_link, awards_home_link, contact_home_link, menu_home_link,
-        p1_home_link, p2_home_link, p3_home_link, p4_home_link, p5_home_link, p6_home_link];
+        p1_home_link, p2_home_link, p3_home_link, p4_home_link, p5_home_link, p6_home_link, p7_home_link, p8_home_link];
     const all_pages_2 = [landing_page, about_page, tech_stack_page, portfolio_page, awards_page, contact_page, menu_page,
-        p1_page, p2_page, p3_page, p4_page, p5_page, p6_page];
-
-    const backButton3 = jQuery("#menu-icon-2");
-
+        _p1, _p2, _p3, _p4, _p5, _p6, _p7, _p8];
 
     // Add EventListener to each link
     home_links.forEach(element => {

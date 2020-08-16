@@ -1508,6 +1508,36 @@ body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-containe
   animation: 1s jh-zoom-out-left forwards;
   z-index: 9998 !important;
 }
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f7-1 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+  animation: 1s jh-zoom-out-down forwards;
+  z-index: 9999 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f7-2 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+  animation: 1s jh-zoom-out-right forwards;
+  z-index: 9998 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f7-3 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+  animation: 1s jh-zoom-out-left forwards;
+  z-index: 9998 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f8-1 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_1.png");
+  animation: 1s jh-zoom-out-down forwards;
+  z-index: 9999 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f8-2 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_2.png");
+  animation: 1s jh-zoom-out-right forwards;
+  z-index: 9998 !important;
+}
+body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-page-thumb-holder .jh-figure .f8-3 {
+  background-image: url("../assets/03_Projects/00_Project_Thumbnails/05_Procreo/IH_3.png");
+  animation: 1s jh-zoom-out-left forwards;
+  z-index: 9998 !important;
+}
 body main #jh-portfolio .container-fluid .jh-portfolio-content .jh-page-container-content .jh-page-container-fill .jh-pf-header {
   font-size: 2.5vw;
   margin-bottom: 3vh;
@@ -1608,7 +1638,9 @@ body main #jh-portfolio .container-fluid #jh-portfolio-content-1,
 body main #jh-portfolio .container-fluid #jh-portfolio-content-3,
 body main #jh-portfolio .container-fluid #jh-portfolio-content-4,
 body main #jh-portfolio .container-fluid #jh-portfolio-content-5,
-body main #jh-portfolio .container-fluid #jh-portfolio-content-6 {
+body main #jh-portfolio .container-fluid #jh-portfolio-content-6,
+body main #jh-portfolio .container-fluid #jh-portfolio-content-7,
+body main #jh-portfolio .container-fluid #jh-portfolio-content-8 {
   display: none;
   opacity: 0;
   transition: opacity 1s;
@@ -1707,7 +1739,9 @@ body main #jh-p2,
 body main #jh-p3,
 body main #jh-p4,
 body main #jh-p5,
-body main #jh-p6 {
+body main #jh-p6,
+body main #jh-p7,
+body main #jh-p8 {
   display: none;
   opacity: 0;
   transition: opacity 1s !important;
@@ -1719,7 +1753,9 @@ body main #jh-p2 .container-fluid,
 body main #jh-p3 .container-fluid,
 body main #jh-p4 .container-fluid,
 body main #jh-p5 .container-fluid,
-body main #jh-p6 .container-fluid {
+body main #jh-p6 .container-fluid,
+body main #jh-p7 .container-fluid,
+body main #jh-p8 .container-fluid {
   height: 100vh;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content,
@@ -1727,7 +1763,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content,
 body main #jh-p3 .container-fluid .jh-page-container-content,
 body main #jh-p4 .container-fluid .jh-page-container-content,
 body main #jh-p5 .container-fluid .jh-page-container-content,
-body main #jh-p6 .container-fluid .jh-page-container-content {
+body main #jh-p6 .container-fluid .jh-page-container-content,
+body main #jh-p7 .container-fluid .jh-page-container-content,
+body main #jh-p8 .container-fluid .jh-page-container-content {
   height: 100%;
   overflow: visible !important;
 }
@@ -1737,7 +1775,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content {
   body main #jh-p3 .container-fluid .jh-page-container-content,
   body main #jh-p4 .container-fluid .jh-page-container-content,
   body main #jh-p5 .container-fluid .jh-page-container-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content {
     width: 85vw;
     margin: auto;
   }
@@ -1748,7 +1788,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content {
   body main #jh-p3 .container-fluid .jh-page-container-content,
   body main #jh-p4 .container-fluid .jh-page-container-content,
   body main #jh-p5 .container-fluid .jh-page-container-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content {
     width: 90%;
     margin: auto;
     transform: translate(2vw, 0);
@@ -1759,7 +1801,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill {
   overflow: visible !important;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
@@ -1767,7 +1811,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
   text-align: left;
   font-size: 2vw;
   font-family: ingra-2, sans-serif !important;
@@ -1783,7 +1829,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
     font-size: 4vw;
   }
 }
@@ -1793,7 +1841,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header {
     font-size: 2.5vw;
   }
 }
@@ -1802,7 +1852,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
   display: inline-block;
   height: 1.2vw;
   width: auto;
@@ -1813,7 +1865,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
     height: 2.7vw;
   }
 }
@@ -1823,7 +1877,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-header .pitem-header-sign {
     font-size: 2.1vw;
   }
 }
@@ -1832,7 +1888,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
   text-align: left !important;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -1841,7 +1899,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content {
     display: none !important;
   }
 }
@@ -1850,7 +1910,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile {
   display: none !important;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -1859,7 +1921,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-mobile {
     display: block !important;
     text-align: left !important;
     font-size: 2vw !important;
@@ -1870,7 +1934,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet {
   display: none !important;
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -1879,7 +1945,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-content-tablet {
     display: block !important;
     text-align: left !important;
   }
@@ -1889,7 +1957,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
   height: 40vh;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -1898,7 +1968,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content {
     width: 90%;
     margin: auto;
   }
@@ -1909,30 +1981,56 @@ body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7 {
   position: absolute;
   top: 2.1vh;
   opacity: 0;
@@ -1945,30 +2043,56 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5 {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7 {
     display: none;
   }
 }
@@ -1979,30 +2103,56 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5 {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7 {
     top: 13.36vh;
   }
 }
@@ -2013,30 +2163,56 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5 {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+  body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7 {
     top: 7vh;
   }
 }
@@ -2046,18 +2222,40 @@ body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-4,
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-5,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-6,
+body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7 {
   transform: scale(0.99) !important;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
@@ -2065,7 +2263,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3 {
   transform: scale(0.99) !important;
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -2074,7 +2274,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3 {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3 {
     transform: translate(0, 5vw);
   }
 }
@@ -2083,7 +2285,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
   position: static;
   width: 100%;
   height: 100%;
@@ -2096,7 +2300,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content iframe {
     width: 43% !important;
     margin: auto !important;
   }
@@ -2106,7 +2312,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-game {
   animation: 1s jh-fade-in 1s forwards;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
@@ -2114,7 +2322,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website {
   animation: 2s jh-fade-in 1s forwards;
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -2123,7 +2333,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website {
     transform: scale(0.97) translate(0px, -0.8vh) !important;
   }
 }
@@ -2133,7 +2345,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content .jh-iframe-website {
     transform: scale(1.57) translate(0, 0.2vw) !important;
   }
 }
@@ -2143,7 +2357,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-iframe-meu {
     transform: scale(1.34) translate(0, 0vw) !important;
   }
 }
@@ -2152,7 +2368,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
   text-align: left;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -2161,7 +2379,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-image-content {
     text-align: center;
   }
 }
@@ -2170,7 +2390,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
   height: 25.5vh;
   overflow: visible !important;
 }
@@ -2180,7 +2402,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
     height: 19vh;
   }
 }
@@ -2190,7 +2414,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content {
     height: 20vh;
   }
 }
@@ -2199,7 +2425,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure {
   width: 100%;
   height: 100%;
   overflow: visible !important;
@@ -2209,7 +2437,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .figure-item {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2224,7 +2454,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/01.png");
   animation: 3s jh-fade-in 0.5s forwards;
   z-index: 9998 !important;
@@ -2234,7 +2466,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/02.png");
   animation: 1s jh-zoom-out-down 0.5s forwards;
   z-index: 9999 !important;
@@ -2244,7 +2478,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_3 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/03.png");
   animation: 1s jh-zoom-out-right 0.7s forwards;
   z-index: 9999 !important;
@@ -2254,7 +2490,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-1_4 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/02/04.png");
   animation: 1s jh-zoom-out-left 0.7s forwards;
   z-index: 9999 !important;
@@ -2264,7 +2502,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/01.png");
   animation: 3s jh-fade-in 0.5s forwards;
   z-index: 9998 !important;
@@ -2274,7 +2514,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_2 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/02.png");
   animation: 1s jh-zoom-out-down 0.5s forwards;
   z-index: 9999 !important;
@@ -2284,7 +2526,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_3 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/03.png");
   animation: 1s jh-zoom-out-right 0.7s forwards;
   z-index: 9999 !important;
@@ -2294,7 +2538,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4 {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure .p1-2_4 {
   background-image: url("../assets/03_Projects/05 Other/01 Internship Hunter/03/04.png");
   animation: 1s jh-zoom-out-left 0.7s forwards;
   z-index: 9999 !important;
@@ -2305,7 +2551,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3 {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .portfolio-image-content .jh-figure-1_3 {
     transform: scale(1.3);
   }
 }
@@ -2314,7 +2562,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img {
   display: inline-block;
   width: 41%;
 }
@@ -2324,7 +2574,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img {
     width: 48%;
   }
 }
@@ -2333,7 +2585,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-logo-img:first-child {
   margin-right: 1vw;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
@@ -2341,7 +2595,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img {
   display: inline-block;
   width: 47%;
   transition: transform 1s, opacity 1s !important;
@@ -2352,7 +2608,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img {
     display: block;
     width: 70%;
     margin: auto;
@@ -2364,7 +2622,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img {
     display: block;
     width: 55%;
     margin: auto;
@@ -2375,7 +2635,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child {
   margin-right: 2vw;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
@@ -2384,7 +2646,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child {
     margin: 5vh auto;
   }
 }
@@ -2394,7 +2658,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:first-child {
     margin: 5vh auto;
   }
 }
@@ -2403,7 +2669,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-website-img:hover {
   transform: scale(1.2);
   transition: transform 1s, opacity 1s !important;
 }
@@ -2412,7 +2680,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img {
   display: inline-block;
   width: 9vw;
   float: right;
@@ -2424,7 +2694,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img:hover {
   transform: scale(1.2);
   transition: transform 1s;
 }
@@ -2433,7 +2705,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big {
   width: 10vw;
   float: right;
   transform: translate(0vw, -5vw);
@@ -2444,7 +2718,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .p-app-img-big:hover {
   transform: scale(1.2) translate(0vw, -5vw);
   transition: transform 1s;
 }
@@ -2454,7 +2730,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet {
     display: none;
   }
 }
@@ -2464,7 +2742,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet {
     width: 66%;
     transform: translate(0, 13vh) scale(1.4) !important;
   }
@@ -2475,7 +2755,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-tablet {
     transform: translate(-8vw, 5vw) scale(1.2) !important;
   }
 }
@@ -2484,7 +2766,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile {
   display: none;
   overflow: visible;
 }
@@ -2494,7 +2778,9 @@ body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
   body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
   body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
-  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile {
+  body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
+  body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile,
+  body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile {
     display: block;
   }
 }
@@ -2503,7 +2789,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div {
   overflow: visible;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img,
@@ -2511,7 +2799,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img {
   display: inline-block;
   width: 22%;
   margin: 1vh 3vh 3vh 3vh;
@@ -2522,7 +2812,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div img:hover {
   transform: scale(1.4);
   transition: transform 1s;
 }
@@ -2531,7 +2823,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .app-display-mobile div .p-app-img-mobile {
   width: 19.3%;
 }
 body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
@@ -2539,7 +2833,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer {
   opacity: 0.8 !important;
   transition: opacity 1s;
 }
@@ -2548,7 +2844,9 @@ body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
 body main #jh-p4 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
 body main #jh-p5 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
-body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover {
+body main #jh-p6 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
+body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover,
+body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .opacity-changer:hover {
   opacity: 1 !important;
   transition: opacity 1s;
 }
@@ -2558,36 +2856,48 @@ body main #jh-p3 .container-fluid #jh-p1-01,
 body main #jh-p4 .container-fluid #jh-p1-01,
 body main #jh-p5 .container-fluid #jh-p1-01,
 body main #jh-p6 .container-fluid #jh-p1-01,
+body main #jh-p7 .container-fluid #jh-p1-01,
+body main #jh-p8 .container-fluid #jh-p1-01,
 body main #jh-p1 .container-fluid #jh-p2-01,
 body main #jh-p2 .container-fluid #jh-p2-01,
 body main #jh-p3 .container-fluid #jh-p2-01,
 body main #jh-p4 .container-fluid #jh-p2-01,
 body main #jh-p5 .container-fluid #jh-p2-01,
 body main #jh-p6 .container-fluid #jh-p2-01,
+body main #jh-p7 .container-fluid #jh-p2-01,
+body main #jh-p8 .container-fluid #jh-p2-01,
 body main #jh-p1 .container-fluid #jh-p3-01,
 body main #jh-p2 .container-fluid #jh-p3-01,
 body main #jh-p3 .container-fluid #jh-p3-01,
 body main #jh-p4 .container-fluid #jh-p3-01,
 body main #jh-p5 .container-fluid #jh-p3-01,
 body main #jh-p6 .container-fluid #jh-p3-01,
+body main #jh-p7 .container-fluid #jh-p3-01,
+body main #jh-p8 .container-fluid #jh-p3-01,
 body main #jh-p1 .container-fluid #jh-p4-01,
 body main #jh-p2 .container-fluid #jh-p4-01,
 body main #jh-p3 .container-fluid #jh-p4-01,
 body main #jh-p4 .container-fluid #jh-p4-01,
 body main #jh-p5 .container-fluid #jh-p4-01,
 body main #jh-p6 .container-fluid #jh-p4-01,
+body main #jh-p7 .container-fluid #jh-p4-01,
+body main #jh-p8 .container-fluid #jh-p4-01,
 body main #jh-p1 .container-fluid #jh-p5-01,
 body main #jh-p2 .container-fluid #jh-p5-01,
 body main #jh-p3 .container-fluid #jh-p5-01,
 body main #jh-p4 .container-fluid #jh-p5-01,
 body main #jh-p5 .container-fluid #jh-p5-01,
 body main #jh-p6 .container-fluid #jh-p5-01,
+body main #jh-p7 .container-fluid #jh-p5-01,
+body main #jh-p8 .container-fluid #jh-p5-01,
 body main #jh-p1 .container-fluid #jh-p6-01,
 body main #jh-p2 .container-fluid #jh-p6-01,
 body main #jh-p3 .container-fluid #jh-p6-01,
 body main #jh-p4 .container-fluid #jh-p6-01,
 body main #jh-p5 .container-fluid #jh-p6-01,
-body main #jh-p6 .container-fluid #jh-p6-01 {
+body main #jh-p6 .container-fluid #jh-p6-01,
+body main #jh-p7 .container-fluid #jh-p6-01,
+body main #jh-p8 .container-fluid #jh-p6-01 {
   display: block;
   opacity: 1;
   transition: 1s opacity;
@@ -2598,114 +2908,152 @@ body main #jh-p3 .container-fluid #jh-p1-02,
 body main #jh-p4 .container-fluid #jh-p1-02,
 body main #jh-p5 .container-fluid #jh-p1-02,
 body main #jh-p6 .container-fluid #jh-p1-02,
+body main #jh-p7 .container-fluid #jh-p1-02,
+body main #jh-p8 .container-fluid #jh-p1-02,
 body main #jh-p1 .container-fluid #jh-p1-03,
 body main #jh-p2 .container-fluid #jh-p1-03,
 body main #jh-p3 .container-fluid #jh-p1-03,
 body main #jh-p4 .container-fluid #jh-p1-03,
 body main #jh-p5 .container-fluid #jh-p1-03,
 body main #jh-p6 .container-fluid #jh-p1-03,
+body main #jh-p7 .container-fluid #jh-p1-03,
+body main #jh-p8 .container-fluid #jh-p1-03,
 body main #jh-p1 .container-fluid #jh-p1-04,
 body main #jh-p2 .container-fluid #jh-p1-04,
 body main #jh-p3 .container-fluid #jh-p1-04,
 body main #jh-p4 .container-fluid #jh-p1-04,
 body main #jh-p5 .container-fluid #jh-p1-04,
 body main #jh-p6 .container-fluid #jh-p1-04,
+body main #jh-p7 .container-fluid #jh-p1-04,
+body main #jh-p8 .container-fluid #jh-p1-04,
 body main #jh-p1 .container-fluid #jh-p2-02,
 body main #jh-p2 .container-fluid #jh-p2-02,
 body main #jh-p3 .container-fluid #jh-p2-02,
 body main #jh-p4 .container-fluid #jh-p2-02,
 body main #jh-p5 .container-fluid #jh-p2-02,
 body main #jh-p6 .container-fluid #jh-p2-02,
+body main #jh-p7 .container-fluid #jh-p2-02,
+body main #jh-p8 .container-fluid #jh-p2-02,
 body main #jh-p1 .container-fluid #jh-p2-03,
 body main #jh-p2 .container-fluid #jh-p2-03,
 body main #jh-p3 .container-fluid #jh-p2-03,
 body main #jh-p4 .container-fluid #jh-p2-03,
 body main #jh-p5 .container-fluid #jh-p2-03,
 body main #jh-p6 .container-fluid #jh-p2-03,
+body main #jh-p7 .container-fluid #jh-p2-03,
+body main #jh-p8 .container-fluid #jh-p2-03,
 body main #jh-p1 .container-fluid #jh-p2-04,
 body main #jh-p2 .container-fluid #jh-p2-04,
 body main #jh-p3 .container-fluid #jh-p2-04,
 body main #jh-p4 .container-fluid #jh-p2-04,
 body main #jh-p5 .container-fluid #jh-p2-04,
 body main #jh-p6 .container-fluid #jh-p2-04,
+body main #jh-p7 .container-fluid #jh-p2-04,
+body main #jh-p8 .container-fluid #jh-p2-04,
 body main #jh-p1 .container-fluid #jh-p2-05,
 body main #jh-p2 .container-fluid #jh-p2-05,
 body main #jh-p3 .container-fluid #jh-p2-05,
 body main #jh-p4 .container-fluid #jh-p2-05,
 body main #jh-p5 .container-fluid #jh-p2-05,
 body main #jh-p6 .container-fluid #jh-p2-05,
+body main #jh-p7 .container-fluid #jh-p2-05,
+body main #jh-p8 .container-fluid #jh-p2-05,
 body main #jh-p1 .container-fluid #jh-p3-02,
 body main #jh-p2 .container-fluid #jh-p3-02,
 body main #jh-p3 .container-fluid #jh-p3-02,
 body main #jh-p4 .container-fluid #jh-p3-02,
 body main #jh-p5 .container-fluid #jh-p3-02,
 body main #jh-p6 .container-fluid #jh-p3-02,
+body main #jh-p7 .container-fluid #jh-p3-02,
+body main #jh-p8 .container-fluid #jh-p3-02,
 body main #jh-p1 .container-fluid #jh-p3-03,
 body main #jh-p2 .container-fluid #jh-p3-03,
 body main #jh-p3 .container-fluid #jh-p3-03,
 body main #jh-p4 .container-fluid #jh-p3-03,
 body main #jh-p5 .container-fluid #jh-p3-03,
 body main #jh-p6 .container-fluid #jh-p3-03,
+body main #jh-p7 .container-fluid #jh-p3-03,
+body main #jh-p8 .container-fluid #jh-p3-03,
 body main #jh-p1 .container-fluid #jh-p3-04,
 body main #jh-p2 .container-fluid #jh-p3-04,
 body main #jh-p3 .container-fluid #jh-p3-04,
 body main #jh-p4 .container-fluid #jh-p3-04,
 body main #jh-p5 .container-fluid #jh-p3-04,
 body main #jh-p6 .container-fluid #jh-p3-04,
+body main #jh-p7 .container-fluid #jh-p3-04,
+body main #jh-p8 .container-fluid #jh-p3-04,
 body main #jh-p1 .container-fluid #jh-p4-02,
 body main #jh-p2 .container-fluid #jh-p4-02,
 body main #jh-p3 .container-fluid #jh-p4-02,
 body main #jh-p4 .container-fluid #jh-p4-02,
 body main #jh-p5 .container-fluid #jh-p4-02,
 body main #jh-p6 .container-fluid #jh-p4-02,
+body main #jh-p7 .container-fluid #jh-p4-02,
+body main #jh-p8 .container-fluid #jh-p4-02,
 body main #jh-p1 .container-fluid #jh-p4-03,
 body main #jh-p2 .container-fluid #jh-p4-03,
 body main #jh-p3 .container-fluid #jh-p4-03,
 body main #jh-p4 .container-fluid #jh-p4-03,
 body main #jh-p5 .container-fluid #jh-p4-03,
 body main #jh-p6 .container-fluid #jh-p4-03,
+body main #jh-p7 .container-fluid #jh-p4-03,
+body main #jh-p8 .container-fluid #jh-p4-03,
 body main #jh-p1 .container-fluid #jh-p4-04,
 body main #jh-p2 .container-fluid #jh-p4-04,
 body main #jh-p3 .container-fluid #jh-p4-04,
 body main #jh-p4 .container-fluid #jh-p4-04,
 body main #jh-p5 .container-fluid #jh-p4-04,
 body main #jh-p6 .container-fluid #jh-p4-04,
+body main #jh-p7 .container-fluid #jh-p4-04,
+body main #jh-p8 .container-fluid #jh-p4-04,
 body main #jh-p1 .container-fluid #jh-p5-02,
 body main #jh-p2 .container-fluid #jh-p5-02,
 body main #jh-p3 .container-fluid #jh-p5-02,
 body main #jh-p4 .container-fluid #jh-p5-02,
 body main #jh-p5 .container-fluid #jh-p5-02,
 body main #jh-p6 .container-fluid #jh-p5-02,
+body main #jh-p7 .container-fluid #jh-p5-02,
+body main #jh-p8 .container-fluid #jh-p5-02,
 body main #jh-p1 .container-fluid #jh-p5-03,
 body main #jh-p2 .container-fluid #jh-p5-03,
 body main #jh-p3 .container-fluid #jh-p5-03,
 body main #jh-p4 .container-fluid #jh-p5-03,
 body main #jh-p5 .container-fluid #jh-p5-03,
 body main #jh-p6 .container-fluid #jh-p5-03,
+body main #jh-p7 .container-fluid #jh-p5-03,
+body main #jh-p8 .container-fluid #jh-p5-03,
 body main #jh-p1 .container-fluid #jh-p5-04,
 body main #jh-p2 .container-fluid #jh-p5-04,
 body main #jh-p3 .container-fluid #jh-p5-04,
 body main #jh-p4 .container-fluid #jh-p5-04,
 body main #jh-p5 .container-fluid #jh-p5-04,
 body main #jh-p6 .container-fluid #jh-p5-04,
+body main #jh-p7 .container-fluid #jh-p5-04,
+body main #jh-p8 .container-fluid #jh-p5-04,
 body main #jh-p1 .container-fluid #jh-p6-02,
 body main #jh-p2 .container-fluid #jh-p6-02,
 body main #jh-p3 .container-fluid #jh-p6-02,
 body main #jh-p4 .container-fluid #jh-p6-02,
 body main #jh-p5 .container-fluid #jh-p6-02,
 body main #jh-p6 .container-fluid #jh-p6-02,
+body main #jh-p7 .container-fluid #jh-p6-02,
+body main #jh-p8 .container-fluid #jh-p6-02,
 body main #jh-p1 .container-fluid #jh-p6-03,
 body main #jh-p2 .container-fluid #jh-p6-03,
 body main #jh-p3 .container-fluid #jh-p6-03,
 body main #jh-p4 .container-fluid #jh-p6-03,
 body main #jh-p5 .container-fluid #jh-p6-03,
 body main #jh-p6 .container-fluid #jh-p6-03,
+body main #jh-p7 .container-fluid #jh-p6-03,
+body main #jh-p8 .container-fluid #jh-p6-03,
 body main #jh-p1 .container-fluid #jh-p6-04,
 body main #jh-p2 .container-fluid #jh-p6-04,
 body main #jh-p3 .container-fluid #jh-p6-04,
 body main #jh-p4 .container-fluid #jh-p6-04,
 body main #jh-p5 .container-fluid #jh-p6-04,
-body main #jh-p6 .container-fluid #jh-p6-04 {
+body main #jh-p6 .container-fluid #jh-p6-04,
+body main #jh-p7 .container-fluid #jh-p6-04,
+body main #jh-p8 .container-fluid #jh-p6-04 {
   display: none;
   opacity: 0;
   transition: 1s opacity;
@@ -2716,30 +3064,40 @@ body main #jh-p3 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-cont
 body main #jh-p4 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
 body main #jh-p5 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
 body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
+body main #jh-p7 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
+body main #jh-p8 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p1-bar-indicator-thumb,
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
 body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
 body main #jh-p3 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
 body main #jh-p4 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
 body main #jh-p5 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
 body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
+body main #jh-p7 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
+body main #jh-p8 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p3-bar-indicator-thumb,
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
 body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
 body main #jh-p3 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
 body main #jh-p4 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
 body main #jh-p5 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
 body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
+body main #jh-p7 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
+body main #jh-p8 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p4-bar-indicator-thumb,
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
 body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
 body main #jh-p3 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
 body main #jh-p4 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
 body main #jh-p5 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
 body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
+body main #jh-p7 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
+body main #jh-p8 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p5-bar-indicator-thumb,
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
 body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
 body main #jh-p3 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
 body main #jh-p4 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
 body main #jh-p5 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
-body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb {
+body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
+body main #jh-p7 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb,
+body main #jh-p8 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p6-bar-indicator-thumb {
   height: 25%;
 }
 body main #jh-p1 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
@@ -2747,7 +3105,9 @@ body main #jh-p2 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-cont
 body main #jh-p3 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
 body main #jh-p4 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
 body main #jh-p5 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
-body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb {
+body main #jh-p6 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
+body main #jh-p7 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb,
+body main #jh-p8 .container-fluid .jh-bar-indicator .jh-bar-indicator-thumb-container #jh-p2-bar-indicator-thumb {
   height: 20%;
 }
 body main #jh-p1 .container-fluid .jh-number-indicator,
@@ -2755,7 +3115,9 @@ body main #jh-p2 .container-fluid .jh-number-indicator,
 body main #jh-p3 .container-fluid .jh-number-indicator,
 body main #jh-p4 .container-fluid .jh-number-indicator,
 body main #jh-p5 .container-fluid .jh-number-indicator,
-body main #jh-p6 .container-fluid .jh-number-indicator {
+body main #jh-p6 .container-fluid .jh-number-indicator,
+body main #jh-p7 .container-fluid .jh-number-indicator,
+body main #jh-p8 .container-fluid .jh-number-indicator {
   font-size: 7vw;
   font-weight: 900 !important;
   opacity: 0.1;
@@ -2774,7 +3136,9 @@ body main #jh-p6 .container-fluid .jh-number-indicator {
   body main #jh-p3 .container-fluid .jh-number-indicator,
   body main #jh-p4 .container-fluid .jh-number-indicator,
   body main #jh-p5 .container-fluid .jh-number-indicator,
-  body main #jh-p6 .container-fluid .jh-number-indicator {
+  body main #jh-p6 .container-fluid .jh-number-indicator,
+  body main #jh-p7 .container-fluid .jh-number-indicator,
+  body main #jh-p8 .container-fluid .jh-number-indicator {
     display: none;
   }
 }
@@ -2784,7 +3148,9 @@ body main #jh-p6 .container-fluid .jh-number-indicator {
   body main #jh-p3 .container-fluid .jh-number-indicator,
   body main #jh-p4 .container-fluid .jh-number-indicator,
   body main #jh-p5 .container-fluid .jh-number-indicator,
-  body main #jh-p6 .container-fluid .jh-number-indicator {
+  body main #jh-p6 .container-fluid .jh-number-indicator,
+  body main #jh-p7 .container-fluid .jh-number-indicator,
+  body main #jh-p8 .container-fluid .jh-number-indicator {
     left: 11%;
   }
 }
@@ -2794,7 +3160,9 @@ body main #jh-p6 .container-fluid .jh-number-indicator {
   body main #jh-p3 .container-fluid .jh-page-counter,
   body main #jh-p4 .container-fluid .jh-page-counter,
   body main #jh-p5 .container-fluid .jh-page-counter,
-  body main #jh-p6 .container-fluid .jh-page-counter {
+  body main #jh-p6 .container-fluid .jh-page-counter,
+  body main #jh-p7 .container-fluid .jh-page-counter,
+  body main #jh-p8 .container-fluid .jh-page-counter {
     font-weight: 900 !important;
   }
 }
@@ -2804,7 +3172,9 @@ body main #jh-p6 .container-fluid .jh-number-indicator {
   body main #jh-p3 .container-fluid .jh-read-more-button,
   body main #jh-p4 .container-fluid .jh-read-more-button,
   body main #jh-p5 .container-fluid .jh-read-more-button,
-  body main #jh-p6 .container-fluid .jh-read-more-button {
+  body main #jh-p6 .container-fluid .jh-read-more-button,
+  body main #jh-p7 .container-fluid .jh-read-more-button,
+  body main #jh-p8 .container-fluid .jh-read-more-button {
     bottom: 10vh;
   }
 }

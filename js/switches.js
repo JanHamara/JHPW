@@ -227,6 +227,8 @@ let link_P3 = jQuery("#jh-portfolio-item-3");
 let link_P4 = jQuery("#jh-portfolio-item-4");
 let link_P5 = jQuery("#jh-portfolio-item-5");
 let link_P6 = jQuery("#jh-portfolio-item-6");
+let link_P7 = jQuery("#jh-portfolio-item-7");
+let link_P8 = jQuery("#jh-portfolio-item-8");
 
 // Portfolio Item Containers
 let P1 = jQuery("#jh-p1");
@@ -235,6 +237,8 @@ let P3 = jQuery("#jh-p3");
 let P4 = jQuery("#jh-p4");
 let P5 = jQuery("#jh-p5");
 let P6 = jQuery("#jh-p6");
+let P7 = jQuery("#jh-p7");
+let P8 = jQuery("#jh-p8");
 
 // let links_P = [link_P1, link_P2];
 // let P = [P1, P2];
@@ -245,8 +249,14 @@ let LP3 = [link_P3, P3, "#jh-p3"];
 let LP4 = [link_P4, P4, "#jh-p4"];
 let LP5 = [link_P5, P5, "#jh-p5"];
 let LP6 = [link_P6, P6, "#jh-p6"];
+let LP7 = [link_P7, P7, "#jh-p7"];
+let LP8 = [link_P8, P8, "#jh-p8"];
 
-let LP = [LP1, LP2, LP3, LP4, LP5, LP6];
+let LP = [LP1, LP2, LP3, LP4, LP5, LP6, LP7, LP8];
+
+// -----------------------------------------------------------------------------------------------------------------
+
+                                        // Do NOT modify code BELOW //
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -265,7 +275,9 @@ function linkPItem(item, port, button) {
             port.css({"display": "none"});
         }, 800);
         //
+
         item[1].css({"opacity": "1"});
+
         // Show close button
         button.css({"display": "block"});
         setTimeout(function() {

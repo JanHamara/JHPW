@@ -4,226 +4,144 @@
 
 // -----------------------------------------------------------------------------------------------------------------
 
-// Portfolio Switches
-const leftPSwitch2 = $("#jh-portfolio-switch-left");
-const rightPSwitch2 = $("#jh-portfolio-switch-right");
-const leftPOSwitch2 = $("#jh-portfolio-switch-mobile-left");
-const rightPOSwitch2 = $("#jh-portfolio-switch-mobile-right");
+function createAllVariables() {
+    let func = [];
+    let counter = [];
+    const button = [];
+    const button_text = [];
+    const number_indicator = [];
+    const bar_indicator = [];
+    const p = [];
+    let sections = [];
+    const num_indicator = [];
 
-let switches2 = [leftPSwitch2, rightPSwitch2, leftPOSwitch2, rightPOSwitch2];
+    // ---------------------------
 
-// -----------------------------------------------------------------------------------------------------------------
+    p_1to2 = [];
+    p_2to3 = [];
+    p_3to4 = [];
+    p_4to1 = [];
 
-// Portfolio Items
-const p1 = document.getElementById("jh-p1");
-const p2 = document.getElementById("jh-p2");
-const p3 = document.getElementById("jh-p3");
-const p4 = document.getElementById("jh-p4");
-const p5 = document.getElementById("jh-p5");
-const p6 = document.getElementById("jh-p6");
+    p_4to5 = [];
+    p_5to1 = [];
 
-// -----------------------------------------------------------------------------------------------------------------
+    // ---------------------------
 
-// P1 - Internship Hunter
+    jh_P_1 = [];
+    jh_P_2 = [];
+    jh_P_3 = [];
+    jh_P_4 = [];
+    jh_P_5 = [];
 
-let P1_counter = "1";                                       // Counter
-let P1_button = $("#jh-p1-link");                           // Read More Button
-let P1_button_text = $("#jh-p1-link-text");                 // Read More Button - Text
-let P1_number_indicator = $("#jh-p1-pc-current");           // Number Indicator
-let P1_bar_indicator = $("#jh-p1-bar-indicator-thumb");     // Bar Indicator
-let P1_num_indicator = $("#jh-p1-number-indicator");        // Heading Number Indicator
+    // ---------------------------
 
-// Sections
-let jh_P1_1 = $("#jh-p1-01");
-let jh_P1_2 = $("#jh-p1-02");
-let jh_P1_3 = $("#jh-p1-03");
-let jh_P1_4 = $("#jh-p1-04");
+    let P_data = [];
 
-// ------------------
+    let allVars = [];
 
-// P2 - Notify
+    // ---------------------------
 
-let P2_counter = "1";                                       // Counter
-let P2_button = $("#jh-p2-link");                           // Read More Button
-let P2_button_text = $("#jh-p2-link-text");                 // Read More Button - Text
-let P2_number_indicator = $("#jh-p2-pc-current");           // Number Indicator
-let P2_bar_indicator = $("#jh-p2-bar-indicator-thumb");     // Bar Indicator
-let P2_num_indicator = $("#jh-p2-number-indicator");        // Heading Number Indicator
+    for (let i = 1; i <= 8; ++i) {
 
-// Sections
-let jh_P2_1 = $("#jh-p2-01");
-let jh_P2_2 = $("#jh-p2-02");
-let jh_P2_3 = $("#jh-p2-03");
-let jh_P2_4 = $("#jh-p2-04");
-let jh_P2_5 = $("#jh-p2-05");
+        // ---------------------------
 
-// ------------------
+        jh_P_1[i] = $("#jh-p" + i + "-01");
+        jh_P_2[i] = $("#jh-p" + i + "-02");
+        jh_P_3[i] = $("#jh-p" + i + "-03");
+        jh_P_4[i] = $("#jh-p" + i + "-04");
 
-// P3 - MEU
+        if (i === 2) {
+            jh_P_5[i] = $("#jh-p" + i + "-05");
+        }
 
-let P3_counter = "1";                                       // Counter
-let P3_button = $("#jh-p3-link");                           // Read More Button
-let P3_button_text = $("#jh-p3-link-text");                 // Read More Button - Text
-let P3_number_indicator = $("#jh-p3-pc-current");           // Number Indicator
-let P3_bar_indicator = $("#jh-p3-bar-indicator-thumb");     // Bar Indicator
-let P3_num_indicator = $("#jh-p3-number-indicator");        // Heading Number Indicator
+        // ---------------------------
 
-// Sections
-let jh_P3_1 = $("#jh-p3-01");
-let jh_P3_2 = $("#jh-p3-02");
-let jh_P3_3 = $("#jh-p3-03");
-let jh_P3_4 = $("#jh-p3-04");
+        p_1to2[i] = [jh_P_1[i], jh_P_2[i], "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
+        p_2to3[i] = [jh_P_2[i], jh_P_3[i], "22.66vh", "03", "04 | DEMO", "3", "03"];
+        p_3to4[i] = [jh_P_3[i], jh_P_4[i], "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
+        p_4to1[i] = [jh_P_4[i], jh_P_1[i], "0vh", "01", "02 | WEBSITE", "1", "01"];
 
-// ------------------
+        // Internship Hunter
+        if (i === 1) {
+            p_1to2[i] = [jh_P_1[i], jh_P_2[i], "11.33vh", "02", "03 | INTERFACE DESIGN", "2", "02"];
+            p_4to1[i] = [jh_P_4[i], jh_P_1[i], "0vh", "01", "02 | SPRITE DESIGN", "1", "01"];
+        }
 
-// P4 - Emmanuel Delay
+        // Notify
+        if (i === 2) {
+            p_1to2[i] = [jh_P_1[i], jh_P_2[i], "9vh", "02", "03 | LOGO DESIGN", "2", "02"];
+            p_2to3[i] = [jh_P_2[i], jh_P_3[i], "18vh", "03", "04 | WEBSITE DESIGN", "3", "03"];
+            p_3to4[i] = [jh_P_3[i], jh_P_4[i], "27vh", "04", "05 | APP DESIGN", "4", "04"];
+            p_4to5[i] = [jh_P_4[i], jh_P_5[i], "36vh", "05", "BACK TO PORTFOLIO", "5", "05"];
+            p_5to1[i] = [jh_P_5[i], jh_P_1[i], "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
+        }
 
-let P4_counter = "1";                                       // Counter
-let P4_button = $("#jh-p4-link");                           // Read More Button
-let P4_button_text = $("#jh-p4-link-text");                 // Read More Button - Text
-let P4_number_indicator = $("#jh-p4-pc-current");           // Number Indicator
-let P4_bar_indicator = $("#jh-p4-bar-indicator-thumb");     // Bar Indicator
-let P4_num_indicator = $("#jh-p4-number-indicator");        // Heading Number Indicator
+        // Emmanuel Delay
+        if (i === 3) {
+            p_4to1[i] = [jh_P_4[i], jh_P_1[i], "0vh", "01", "02 | WEB DESIGN", "1", "01"];
+        }
 
-// Sections
-let jh_P4_1 = $("#jh-p4-01");
-let jh_P4_2 = $("#jh-p4-02");
-let jh_P4_3 = $("#jh-p4-03");
-let jh_P4_4 = $("#jh-p4-04");
+        func[i] = [["1", p_1to2[i]], ["2", p_2to3[i]], ["3", p_3to4[i]], ["4", p_4to1[i]]];
 
-// -----------------------------------------------------------------------------------------------------------------
+        if (i === 2) {
+            func[i] = [["1", p_1to2[i]], ["2", p_2to3[i]], ["3", p_3to4[i]], ["4", p_4to5[i]], ["5", p_5to1[i]]];
+        }
 
-// P5 - Emmanuel Delay
+        // ---------------------------
 
-let P5_counter = "1";                                       // Counter
-let P5_button = $("#jh-p5-link");                           // Read More Button
-let P5_button_text = $("#jh-p5-link-text");                 // Read More Button - Text
-let P5_number_indicator = $("#jh-p5-pc-current");           // Number Indicator
-let P5_bar_indicator = $("#jh-p5-bar-indicator-thumb");     // Bar Indicator
-let P5_num_indicator = $("#jh-p5-number-indicator");        // Heading Number Indicator
+        counter[i] = "1";
+        button[i] = $("#jh-p" + i + "-link");
+        button_text[i] = $("#jh-p" + i + "-link-text");
+        number_indicator[i] = $("#jh-p" + i + "-pc-current");
+        bar_indicator[i] = $("#jh-p" + i + "-bar-indicator-thumb");
+        p[i] = document.getElementById("jh-p" + i);
+        sections[i] = "4";
+        if (i === 2) {
+            sections[i] = "5";
+        }
+        num_indicator[i] = $("jh-p" + i + "-number-indicator");
 
-// Sections
-let jh_P5_1 = $("#jh-p5-01");
-let jh_P5_2 = $("#jh-p5-02");
-let jh_P5_3 = $("#jh-p5-03");
-let jh_P5_4 = $("#jh-p5-04");
+        // ---------------------------
 
-// -----------------------------------------------------------------------------------------------------------------
+        // Elements Bundle
 
-// P6 - Procreo
+        // [0] - Data Bundle
+        // [1] - Button
+        // [2] - Button Text
+        // [3] - Section Counter
+        // [4] - Number Indicator
+        // [5] - Bar Indicator
+        // [6] - Portfolio Item - Main Container
+        // [7] - Number of Sections
+        // [8] - Number Indicator 2
 
-let P6_counter = "1";                                       // Counter
-let P6_button = $("#jh-p6-link");                           // Read More Button
-let P6_button_text = $("#jh-p6-link-text");                 // Read More Button - Text
-let P6_number_indicator = $("#jh-p6-pc-current");           // Number Indicator
-let P6_bar_indicator = $("#jh-p6-bar-indicator-thumb");     // Bar Indicator
-let P6_num_indicator = $("#jh-p6-number-indicator");        // Heading Number Indicator
+        P_data[i] = [func[i], button[i], button_text[i], counter[i], number_indicator[i], bar_indicator[i], p[i], sections[i], num_indicator[i]];
 
-// Sections
-let jh_P6_1 = $("#jh-p6-01");
-let jh_P6_2 = $("#jh-p6-02");
-let jh_P6_3 = $("#jh-p6-03");
-let jh_P6_4 = $("#jh-p6-04");
+        // ---------------------------
 
-// -----------------------------------------------------------------------------------------------------------------
-
-// Data
-
-// [0] - current section
-// [1] - next section
-// [2] - bar indicator height
-// [3] - number indicator value
-// [4] - button text [text indicator]
-// [5] - new section [helper counter]
-
-let P1_1to2 = [jh_P1_1, jh_P1_2, "11.33vh", "02", "03 | INTERFACE DESIGN", "2", "02"];
-let P1_2to3 = [jh_P1_2, jh_P1_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
-let P1_3to4 = [jh_P1_3, jh_P1_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
-let P1_4to1 = [jh_P1_4, jh_P1_1, "0vh", "01", "02 | SPRITE DESIGN", "1", "01"];
-
-// ------------
-
-let P2_1to2 = [jh_P2_1, jh_P2_2, "9vh", "02", "03 | LOGO DESIGN", "2", "02"];
-let P2_2to3 = [jh_P2_2, jh_P2_3, "18vh", "03", "04 | WEBSITE DESIGN", "3", "03"];
-let P2_3to4 = [jh_P2_3, jh_P2_4, "27vh", "04", "05 | APP DESIGN", "4", "04"];
-let P2_4to5 = [jh_P2_4, jh_P2_5, "36vh", "05", "BACK TO PORTFOLIO", "5", "05"];
-let P2_5to1 = [jh_P2_5, jh_P2_1, "0vh", "01", "02 | PROJECT BRIEF", "1", "01"];
-
-// ------------
-
-let P3_1to2 = [jh_P3_1, jh_P3_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
-let P3_2to3 = [jh_P3_2, jh_P3_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
-let P3_3to4 = [jh_P3_3, jh_P3_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
-let P3_4to1 = [jh_P3_4, jh_P3_1, "0vh", "01", "02 | WEB DESIGN", "1", "01"];
-
-// ------------
-
-let P4_1to2 = [jh_P4_1, jh_P4_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
-let P4_2to3 = [jh_P4_2, jh_P4_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
-let P4_3to4 = [jh_P4_3, jh_P4_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
-let P4_4to1 = [jh_P4_4, jh_P4_1, "0vh", "01", "02 | WEBSITE", "1", "01"];
-
-// ------------
-
-let P5_1to2 = [jh_P5_1, jh_P5_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
-let P5_2to3 = [jh_P5_2, jh_P5_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
-let P5_3to4 = [jh_P5_3, jh_P5_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
-let P5_4to1 = [jh_P5_4, jh_P5_1, "0vh", "01", "02 | WEBSITE", "1", "01"];
-
-// ------------
-
-let P6_1to2 = [jh_P6_1, jh_P6_2, "11.33vh", "02", "03 | RESPONSIVE DESIGN", "2", "02"];
-let P6_2to3 = [jh_P6_2, jh_P6_3, "22.66vh", "03", "04 | DEMO", "3", "03"];
-let P6_3to4 = [jh_P6_3, jh_P6_4, "34vh", "04", "BACK TO PORTFOLIO", "4", "04"];
-let P6_4to1 = [jh_P6_4, jh_P6_1, "0vh", "01", "02 | WEBSITE", "1", "01"];
+        allVars[i-1] = P_data[i];
+    }
+    //
+    return allVars;
+}
 
 // -----------------------------------------------------------------------------------------------------------------
 
-// Data Bundle
-let P1_func = [["1", P1_1to2], ["2", P1_2to3], ["3", P1_3to4], ["4", P1_4to1]];
-let P2_func = [["1", P2_1to2], ["2", P2_2to3], ["3", P2_3to4], ["4", P2_4to5], ["5", P2_5to1]];
-let P3_func = [["1", P3_1to2], ["2", P3_2to3], ["3", P3_3to4], ["4", P3_4to1]];
-let P4_func = [["1", P4_1to2], ["2", P4_2to3], ["3", P4_3to4], ["4", P4_4to1]];
-let P5_func = [["1", P5_1to2], ["2", P5_2to3], ["3", P5_3to4], ["4", P5_4to1]];
-let P6_func = [["1", P6_1to2], ["2", P6_2to3], ["3", P6_3to4], ["4", P6_4to1]];
+const portGallery = jQuery("#jh-portfolio");
 
-// -----------------------------------------------------------------------------------------------------------------
-
-// Elements Bundle
-
-// [0] - Data Bundle
-// [1] - Button
-// [2] - Button Text
-// [3] - Section Counter
-// [4] - Number Indicator
-// [5] - Bar Indicator
-// [6] - Portfolio Item - Main Container
-// [7] - Number of Sections
-// [8] - Number Indicator 2
-
-let P1_data = [P1_func, P1_button, P1_button_text, P1_counter, P1_number_indicator, P1_bar_indicator, p1, "4", P1_num_indicator];
-let P2_data = [P2_func, P2_button, P2_button_text, P2_counter, P2_number_indicator, P2_bar_indicator, p2, "5", P2_num_indicator];
-let P3_data = [P3_func, P3_button, P3_button_text, P3_counter, P3_number_indicator, P3_bar_indicator, p3, "4", P3_num_indicator];
-let P4_data = [P4_func, P4_button, P4_button_text, P4_counter, P4_number_indicator, P4_bar_indicator, p4, "4", P4_num_indicator];
-let P5_data = [P5_func, P5_button, P5_button_text, P5_counter, P5_number_indicator, P5_bar_indicator, p5, "4", P5_num_indicator];
-let P6_data = [P6_func, P6_button, P6_button_text, P6_counter, P6_number_indicator, P6_bar_indicator, p6, "4", P6_num_indicator];
-
-// -----------------------------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------
 
 // !!!
 // This variable holds separate sets of data - one per each portfolio item
 // !!!
 
-let portfolioData = [P1_data, P2_data, P3_data, P4_data, P5_data, P6_data];
+let portfolioData = createAllVariables();
 
 // -----------------------------------------------------------------------------------------------------------------
 
                                         // Do NOT modify code BELOW //
 
 // -----------------------------------------------------------------------------------------------------------------
-
-const portGallery = jQuery("#jh-portfolio");
 
 portfolioData.forEach(el => setGallery(el));
 
