@@ -30,13 +30,15 @@ let input3Sign = document.getElementById("jh-cf-sign-3");
 
 // Input Fields
 let input1 = document.getElementById("jh-cf-text");
-// let input2 = document.getElementById("jh-cf-email");
+let input2 = document.getElementById("jh-cf-email");
 let input3 = document.getElementById("jh-cf-message");
 
 // Form Groups - controls bottom border
 const fg1 = document.getElementById("fg1");
 const fg2 = document.getElementById("fg2");
 const fg3 = document.getElementById("fg3");
+
+const fg = [fg1, fg2, fg3];
 
 // Visit count
 let fg1count = 0;
@@ -53,14 +55,11 @@ jh_cf_text.on('focus', function() {
     // Make the indicator red
     input1Sign.src = "./assets/00_IMG/01_About/about-pc-divider.png";
     // Add to the counter
-    fg1count = fg1count + 1;
 }).on('focusout', function() {
     if (input1.value === "") {
         input1Sign.src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
     } else {
-        clearErrors();
-        fg1.classList.remove("error");
-        revalidate();
+
     }
 });
 
@@ -74,29 +73,11 @@ jh_cf_email.on('focus', function() {
     // Make the indicator red
     input2Sign.src = "./assets/00_IMG/01_About/about-pc-divider.png";
     // Add to the counter
-    fg2count = fg2count + 1;
 }).on('focusout', function() {
-    // Clear all error before revalidation
-    clearErrors();
-
-    // Validate if there is any content in EMAIL input field ONLY!
-    if (validateMailField()) {
-
-        // If EMAIL input field is not empty - go ahead to
-        // // Validate the email format
-        if (validateMail()) {
-            // if EMAIL format is correct - remove red border as well
-            fg2.classList.remove("error");
-        } else {
-            // if EMAIL format is incorrect - keep red border and add errorMessage
-            fireMailError();
-        }
-
-        // If there is no content in EMAIL input field
-    } else {
-        // Just remove red indicator and red border
+    if (input2.value === "") {
         input2Sign.src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
-        fg2.classList.remove("error");
+    } else {
+
     }
 });
 
@@ -110,17 +91,12 @@ jh_cf_message.on('focus', function() {
     // Make the indicator red
     input3Sign.src = "./assets/00_IMG/01_About/about-pc-divider.png";
     // Add to the counter
-    fg3count = fg3count + 1;
 }).on('focusout', function() {
     if (input3.value === "") {
         input3Sign.src = "./assets/00_IMG/01_About/about-pc-divider-white.png";
-        if (validateForm()) {
-            validateMail();
-        }
+
     } else {
-        clearErrors();
-        fg3.classList.remove("error");
-        revalidate();
+
     }
 });
 
@@ -138,28 +114,25 @@ function validateMailField() {
 
 function isNotEmpty(values, valueNames) {
     let isNotEmpty = true;
+
     for (x in values) {
         if (values[x] === "") {
             let errorInput = jQuery('#jh-cf-' + valueNames[x]);
             let errorMsg = jQuery("<div class='errorMessage'></div>").text('FILL OUT MISSING INFORMATION!');
             let errorMsg2 = jQuery("<div class='errorMessage2'></div>").text('FILL OUT MISSING INFORMATION!');
+
             if (valueNames[x] === "message") {
                 let formContainer = jQuery("#jh-cf");
-                if (fg3count > 0) {
-                    formContainer.after(errorMsg2);
-                    fg3.classList.add("error");
-                }
+                formContainer.after(errorMsg2);
+                fg3.classList.add("error");
             } else if (valueNames[x] === "text") {
-                if (fg1count > 0) {
-                    errorInput.after(errorMsg);
-                    fg1.classList.add("error");
-                }
-            } else if (valueNames[x] === "email") {
-                if (fg2count > 0) {
-                    errorInput.after(errorMsg);
-                    fg2.classList.add("error");
-                }
+                errorInput.after(errorMsg);
+                fg1.classList.add("error");
+            } else {
+                errorInput.after(errorMsg);
+                fg2.classList.add("error");
             }
+
             isNotEmpty = false;
         }
     }
@@ -168,8 +141,13 @@ function isNotEmpty(values, valueNames) {
 
 <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
+function removeErrors(fg) {
+    fg.forEach(el => el.classList.remove("error"));
+}
+
+<!--  -----------------------------------------------------------------------------------------------------------------  -->
+
 function validateForm() {
-    clearErrors();
     let name = $('#jh-cf-text').val();
     let email =  $('#jh-cf-email').val();
     let message = $('#jh-cf-message').val();
@@ -196,13 +174,6 @@ function validateMail() {
 
 // Clearing & Error Functions
 
-function fireMailEmptyError() {
-    let errorInput = jh_cf_email;
-    let errorMsg = $("<div class='errorMessage'></div>").text('FILL OUT MISSING INFORMATION!');
-    errorInput.after(errorMsg);
-    fg2.classList.add("error");
-}
-
 function fireMailError() {
     let errorInput = jh_cf_email;
     let errorMsg = $("<div class='errorMessage'></div>").text('EMAIL FORMAT INCORRECT!');
@@ -210,21 +181,24 @@ function fireMailError() {
     fg2.classList.add("error");
 }
 
+<!--  ---------------------------------------------------  -->
+
+// This clears red bars
+function removeErrors(fg) {
+    fg.forEach(el => el.classList.remove("error"));
+}
+
+// This clears textual errors
 function clearErrors() {
     $('.errorMessage').remove();
     $('.errorMessage2').remove();
-}
-
-function revalidate() {
-    if (validateForm()) {
-        validateMail();
-    }
 }
 
 <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
 function formSubmit() {
     clearErrors();
+    removeErrors(fg);
     // Check if all fields are filled
     if (validateForm()) {
         // Check for validity of email address
