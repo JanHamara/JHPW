@@ -177,6 +177,58 @@
   display: inline;
   color: #d1d1d1;
 }
+.form-submitted {
+  font-size: 0.5vw !important;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 2.5vw !important;
+  transform: translate(-50%, -50%) scale(0.8);
+  text-transform: uppercase !important;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  .form-submitted {
+    text-align: center;
+    width: 100%;
+    font-size: 1vw !important;
+    bottom: 2.3vw !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .form-submitted {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw !important;
+    bottom: 8.5vw !important;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .form-submitted {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw !important;
+    bottom: 3.3vw !important;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .form-submitted .fs-desktop {
+    display: none;
+  }
+}
+.form-submitted .fs-mobile {
+  display: none;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .form-submitted .fs-mobile {
+    display: inline-block;
+    text-align: center;
+    bottom: 9vw !important;
+    width: 100%;
+    font-size: 2.5vw !important;
+    line-height: 200%;
+  }
+}
 body,
 html,
 div,
@@ -2257,7 +2309,7 @@ body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-
     display: none;
   }
 }
-@media only screen and (min-width: 3840px), only screen and (min-width: 2560px), only screen and (min-width: 1920px), only screen and (min-width: 1280px) {
+@media only screen and (min-width: 3840px), only screen and (min-width: 2560px), only screen and (min-width: 1920px) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg,
@@ -2540,7 +2592,7 @@ body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-7 {
   transform: scale(0.99) !important;
 }
-@media only screen and (min-width: 3840px), only screen and (min-width: 2560px), only screen and (min-width: 1920px), only screen and (min-width: 1280px) {
+@media only screen and (min-width: 3840px), only screen and (min-width: 2560px), only screen and (min-width: 1920px) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-2,
@@ -2682,7 +2734,7 @@ body main #jh-p7 .container-fluid .jh-page-container-content .jh-page-container-
 body main #jh-p8 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3 {
   transform: scale(0.99) !important;
 }
-@media only screen and (min-width: 3840px), only screen and (min-width: 2560px), only screen and (min-width: 1920px), only screen and (min-width: 1280px) {
+@media only screen and (min-width: 3840px), only screen and (min-width: 2560px), only screen and (min-width: 1920px) {
   body main #jh-p1 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p2 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,
   body main #jh-p3 .container-fluid .jh-page-container-content .jh-page-container-fill .pitem-video-content #jh-demo-bg-3,

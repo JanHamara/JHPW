@@ -280,6 +280,57 @@
   }
 }
 
+.form-submitted {
+  font-size: 0.5vw !important;
+  .abs !important;
+  left: 50% !important;
+  bottom: 2.5vw !important;
+  transform: translate(-50%, -50%) scale(0.8);
+  text-transform: uppercase !important;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+
+  @media @smartphone-all-landscape {
+    .aligntext;
+    width: @max;
+    font-size: 1vw !important;
+    bottom: 2.3vw !important;
+  }
+
+  @media @tablet-small, @tablet-big {
+    .aligntext;
+    width: @max;
+    font-size: 1.5vw !important;
+    bottom: 8.5vw !important;
+  }
+
+  @media @tablet-landscape, @iPad-Pro-landscape {
+    .aligntext;
+    width: @max;
+    font-size: 1.5vw !important;
+    bottom: 3.3vw !important;
+  }
+
+  .fs-desktop {
+    @media @smartphone-all {
+      .display(none);
+    }
+  }
+
+  .fs-mobile {
+    .display(none);
+
+    @media @smartphone-all {
+      .display(inline-block);
+      .aligntext;
+      bottom: 9vw !important;
+      width: @max;
+      font-size: 2.5vw !important;
+      line-height: 200%;
+    }
+  }
+}
+
 //-------------------------------------------------------------
 
 body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, aside, article, figure, figcaption, h1, h2, h3, h4, h5, h6, i {
@@ -2019,7 +2070,7 @@ body {
                   .display(none);
                 }
 
-                @media @4K-screen, @QHD-screen, @FullHD-screen, @HD-screen {
+                @media @4K-screen, @QHD-screen, @FullHD-screen {
                   transform: scale(1.16) translate(0, 2.8vh) !important
                 }
 
@@ -2040,7 +2091,7 @@ body {
               #jh-demo-bg-2, #jh-demo-bg-4, #jh-demo-bg-5, #jh-demo-bg-6, #jh-demo-bg-7 {
                 transform: scale(0.99) !important;
 
-                @media @4K-screen, @QHD-screen, @FullHD-screen, @HD-screen {
+                @media @4K-screen, @QHD-screen, @FullHD-screen {
                   transform: scale(1.16) translate(0, 2.8vh) !important
                 }
 
@@ -2056,7 +2107,7 @@ body {
               #jh-demo-bg-3 {
                 transform: scale(0.99) !important;
 
-                @media @4K-screen, @QHD-screen, @FullHD-screen, @HD-screen {
+                @media @4K-screen, @QHD-screen, @FullHD-screen {
                   transform: scale(1.15) translate(0, 2.8vh) !important
                 }
 
@@ -2776,10 +2827,6 @@ body {
 
             .form-control {
               padding: 0 !important;
-
-              .form-submitted {
-
-              }
             }
 
             .fg1, .fg2 {
