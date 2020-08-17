@@ -238,6 +238,18 @@
   overflow: visible;
   transform: translate(0, 1.5vw);
 
+  @media @QHD-screen, @FullHD-screen {
+    transform: translate(0, 3vw);
+  }
+
+  @media @4K-screen {
+    transform: translate(0, 4vw);
+  }
+
+  @media @8K-screen {
+    transform: translate(0, 5vw);
+  }
+
   @media @tablet-landscape, @iPad-Pro-landscape {
     transform: translate(0, 4vw);
   }
@@ -1892,10 +1904,19 @@ body {
                 .abs;
                 top: 2.1vh;
                 opacity: 0;
-                animation: 3s jh-fade-in 0.5s forwards;
+                animation: 3s jh-fade-in 1s forwards;
+                animation-delay: 1s !important;
 
                 @media @smartphone-all {
                   .display(none);
+                }
+
+                @media @4K-screen, @QHD-screen, @FullHD-screen, @HD-screen {
+                  transform: scale(1.16) translate(0, 2.8vh) !important
+                }
+
+                @media @8K-screen {
+                  transform: scale(1.29) translate(0, 4vh) !important;
                 }
 
                 @media @tablet-small, @tablet-big {
@@ -1904,18 +1925,53 @@ body {
 
                 @media @tablet-landscape, @iPad-Pro-landscape {
                   top: 7vh;
+                  transform: translate(0, 0) !important
                 }
               }
 
               #jh-demo-bg-2, #jh-demo-bg-4, #jh-demo-bg-5, #jh-demo-bg-6, #jh-demo-bg-7 {
                 transform: scale(0.99) !important;
+
+                @media @4K-screen, @QHD-screen, @FullHD-screen, @HD-screen {
+                  transform: scale(1.16) translate(0, 2.8vh) !important
+                }
+
+                @media @8K-screen {
+                  transform: scale(1.29) translate(0, 4vh) !important;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  transform: translate(0, 0) !important
+                }
               }
 
               #jh-demo-bg-3 {
                 transform: scale(0.99) !important;
 
+                @media @4K-screen, @QHD-screen, @FullHD-screen, @HD-screen {
+                  transform: scale(1.15) translate(0, 2.8vh) !important
+                }
+
+                @media @8K-screen {
+                  transform: scale(1.29) translate(0, 4vh) !important;
+                }
+
                 @media @smartphone-all-landscape {
                   transform: translate(0, 5vw);
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  transform: translate(0, 0) !important
+                }
+              }
+
+              #jh-demo-bg-5 {
+                @media @tablet-small, @tablet-big {
+                  transform: scale(1.18) translate(0, 0.2vh) !important;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  transform: scale(1.17) translate(0, 0) !important;
                 }
               }
 
@@ -2237,11 +2293,11 @@ body {
         .jh-bar-indicator {
           .jh-bar-indicator-thumb-container {
             #jh-p1-bar-indicator-thumb, #jh-p3-bar-indicator-thumb, #jh-p4-bar-indicator-thumb, #jh-p5-bar-indicator-thumb,
-            #jh-p6-bar-indicator-thumb, #jh-p7-bar-indicator-thumb, #jh-p8-bar-indicator-thumb {
+            #jh-p6-bar-indicator-thumb, #jh-p8-bar-indicator-thumb {
               height: 25%;
             }
 
-            #jh-p2-bar-indicator-thumb {
+            #jh-p2-bar-indicator-thumb, #jh-p7-bar-indicator-thumb {
               height: 20%;
             }
           }
