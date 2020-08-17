@@ -229,7 +229,6 @@ function formSubmit() {
     if (validateForm()) {
         // Check for validity of email address
         if (validateMail()) {
-            alert("mail validated");
             let form = $('#jh-cf');
             let form_alert = $('.form-submitted');
             let dataString = form.serialize();

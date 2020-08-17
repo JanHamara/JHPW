@@ -177,6 +177,24 @@
   }
 }
 
+@-webkit-keyframes jh-fade-in-08 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes jh-fade-in-08 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
 //------------------------------------------------------------------------------
 
 // Classes
@@ -847,7 +865,7 @@ body {
 
       @media @tablet-small, @tablet-big {
         width: 7vw;
-        top: 7vh;
+        top: 8vh;
       }
 
       @media @tablet-landscape, @iPad-Pro-landscape {
@@ -861,18 +879,75 @@ body {
 
       #menu-icon-tooltip, #menu-icon-tooltip-2 {
         margin-top: 1.5vh;
-        font-size: 0.7vw;
+        font-size: 0.65vw;
         font-weight: 600;
         //
         opacity: 0;
         transition: opacity 1s;
 
-        //
-        //.display(none);
-        // you need to sort this out at the end, for big screens etc.
+        &:hover {
+          opacity: 0.7;
+        }
 
         @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
           .display(none);
+          opacity: 0.2;
+        }
+
+        @media @FullHD-screen, @QHD-screen {
+          font-size: 0.78vw;
+        }
+
+        @media @4K-screen, @8K-screen {
+          font-size: 0.8vw;
+          letter-spacing: 0.15vw;
+        }
+
+        @media @smartphone-all {
+          font-size: 2.5vw;
+          letter-spacing: 1.1vw;
+        }
+
+        @media @smartphone-all-landscape {
+          margin-top: 2.5vh;
+          font-size: 0.85vw;
+        }
+
+        @media @tablet-small, @tablet-big {
+          margin-top: 1.5vh;
+          font-size: 1.4vh;
+          letter-spacing: 0.7vw;
+        }
+
+        @media @tablet-landscape, @iPad-Pro-landscape {
+          font-size: 1.5vh;
+        }
+      }
+
+      #menu-icon-tooltip-2 {
+
+        @media @FullHD-screen, @QHD-screen {
+          letter-spacing: 0.25vw;
+        }
+
+        @media @4K-screen, @8K-screen {
+          letter-spacing: 0.25vw;
+        }
+
+        @media @smartphone-all {
+          letter-spacing: 1.4vw;
+        }
+
+        @media @smartphone-all-landscape {
+          letter-spacing: 0.6vw;
+        }
+
+        @media @tablet-small, @tablet-big {
+          letter-spacing: 0.9vw;
+        }
+
+        @media @tablet-landscape, @iPad-Pro-landscape {
+          letter-spacing: 0.6vw;
         }
       }
 
@@ -886,6 +961,11 @@ body {
           transition: opacity 1s;
         }
       }
+    }
+
+    #menu-icon {
+      opacity: 0;
+      animation: 1s jh-fade-in-08 2s forwards;
     }
 
     #menu-icon-2 {
@@ -937,11 +1017,28 @@ body {
         .fs;
         .nobound;
 
+        #menu-github-left {
+          width: 2vw;
+          //
+          .position(fixed);
+          top: 9vh;
+          left: 5vw;
+          opacity: 0.4;
+          transform: translate(-50%, -50%);
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
         img#jh-hero-logo {
           .p-center;
           width: 6vw;
           //
           top: 17%;
+          //
+          opacity: 0;
+          animation: 2s jh-fade-in 1s forwards;
 
           @media @smartphone-all {
             width: 20vw;
@@ -963,6 +1060,9 @@ body {
           width: 29vw;
           //
           top: 35.5%;
+          //
+          opacity: 0;
+          animation: 2s jh-fade-in 1.5s forwards;
 
           @media @smartphone-all {
             width: 70vw;
@@ -989,7 +1089,8 @@ body {
           top: 42%;
           left: 50.2%;
           //
-          opacity: 0.8;
+          opacity: 0;
+          animation: 2s jh-fade-in-08 2s forwards;
 
           @media @smartphone-all {
             font-size: 2.4vw;
@@ -1023,6 +1124,8 @@ body {
           bottom: 0;
           transform: translate(-50%, 0%);
           width: 25vw;
+          opacity: 0;
+          animation: 3s jh-fade-in 0s forwards;
 
           @media @HD-screen {
             width: 28vw;
@@ -1297,6 +1400,11 @@ body {
           img {
             width: 50%;
             margin: 0 auto 2vh;
+            opacity: 0.8;
+
+            &:hover {
+              opacity: 1;
+            }
           }
 
           span.jh-tsl-thumb {
@@ -1343,7 +1451,7 @@ body {
       //-------------------------------------------------------------
 
       #jh-tech-stack-2 {
-        width: 36%;
+        width: 50%;
         margin: 7vh auto 0;
       }
 
@@ -2130,7 +2238,7 @@ body {
               @media @smartphone-all {
                 .display(block);
                 margin: auto !important;
-                width: 80%;
+                width: 67%;
 
                 &:first-child {
                   margin-bottom: 5vw !important;
