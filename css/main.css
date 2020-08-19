@@ -178,35 +178,30 @@
   color: #d1d1d1;
 }
 .form-submitted {
-  font-size: 0.5vw !important;
+  text-align: center;
+  width: 100%;
+  font-size: 1vw !important;
   position: absolute !important;
   left: 50% !important;
-  bottom: 2.5vw !important;
-  transform: translate(-50%, -50%) scale(0.8);
+  bottom: 2vw !important;
+  transform: translate(-50%, -50%) scale(0.5);
   text-transform: uppercase !important;
   opacity: 0;
   transition: opacity 1s, transform 1s;
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
   .form-submitted {
-    text-align: center;
-    width: 100%;
-    font-size: 1vw !important;
     bottom: 2.3vw !important;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   .form-submitted {
-    text-align: center;
-    width: 100%;
     font-size: 1.5vw !important;
     bottom: 8.5vw !important;
   }
 }
 @media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
   .form-submitted {
-    text-align: center;
-    width: 100%;
     font-size: 1.5vw !important;
     bottom: 3.3vw !important;
   }
@@ -973,7 +968,8 @@ body main #menu-icon-2 {
   right: 3.5vw;
   transform: translate(-50%, -50%);
   overflow: visible !important;
-  opacity: 0.7;
+  opacity: 0;
+  animation: 1s jh-fade-in-08 2s forwards;
   transition: opacity 1s;
   z-index: 9999 !important;
 }
@@ -1136,7 +1132,6 @@ body main #menu-icon-2 #menu-icon-tooltip-2:hover {
 body main #menu-icon:hover,
 body main #menu-icon-2:hover {
   cursor: pointer;
-  opacity: 1;
   transition: opacity 1s;
 }
 body main #menu-icon:hover #menu-icon-tooltip,
@@ -1145,10 +1140,6 @@ body main #menu-icon:hover #menu-icon-tooltip-2,
 body main #menu-icon-2:hover #menu-icon-tooltip-2 {
   opacity: 1;
   transition: opacity 1s;
-}
-body main #menu-icon {
-  opacity: 0;
-  animation: 1s jh-fade-in-08 2s forwards;
 }
 body main #menu-icon-2 {
   display: none;

@@ -3102,10 +3102,10 @@
                         url: "./send_form.php",
                         data: dataString,
                         success: function() {
-                            form_alert.css({"opacity": 1, "transform": "translate(-50%, -50%) scale(1.1)"});
+                            form_alert.css({"opacity": 1, "transform": "translate(-50%, -50%) scale(0.8)"});
                             form.trigger("reset");
                             setTimeout(function () {
-                                form_alert.css({"opacity": 0, "transform": "translate(-50%, -50%) scale(0.8)"});
+                                form_alert.css({"opacity": 0, "transform": "translate(-50%, -50%) scale(0.5)"});
                             }, 3000);
                         }
                     });
